@@ -1,0 +1,951 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		997400A860CB25F08BF3D1D3 /* libPods-ELToolUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DAC2C08DC3485434DEBDAD7 /* libPods-ELToolUITests.a */; };
+		BBE64FC78A32E22C92A69775 /* libPods-ELToolTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC059C560104A6133D9C1D0 /* libPods-ELToolTests.a */; };
+		D3E28E8F91A8C09C6862A34F /* libPods-ELTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54001BB0439D49AC1C142A0B /* libPods-ELTool.a */; };
+		DF1B190B2089F54200DAE209 /* processCate_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1B19032089F54200DAE209 /* processCate_selected@2x.png */; };
+		DF1B190C2089F54200DAE209 /* processCate_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1B19042089F54200DAE209 /* processCate_selected@3x.png */; };
+		DF1B190D2089F54200DAE209 /* processCate_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1B19052089F54200DAE209 /* processCate_unselected@2x.png */; };
+		DF1B190E2089F54200DAE209 /* processCate_unselected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1B19062089F54200DAE209 /* processCate_unselected@3x.png */; };
+		DF1B190F2089F54200DAE209 /* processlist_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1B19072089F54200DAE209 /* processlist_selected@2x.png */; };
+		DF1B19102089F54200DAE209 /* processlist_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1B19082089F54200DAE209 /* processlist_selected@3x.png */; };
+		DF1B19112089F54200DAE209 /* processlist_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1B19092089F54200DAE209 /* processlist_unselected@2x.png */; };
+		DF1B19122089F54200DAE209 /* processlist_unselected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1B190A2089F54200DAE209 /* processlist_unselected@3x.png */; };
+		DF3E67A9208E166E0089211E /* ELFoodPieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3E67A8208E166E0089211E /* ELFoodPieModel.m */; };
+		DF3E67AC208E16DE0089211E /* ELPieCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3E67AB208E16DE0089211E /* ELPieCenterView.m */; };
+		DF40BE28208B129400BA97C9 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BDFC208B129400BA97C9 /* MJRefreshAutoFooter.m */; };
+		DF40BE29208B129400BA97C9 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BDFE208B129400BA97C9 /* MJRefreshBackFooter.m */; };
+		DF40BE2A208B129400BA97C9 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE00208B129400BA97C9 /* MJRefreshComponent.m */; };
+		DF40BE2B208B129400BA97C9 /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE02208B129400BA97C9 /* MJRefreshFooter.m */; };
+		DF40BE2C208B129400BA97C9 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE04208B129400BA97C9 /* MJRefreshHeader.m */; };
+		DF40BE2D208B129400BA97C9 /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE09208B129400BA97C9 /* MJRefreshAutoGifFooter.m */; };
+		DF40BE2E208B129400BA97C9 /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE0B208B129400BA97C9 /* MJRefreshAutoNormalFooter.m */; };
+		DF40BE2F208B129400BA97C9 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE0D208B129400BA97C9 /* MJRefreshAutoStateFooter.m */; };
+		DF40BE30208B129400BA97C9 /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE10208B129400BA97C9 /* MJRefreshBackGifFooter.m */; };
+		DF40BE31208B129400BA97C9 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE12208B129400BA97C9 /* MJRefreshBackNormalFooter.m */; };
+		DF40BE32208B129400BA97C9 /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE14208B129400BA97C9 /* MJRefreshBackStateFooter.m */; };
+		DF40BE33208B129400BA97C9 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE17208B129400BA97C9 /* MJRefreshGifHeader.m */; };
+		DF40BE34208B129400BA97C9 /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE19208B129400BA97C9 /* MJRefreshNormalHeader.m */; };
+		DF40BE35208B129400BA97C9 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE1B208B129400BA97C9 /* MJRefreshStateHeader.m */; };
+		DF40BE36208B129400BA97C9 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DF40BE1C208B129400BA97C9 /* MJRefresh.bundle */; };
+		DF40BE37208B129400BA97C9 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE1F208B129400BA97C9 /* MJRefreshConst.m */; };
+		DF40BE38208B129400BA97C9 /* NSBundle+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE21208B129400BA97C9 /* NSBundle+MJRefresh.m */; };
+		DF40BE39208B129400BA97C9 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE23208B129400BA97C9 /* UIScrollView+MJExtension.m */; };
+		DF40BE3A208B129400BA97C9 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE25208B129400BA97C9 /* UIScrollView+MJRefresh.m */; };
+		DF40BE3B208B129400BA97C9 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE27208B129400BA97C9 /* UIView+MJExtension.m */; };
+		DF40BE3E208B12B800BA97C9 /* ELRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE3D208B12B800BA97C9 /* ELRefreshViewController.m */; };
+		DF506023207B656F00C38FFC /* ELUtilityHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DF506022207B656F00C38FFC /* ELUtilityHelper.m */; };
+		DF6EBB482074DB2C000A893C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB472074DB2C000A893C /* AppDelegate.m */; };
+		DF6EBB4B2074DB2C000A893C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB4A2074DB2C000A893C /* ViewController.m */; };
+		DF6EBB4E2074DB2C000A893C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6EBB4C2074DB2C000A893C /* Main.storyboard */; };
+		DF6EBB502074DB2C000A893C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6EBB4F2074DB2C000A893C /* Assets.xcassets */; };
+		DF6EBB532074DB2C000A893C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6EBB512074DB2C000A893C /* LaunchScreen.storyboard */; };
+		DF6EBB562074DB2C000A893C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB552074DB2C000A893C /* main.m */; };
+		DF6EBB602074DB2C000A893C /* ELToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB5F2074DB2C000A893C /* ELToolTests.m */; };
+		DF6EBB6B2074DB2C000A893C /* ELToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB6A2074DB2C000A893C /* ELToolUITests.m */; };
+		DF9C0D8620876E100039C531 /* ELCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9C0D8520876E100039C531 /* ELCollectionViewController.m */; };
+		DF9C0D8920877AB50039C531 /* ELCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9C0D8820877AB50039C531 /* ELCollectionViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF6EBB5C2074DB2C000A893C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF6EBB3B2074DB2B000A893C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF6EBB422074DB2C000A893C;
+			remoteInfo = ELTool;
+		};
+		DF6EBB672074DB2C000A893C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF6EBB3B2074DB2B000A893C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF6EBB422074DB2C000A893C;
+			remoteInfo = ELTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B3B4A7FFA91E591156D6230 /* Pods-ELToolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELToolUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELToolUITests/Pods-ELToolUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3F869D03C4DE876BC923F207 /* Pods-ELTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELTool/Pods-ELTool.debug.xcconfig"; sourceTree = "<group>"; };
+		451955514299C8D55638256E /* Pods-ELToolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELToolUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELToolUITests/Pods-ELToolUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		54001BB0439D49AC1C142A0B /* libPods-ELTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ELTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DAC2C08DC3485434DEBDAD7 /* libPods-ELToolUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ELToolUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC059C560104A6133D9C1D0 /* libPods-ELToolTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ELToolTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9251A8FFC661C4006BF2AEA9 /* Pods-ELToolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELToolTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELToolTests/Pods-ELToolTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BBC456D4C2790CA75EDD4982 /* Pods-ELToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELToolTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELToolTests/Pods-ELToolTests.release.xcconfig"; sourceTree = "<group>"; };
+		C6C24736763CF3344F12AC3B /* Pods-ELTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELTool/Pods-ELTool.release.xcconfig"; sourceTree = "<group>"; };
+		DF1B19032089F54200DAE209 /* processCate_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "processCate_selected@2x.png"; sourceTree = "<group>"; };
+		DF1B19042089F54200DAE209 /* processCate_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "processCate_selected@3x.png"; sourceTree = "<group>"; };
+		DF1B19052089F54200DAE209 /* processCate_unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "processCate_unselected@2x.png"; sourceTree = "<group>"; };
+		DF1B19062089F54200DAE209 /* processCate_unselected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "processCate_unselected@3x.png"; sourceTree = "<group>"; };
+		DF1B19072089F54200DAE209 /* processlist_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "processlist_selected@2x.png"; sourceTree = "<group>"; };
+		DF1B19082089F54200DAE209 /* processlist_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "processlist_selected@3x.png"; sourceTree = "<group>"; };
+		DF1B19092089F54200DAE209 /* processlist_unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "processlist_unselected@2x.png"; sourceTree = "<group>"; };
+		DF1B190A2089F54200DAE209 /* processlist_unselected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "processlist_unselected@3x.png"; sourceTree = "<group>"; };
+		DF3E67A7208E166E0089211E /* ELFoodPieModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELFoodPieModel.h; sourceTree = "<group>"; };
+		DF3E67A8208E166E0089211E /* ELFoodPieModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELFoodPieModel.m; sourceTree = "<group>"; };
+		DF3E67AA208E16DE0089211E /* ELPieCenterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELPieCenterView.h; sourceTree = "<group>"; };
+		DF3E67AB208E16DE0089211E /* ELPieCenterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELPieCenterView.m; sourceTree = "<group>"; };
+		DF40BDFB208B129400BA97C9 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
+		DF40BDFC208B129400BA97C9 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
+		DF40BDFD208B129400BA97C9 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
+		DF40BDFE208B129400BA97C9 /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackFooter.m; sourceTree = "<group>"; };
+		DF40BDFF208B129400BA97C9 /* MJRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshComponent.h; sourceTree = "<group>"; };
+		DF40BE00208B129400BA97C9 /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
+		DF40BE01208B129400BA97C9 /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooter.h; sourceTree = "<group>"; };
+		DF40BE02208B129400BA97C9 /* MJRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooter.m; sourceTree = "<group>"; };
+		DF40BE03208B129400BA97C9 /* MJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeader.h; sourceTree = "<group>"; };
+		DF40BE04208B129400BA97C9 /* MJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeader.m; sourceTree = "<group>"; };
+		DF40BE08208B129400BA97C9 /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
+		DF40BE09208B129400BA97C9 /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
+		DF40BE0A208B129400BA97C9 /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
+		DF40BE0B208B129400BA97C9 /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
+		DF40BE0C208B129400BA97C9 /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
+		DF40BE0D208B129400BA97C9 /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
+		DF40BE0F208B129400BA97C9 /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
+		DF40BE10208B129400BA97C9 /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
+		DF40BE11208B129400BA97C9 /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
+		DF40BE12208B129400BA97C9 /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
+		DF40BE13208B129400BA97C9 /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
+		DF40BE14208B129400BA97C9 /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
+		DF40BE16208B129400BA97C9 /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshGifHeader.h; sourceTree = "<group>"; };
+		DF40BE17208B129400BA97C9 /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshGifHeader.m; sourceTree = "<group>"; };
+		DF40BE18208B129400BA97C9 /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshNormalHeader.h; sourceTree = "<group>"; };
+		DF40BE19208B129400BA97C9 /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshNormalHeader.m; sourceTree = "<group>"; };
+		DF40BE1A208B129400BA97C9 /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshStateHeader.h; sourceTree = "<group>"; };
+		DF40BE1B208B129400BA97C9 /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshStateHeader.m; sourceTree = "<group>"; };
+		DF40BE1C208B129400BA97C9 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		DF40BE1D208B129400BA97C9 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		DF40BE1E208B129400BA97C9 /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		DF40BE1F208B129400BA97C9 /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		DF40BE20208B129400BA97C9 /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
+		DF40BE21208B129400BA97C9 /* NSBundle+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+MJRefresh.m"; sourceTree = "<group>"; };
+		DF40BE22208B129400BA97C9 /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		DF40BE23208B129400BA97C9 /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		DF40BE24208B129400BA97C9 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		DF40BE25208B129400BA97C9 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		DF40BE26208B129400BA97C9 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		DF40BE27208B129400BA97C9 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		DF40BE3C208B12B800BA97C9 /* ELRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELRefreshViewController.h; sourceTree = "<group>"; };
+		DF40BE3D208B12B800BA97C9 /* ELRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELRefreshViewController.m; sourceTree = "<group>"; };
+		DF506021207B656F00C38FFC /* ELUtilityHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELUtilityHelper.h; sourceTree = "<group>"; };
+		DF506022207B656F00C38FFC /* ELUtilityHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELUtilityHelper.m; sourceTree = "<group>"; };
+		DF6EBB432074DB2C000A893C /* ELTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6EBB462074DB2C000A893C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DF6EBB472074DB2C000A893C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DF6EBB492074DB2C000A893C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DF6EBB4A2074DB2C000A893C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DF6EBB4D2074DB2C000A893C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF6EBB4F2074DB2C000A893C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF6EBB522074DB2C000A893C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF6EBB542074DB2C000A893C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF6EBB552074DB2C000A893C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF6EBB5B2074DB2C000A893C /* ELToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ELToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6EBB5F2074DB2C000A893C /* ELToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELToolTests.m; sourceTree = "<group>"; };
+		DF6EBB612074DB2C000A893C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF6EBB662074DB2C000A893C /* ELToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ELToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6EBB6A2074DB2C000A893C /* ELToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELToolUITests.m; sourceTree = "<group>"; };
+		DF6EBB6C2074DB2C000A893C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF9C0D8420876E100039C531 /* ELCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCollectionViewController.h; sourceTree = "<group>"; };
+		DF9C0D8520876E100039C531 /* ELCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELCollectionViewController.m; sourceTree = "<group>"; };
+		DF9C0D8720877AB50039C531 /* ELCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCollectionViewCell.h; sourceTree = "<group>"; };
+		DF9C0D8820877AB50039C531 /* ELCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELCollectionViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF6EBB402074DB2C000A893C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E28E8F91A8C09C6862A34F /* libPods-ELTool.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6EBB582074DB2C000A893C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE64FC78A32E22C92A69775 /* libPods-ELToolTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6EBB632074DB2C000A893C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				997400A860CB25F08BF3D1D3 /* libPods-ELToolUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0253202EE6D4FDF9E3F5C734 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54001BB0439D49AC1C142A0B /* libPods-ELTool.a */,
+				8CC059C560104A6133D9C1D0 /* libPods-ELToolTests.a */,
+				7DAC2C08DC3485434DEBDAD7 /* libPods-ELToolUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF9E141D9C8F27F5664405EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F869D03C4DE876BC923F207 /* Pods-ELTool.debug.xcconfig */,
+				C6C24736763CF3344F12AC3B /* Pods-ELTool.release.xcconfig */,
+				9251A8FFC661C4006BF2AEA9 /* Pods-ELToolTests.debug.xcconfig */,
+				BBC456D4C2790CA75EDD4982 /* Pods-ELToolTests.release.xcconfig */,
+				451955514299C8D55638256E /* Pods-ELToolUITests.debug.xcconfig */,
+				2B3B4A7FFA91E591156D6230 /* Pods-ELToolUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DF1B19022089F54200DAE209 /* ImageFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DF1B19032089F54200DAE209 /* processCate_selected@2x.png */,
+				DF1B19042089F54200DAE209 /* processCate_selected@3x.png */,
+				DF1B19052089F54200DAE209 /* processCate_unselected@2x.png */,
+				DF1B19062089F54200DAE209 /* processCate_unselected@3x.png */,
+				DF1B19072089F54200DAE209 /* processlist_selected@2x.png */,
+				DF1B19082089F54200DAE209 /* processlist_selected@3x.png */,
+				DF1B19092089F54200DAE209 /* processlist_unselected@2x.png */,
+				DF1B190A2089F54200DAE209 /* processlist_unselected@3x.png */,
+			);
+			path = ImageFiles;
+			sourceTree = "<group>";
+		};
+		DF3E67A6208E12760089211E /* ELPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				DF3E67A7208E166E0089211E /* ELFoodPieModel.h */,
+				DF3E67A8208E166E0089211E /* ELFoodPieModel.m */,
+				DF3E67AA208E16DE0089211E /* ELPieCenterView.h */,
+				DF3E67AB208E16DE0089211E /* ELPieCenterView.m */,
+			);
+			path = ELPieChart;
+			sourceTree = "<group>";
+		};
+		DF40BDBB208B0B6B00BA97C9 /* ThirdParts */ = {
+			isa = PBXGroup;
+			children = (
+				DF40BDF9208B129400BA97C9 /* MJRefresh */,
+			);
+			path = ThirdParts;
+			sourceTree = "<group>";
+		};
+		DF40BDF9208B129400BA97C9 /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				DF40BDFA208B129400BA97C9 /* Base */,
+				DF40BE05208B129400BA97C9 /* Custom */,
+				DF40BE1C208B129400BA97C9 /* MJRefresh.bundle */,
+				DF40BE1D208B129400BA97C9 /* MJRefresh.h */,
+				DF40BE1E208B129400BA97C9 /* MJRefreshConst.h */,
+				DF40BE1F208B129400BA97C9 /* MJRefreshConst.m */,
+				DF40BE20208B129400BA97C9 /* NSBundle+MJRefresh.h */,
+				DF40BE21208B129400BA97C9 /* NSBundle+MJRefresh.m */,
+				DF40BE22208B129400BA97C9 /* UIScrollView+MJExtension.h */,
+				DF40BE23208B129400BA97C9 /* UIScrollView+MJExtension.m */,
+				DF40BE24208B129400BA97C9 /* UIScrollView+MJRefresh.h */,
+				DF40BE25208B129400BA97C9 /* UIScrollView+MJRefresh.m */,
+				DF40BE26208B129400BA97C9 /* UIView+MJExtension.h */,
+				DF40BE27208B129400BA97C9 /* UIView+MJExtension.m */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		DF40BDFA208B129400BA97C9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DF40BDFB208B129400BA97C9 /* MJRefreshAutoFooter.h */,
+				DF40BDFC208B129400BA97C9 /* MJRefreshAutoFooter.m */,
+				DF40BDFD208B129400BA97C9 /* MJRefreshBackFooter.h */,
+				DF40BDFE208B129400BA97C9 /* MJRefreshBackFooter.m */,
+				DF40BDFF208B129400BA97C9 /* MJRefreshComponent.h */,
+				DF40BE00208B129400BA97C9 /* MJRefreshComponent.m */,
+				DF40BE01208B129400BA97C9 /* MJRefreshFooter.h */,
+				DF40BE02208B129400BA97C9 /* MJRefreshFooter.m */,
+				DF40BE03208B129400BA97C9 /* MJRefreshHeader.h */,
+				DF40BE04208B129400BA97C9 /* MJRefreshHeader.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DF40BE05208B129400BA97C9 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				DF40BE06208B129400BA97C9 /* Footer */,
+				DF40BE15208B129400BA97C9 /* Header */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		DF40BE06208B129400BA97C9 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				DF40BE07208B129400BA97C9 /* Auto */,
+				DF40BE0E208B129400BA97C9 /* Back */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		DF40BE07208B129400BA97C9 /* Auto */ = {
+			isa = PBXGroup;
+			children = (
+				DF40BE08208B129400BA97C9 /* MJRefreshAutoGifFooter.h */,
+				DF40BE09208B129400BA97C9 /* MJRefreshAutoGifFooter.m */,
+				DF40BE0A208B129400BA97C9 /* MJRefreshAutoNormalFooter.h */,
+				DF40BE0B208B129400BA97C9 /* MJRefreshAutoNormalFooter.m */,
+				DF40BE0C208B129400BA97C9 /* MJRefreshAutoStateFooter.h */,
+				DF40BE0D208B129400BA97C9 /* MJRefreshAutoStateFooter.m */,
+			);
+			path = Auto;
+			sourceTree = "<group>";
+		};
+		DF40BE0E208B129400BA97C9 /* Back */ = {
+			isa = PBXGroup;
+			children = (
+				DF40BE0F208B129400BA97C9 /* MJRefreshBackGifFooter.h */,
+				DF40BE10208B129400BA97C9 /* MJRefreshBackGifFooter.m */,
+				DF40BE11208B129400BA97C9 /* MJRefreshBackNormalFooter.h */,
+				DF40BE12208B129400BA97C9 /* MJRefreshBackNormalFooter.m */,
+				DF40BE13208B129400BA97C9 /* MJRefreshBackStateFooter.h */,
+				DF40BE14208B129400BA97C9 /* MJRefreshBackStateFooter.m */,
+			);
+			path = Back;
+			sourceTree = "<group>";
+		};
+		DF40BE15208B129400BA97C9 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				DF40BE16208B129400BA97C9 /* MJRefreshGifHeader.h */,
+				DF40BE17208B129400BA97C9 /* MJRefreshGifHeader.m */,
+				DF40BE18208B129400BA97C9 /* MJRefreshNormalHeader.h */,
+				DF40BE19208B129400BA97C9 /* MJRefreshNormalHeader.m */,
+				DF40BE1A208B129400BA97C9 /* MJRefreshStateHeader.h */,
+				DF40BE1B208B129400BA97C9 /* MJRefreshStateHeader.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		DF50601E207B649900C38FFC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DF506021207B656F00C38FFC /* ELUtilityHelper.h */,
+				DF506022207B656F00C38FFC /* ELUtilityHelper.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		DF6EBB3A2074DB2B000A893C = {
+			isa = PBXGroup;
+			children = (
+				DF6EBB452074DB2C000A893C /* ELTool */,
+				DF6EBB5E2074DB2C000A893C /* ELToolTests */,
+				DF6EBB692074DB2C000A893C /* ELToolUITests */,
+				DF6EBB442074DB2C000A893C /* Products */,
+				BF9E141D9C8F27F5664405EB /* Pods */,
+				0253202EE6D4FDF9E3F5C734 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DF6EBB442074DB2C000A893C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF6EBB432074DB2C000A893C /* ELTool.app */,
+				DF6EBB5B2074DB2C000A893C /* ELToolTests.xctest */,
+				DF6EBB662074DB2C000A893C /* ELToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF6EBB452074DB2C000A893C /* ELTool */ = {
+			isa = PBXGroup;
+			children = (
+				DF6EBB462074DB2C000A893C /* AppDelegate.h */,
+				DF6EBB472074DB2C000A893C /* AppDelegate.m */,
+				DF6EBB492074DB2C000A893C /* ViewController.h */,
+				DF6EBB4A2074DB2C000A893C /* ViewController.m */,
+				DF50601E207B649900C38FFC /* Tools */,
+				DF40BDBB208B0B6B00BA97C9 /* ThirdParts */,
+				DF9C0D8320876DFE0039C531 /* FunctionViewControllers */,
+				DF6EBB4C2074DB2C000A893C /* Main.storyboard */,
+				DF1B19022089F54200DAE209 /* ImageFiles */,
+				DF6EBB4F2074DB2C000A893C /* Assets.xcassets */,
+				DF6EBB512074DB2C000A893C /* LaunchScreen.storyboard */,
+				DF6EBB542074DB2C000A893C /* Info.plist */,
+				DF6EBB552074DB2C000A893C /* main.m */,
+			);
+			path = ELTool;
+			sourceTree = "<group>";
+		};
+		DF6EBB5E2074DB2C000A893C /* ELToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF6EBB5F2074DB2C000A893C /* ELToolTests.m */,
+				DF6EBB612074DB2C000A893C /* Info.plist */,
+			);
+			path = ELToolTests;
+			sourceTree = "<group>";
+		};
+		DF6EBB692074DB2C000A893C /* ELToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DF6EBB6A2074DB2C000A893C /* ELToolUITests.m */,
+				DF6EBB6C2074DB2C000A893C /* Info.plist */,
+			);
+			path = ELToolUITests;
+			sourceTree = "<group>";
+		};
+		DF9C0D8320876DFE0039C531 /* FunctionViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF3E67A6208E12760089211E /* ELPieChart */,
+				DF40BE3C208B12B800BA97C9 /* ELRefreshViewController.h */,
+				DF40BE3D208B12B800BA97C9 /* ELRefreshViewController.m */,
+				DF9C0D8420876E100039C531 /* ELCollectionViewController.h */,
+				DF9C0D8520876E100039C531 /* ELCollectionViewController.m */,
+				DF9C0D8720877AB50039C531 /* ELCollectionViewCell.h */,
+				DF9C0D8820877AB50039C531 /* ELCollectionViewCell.m */,
+			);
+			path = FunctionViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF6EBB422074DB2C000A893C /* ELTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF6EBB6F2074DB2C000A893C /* Build configuration list for PBXNativeTarget "ELTool" */;
+			buildPhases = (
+				C6206775924D25FBCC8FEA3D /* [CP] Check Pods Manifest.lock */,
+				DF6EBB3F2074DB2C000A893C /* Sources */,
+				DF6EBB402074DB2C000A893C /* Frameworks */,
+				DF6EBB412074DB2C000A893C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ELTool;
+			productName = ELTool;
+			productReference = DF6EBB432074DB2C000A893C /* ELTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF6EBB5A2074DB2C000A893C /* ELToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF6EBB722074DB2C000A893C /* Build configuration list for PBXNativeTarget "ELToolTests" */;
+			buildPhases = (
+				8792A7450DD026863477946B /* [CP] Check Pods Manifest.lock */,
+				DF6EBB572074DB2C000A893C /* Sources */,
+				DF6EBB582074DB2C000A893C /* Frameworks */,
+				DF6EBB592074DB2C000A893C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF6EBB5D2074DB2C000A893C /* PBXTargetDependency */,
+			);
+			name = ELToolTests;
+			productName = ELToolTests;
+			productReference = DF6EBB5B2074DB2C000A893C /* ELToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF6EBB652074DB2C000A893C /* ELToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF6EBB752074DB2C000A893C /* Build configuration list for PBXNativeTarget "ELToolUITests" */;
+			buildPhases = (
+				6FBC3931E12E48C39C9A5397 /* [CP] Check Pods Manifest.lock */,
+				DF6EBB622074DB2C000A893C /* Sources */,
+				DF6EBB632074DB2C000A893C /* Frameworks */,
+				DF6EBB642074DB2C000A893C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF6EBB682074DB2C000A893C /* PBXTargetDependency */,
+			);
+			name = ELToolUITests;
+			productName = ELToolUITests;
+			productReference = DF6EBB662074DB2C000A893C /* ELToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF6EBB3B2074DB2B000A893C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = speedsnail;
+				TargetAttributes = {
+					DF6EBB422074DB2C000A893C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DF6EBB5A2074DB2C000A893C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DF6EBB422074DB2C000A893C;
+					};
+					DF6EBB652074DB2C000A893C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DF6EBB422074DB2C000A893C;
+					};
+				};
+			};
+			buildConfigurationList = DF6EBB3E2074DB2B000A893C /* Build configuration list for PBXProject "ELTool" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF6EBB3A2074DB2B000A893C;
+			productRefGroup = DF6EBB442074DB2C000A893C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF6EBB422074DB2C000A893C /* ELTool */,
+				DF6EBB5A2074DB2C000A893C /* ELToolTests */,
+				DF6EBB652074DB2C000A893C /* ELToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF6EBB412074DB2C000A893C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF1B190B2089F54200DAE209 /* processCate_selected@2x.png in Resources */,
+				DF1B190E2089F54200DAE209 /* processCate_unselected@3x.png in Resources */,
+				DF40BE36208B129400BA97C9 /* MJRefresh.bundle in Resources */,
+				DF1B19112089F54200DAE209 /* processlist_unselected@2x.png in Resources */,
+				DF6EBB532074DB2C000A893C /* LaunchScreen.storyboard in Resources */,
+				DF1B190F2089F54200DAE209 /* processlist_selected@2x.png in Resources */,
+				DF6EBB502074DB2C000A893C /* Assets.xcassets in Resources */,
+				DF1B19102089F54200DAE209 /* processlist_selected@3x.png in Resources */,
+				DF1B190C2089F54200DAE209 /* processCate_selected@3x.png in Resources */,
+				DF6EBB4E2074DB2C000A893C /* Main.storyboard in Resources */,
+				DF1B19122089F54200DAE209 /* processlist_unselected@3x.png in Resources */,
+				DF1B190D2089F54200DAE209 /* processCate_unselected@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6EBB592074DB2C000A893C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6EBB642074DB2C000A893C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FBC3931E12E48C39C9A5397 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ELToolUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8792A7450DD026863477946B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ELToolTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6206775924D25FBCC8FEA3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ELTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF6EBB3F2074DB2C000A893C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6EBB4B2074DB2C000A893C /* ViewController.m in Sources */,
+				DF40BE28208B129400BA97C9 /* MJRefreshAutoFooter.m in Sources */,
+				DF40BE2F208B129400BA97C9 /* MJRefreshAutoStateFooter.m in Sources */,
+				DF40BE32208B129400BA97C9 /* MJRefreshBackStateFooter.m in Sources */,
+				DF506023207B656F00C38FFC /* ELUtilityHelper.m in Sources */,
+				DF40BE35208B129400BA97C9 /* MJRefreshStateHeader.m in Sources */,
+				DF3E67A9208E166E0089211E /* ELFoodPieModel.m in Sources */,
+				DF6EBB562074DB2C000A893C /* main.m in Sources */,
+				DF40BE39208B129400BA97C9 /* UIScrollView+MJExtension.m in Sources */,
+				DF40BE33208B129400BA97C9 /* MJRefreshGifHeader.m in Sources */,
+				DF40BE31208B129400BA97C9 /* MJRefreshBackNormalFooter.m in Sources */,
+				DF9C0D8620876E100039C531 /* ELCollectionViewController.m in Sources */,
+				DF40BE2A208B129400BA97C9 /* MJRefreshComponent.m in Sources */,
+				DF40BE2E208B129400BA97C9 /* MJRefreshAutoNormalFooter.m in Sources */,
+				DF6EBB482074DB2C000A893C /* AppDelegate.m in Sources */,
+				DF40BE2D208B129400BA97C9 /* MJRefreshAutoGifFooter.m in Sources */,
+				DF40BE29208B129400BA97C9 /* MJRefreshBackFooter.m in Sources */,
+				DF40BE3B208B129400BA97C9 /* UIView+MJExtension.m in Sources */,
+				DF40BE38208B129400BA97C9 /* NSBundle+MJRefresh.m in Sources */,
+				DF9C0D8920877AB50039C531 /* ELCollectionViewCell.m in Sources */,
+				DF40BE2B208B129400BA97C9 /* MJRefreshFooter.m in Sources */,
+				DF40BE37208B129400BA97C9 /* MJRefreshConst.m in Sources */,
+				DF40BE3A208B129400BA97C9 /* UIScrollView+MJRefresh.m in Sources */,
+				DF40BE30208B129400BA97C9 /* MJRefreshBackGifFooter.m in Sources */,
+				DF40BE3E208B12B800BA97C9 /* ELRefreshViewController.m in Sources */,
+				DF40BE2C208B129400BA97C9 /* MJRefreshHeader.m in Sources */,
+				DF40BE34208B129400BA97C9 /* MJRefreshNormalHeader.m in Sources */,
+				DF3E67AC208E16DE0089211E /* ELPieCenterView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6EBB572074DB2C000A893C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6EBB602074DB2C000A893C /* ELToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6EBB622074DB2C000A893C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6EBB6B2074DB2C000A893C /* ELToolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF6EBB5D2074DB2C000A893C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF6EBB422074DB2C000A893C /* ELTool */;
+			targetProxy = DF6EBB5C2074DB2C000A893C /* PBXContainerItemProxy */;
+		};
+		DF6EBB682074DB2C000A893C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF6EBB422074DB2C000A893C /* ELTool */;
+			targetProxy = DF6EBB672074DB2C000A893C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF6EBB4C2074DB2C000A893C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF6EBB4D2074DB2C000A893C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF6EBB512074DB2C000A893C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF6EBB522074DB2C000A893C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF6EBB6D2074DB2C000A893C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF6EBB6E2074DB2C000A893C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF6EBB702074DB2C000A893C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F869D03C4DE876BC923F207 /* Pods-ELTool.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JS6ECCHXUK;
+				GCC_INPUT_FILETYPE = automatic;
+				INFOPLIST_FILE = ELTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guzhen.CIA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF6EBB712074DB2C000A893C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6C24736763CF3344F12AC3B /* Pods-ELTool.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JS6ECCHXUK;
+				GCC_INPUT_FILETYPE = automatic;
+				INFOPLIST_FILE = ELTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guzhen.CIA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF6EBB732074DB2C000A893C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9251A8FFC661C4006BF2AEA9 /* Pods-ELToolTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JS6ECCHXUK;
+				INFOPLIST_FILE = ELToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enjoylife.com.ELToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ELTool.app/ELTool";
+			};
+			name = Debug;
+		};
+		DF6EBB742074DB2C000A893C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBC456D4C2790CA75EDD4982 /* Pods-ELToolTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JS6ECCHXUK;
+				INFOPLIST_FILE = ELToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enjoylife.com.ELToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ELTool.app/ELTool";
+			};
+			name = Release;
+		};
+		DF6EBB762074DB2C000A893C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 451955514299C8D55638256E /* Pods-ELToolUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JS6ECCHXUK;
+				INFOPLIST_FILE = ELToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enjoylife.com.ELToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ELTool;
+			};
+			name = Debug;
+		};
+		DF6EBB772074DB2C000A893C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B3B4A7FFA91E591156D6230 /* Pods-ELToolUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JS6ECCHXUK;
+				INFOPLIST_FILE = ELToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enjoylife.com.ELToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ELTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF6EBB3E2074DB2B000A893C /* Build configuration list for PBXProject "ELTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF6EBB6D2074DB2C000A893C /* Debug */,
+				DF6EBB6E2074DB2C000A893C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF6EBB6F2074DB2C000A893C /* Build configuration list for PBXNativeTarget "ELTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF6EBB702074DB2C000A893C /* Debug */,
+				DF6EBB712074DB2C000A893C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF6EBB722074DB2C000A893C /* Build configuration list for PBXNativeTarget "ELToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF6EBB732074DB2C000A893C /* Debug */,
+				DF6EBB742074DB2C000A893C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF6EBB752074DB2C000A893C /* Build configuration list for PBXNativeTarget "ELToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF6EBB762074DB2C000A893C /* Debug */,
+				DF6EBB772074DB2C000A893C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF6EBB3B2074DB2B000A893C /* Project object */;
+}
