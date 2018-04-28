@@ -52,6 +52,7 @@
 		DF6EBB6B2074DB2C000A893C /* ELToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB6A2074DB2C000A893C /* ELToolUITests.m */; };
 		DF9C0D8620876E100039C531 /* ELCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9C0D8520876E100039C531 /* ELCollectionViewController.m */; };
 		DF9C0D8920877AB50039C531 /* ELCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9C0D8820877AB50039C531 /* ELCollectionViewCell.m */; };
+		DFB7178C20941B4C00AFB200 /* FirstTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB7178B20941B4C00AFB200 /* FirstTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +158,8 @@
 		DF9C0D8520876E100039C531 /* ELCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELCollectionViewController.m; sourceTree = "<group>"; };
 		DF9C0D8720877AB50039C531 /* ELCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCollectionViewCell.h; sourceTree = "<group>"; };
 		DF9C0D8820877AB50039C531 /* ELCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELCollectionViewCell.m; sourceTree = "<group>"; };
+		DFB7178A20941B4C00AFB200 /* FirstTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstTestViewController.h; sourceTree = "<group>"; };
+		DFB7178B20941B4C00AFB200 /* FirstTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,6 +380,7 @@
 				DF6EBB472074DB2C000A893C /* AppDelegate.m */,
 				DF6EBB492074DB2C000A893C /* ViewController.h */,
 				DF6EBB4A2074DB2C000A893C /* ViewController.m */,
+				DFB7178920941B3900AFB200 /* testDocuments */,
 				DF50601E207B649900C38FFC /* Tools */,
 				DF40BDBB208B0B6B00BA97C9 /* ThirdParts */,
 				DF9C0D8320876DFE0039C531 /* FunctionViewControllers */,
@@ -420,6 +424,15 @@
 				DF9C0D8820877AB50039C531 /* ELCollectionViewCell.m */,
 			);
 			path = FunctionViewControllers;
+			sourceTree = "<group>";
+		};
+		DFB7178920941B3900AFB200 /* testDocuments */ = {
+			isa = PBXGroup;
+			children = (
+				DFB7178A20941B4C00AFB200 /* FirstTestViewController.h */,
+				DFB7178B20941B4C00AFB200 /* FirstTestViewController.m */,
+			);
+			path = testDocuments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -627,6 +640,7 @@
 				DF6EBB4B2074DB2C000A893C /* ViewController.m in Sources */,
 				DF40BE28208B129400BA97C9 /* MJRefreshAutoFooter.m in Sources */,
 				DF40BE2F208B129400BA97C9 /* MJRefreshAutoStateFooter.m in Sources */,
+				DFB7178C20941B4C00AFB200 /* FirstTestViewController.m in Sources */,
 				DF40BE32208B129400BA97C9 /* MJRefreshBackStateFooter.m in Sources */,
 				DF506023207B656F00C38FFC /* ELUtilityHelper.m in Sources */,
 				DF40BE35208B129400BA97C9 /* MJRefreshStateHeader.m in Sources */,
