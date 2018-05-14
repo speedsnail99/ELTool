@@ -40,8 +40,15 @@
 		DF40BE39208B129400BA97C9 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE23208B129400BA97C9 /* UIScrollView+MJExtension.m */; };
 		DF40BE3A208B129400BA97C9 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE25208B129400BA97C9 /* UIScrollView+MJRefresh.m */; };
 		DF40BE3B208B129400BA97C9 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE27208B129400BA97C9 /* UIView+MJExtension.m */; };
-		DF40BE3E208B12B800BA97C9 /* ELRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE3D208B12B800BA97C9 /* ELRefreshViewController.m */; };
 		DF506023207B656F00C38FFC /* ELUtilityHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DF506022207B656F00C38FFC /* ELUtilityHelper.m */; };
+		DF605EC120A1A460000AB9EF /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF605EC020A1A460000AB9EF /* NSTimerViewController.m */; };
+		DF6ABE4720A4154900D2E2BE /* ELSimpleFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6ABE4620A4154900D2E2BE /* ELSimpleFunctionViewController.m */; };
+		DF6ABE4C20A4443200D2E2BE /* DPScreenshotsPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6ABE4B20A4443200D2E2BE /* DPScreenshotsPopView.m */; };
+		DF6ABE5020A444F200D2E2BE /* YLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6ABE4F20A444F200D2E2BE /* YLButton.m */; };
+		DF6DB131209C47C400040096 /* ELScreenShotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6DB130209C47C400040096 /* ELScreenShotsViewController.m */; };
+		DF6DB135209C482500040096 /* ELRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6DB134209C482500040096 /* ELRefreshViewController.m */; };
+		DF6DB13B209C484C00040096 /* ELCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6DB138209C484C00040096 /* ELCollectionViewCell.m */; };
+		DF6DB13C209C484C00040096 /* ELCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6DB13A209C484C00040096 /* ELCollectionViewController.m */; };
 		DF6EBB482074DB2C000A893C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB472074DB2C000A893C /* AppDelegate.m */; };
 		DF6EBB4B2074DB2C000A893C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB4A2074DB2C000A893C /* ViewController.m */; };
 		DF6EBB4E2074DB2C000A893C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6EBB4C2074DB2C000A893C /* Main.storyboard */; };
@@ -50,9 +57,12 @@
 		DF6EBB562074DB2C000A893C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB552074DB2C000A893C /* main.m */; };
 		DF6EBB602074DB2C000A893C /* ELToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB5F2074DB2C000A893C /* ELToolTests.m */; };
 		DF6EBB6B2074DB2C000A893C /* ELToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB6A2074DB2C000A893C /* ELToolUITests.m */; };
-		DF9C0D8620876E100039C531 /* ELCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9C0D8520876E100039C531 /* ELCollectionViewController.m */; };
-		DF9C0D8920877AB50039C531 /* ELCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9C0D8820877AB50039C531 /* ELCollectionViewCell.m */; };
+		DF83F1FC20A9245A009D1289 /* ElWindowTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF83F1FB20A9245A009D1289 /* ElWindowTestViewController.m */; };
 		DFB7178C20941B4C00AFB200 /* FirstTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB7178B20941B4C00AFB200 /* FirstTestViewController.m */; };
+		DFC974B420A529A800C9EEAA /* ELScreenShotInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC974B320A529A800C9EEAA /* ELScreenShotInstance.m */; };
+		DFC974B820A5307200C9EEAA /* ELWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC974B720A5307200C9EEAA /* ELWebViewController.m */; };
+		DFC974BC20A56C6900C9EEAA /* ELCircularReferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC974BB20A56C6900C9EEAA /* ELCircularReferenceViewController.m */; };
+		DFE6E62020A2BD580018DB92 /* NSTableViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE6E61F20A2BD580018DB92 /* NSTableViewTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,10 +144,24 @@
 		DF40BE25208B129400BA97C9 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		DF40BE26208B129400BA97C9 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		DF40BE27208B129400BA97C9 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
-		DF40BE3C208B12B800BA97C9 /* ELRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELRefreshViewController.h; sourceTree = "<group>"; };
-		DF40BE3D208B12B800BA97C9 /* ELRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELRefreshViewController.m; sourceTree = "<group>"; };
 		DF506021207B656F00C38FFC /* ELUtilityHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELUtilityHelper.h; sourceTree = "<group>"; };
 		DF506022207B656F00C38FFC /* ELUtilityHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELUtilityHelper.m; sourceTree = "<group>"; };
+		DF605EBF20A1A460000AB9EF /* NSTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
+		DF605EC020A1A460000AB9EF /* NSTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
+		DF6ABE4520A4154900D2E2BE /* ELSimpleFunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELSimpleFunctionViewController.h; sourceTree = "<group>"; };
+		DF6ABE4620A4154900D2E2BE /* ELSimpleFunctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELSimpleFunctionViewController.m; sourceTree = "<group>"; };
+		DF6ABE4A20A4443200D2E2BE /* DPScreenshotsPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPScreenshotsPopView.h; sourceTree = "<group>"; };
+		DF6ABE4B20A4443200D2E2BE /* DPScreenshotsPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPScreenshotsPopView.m; sourceTree = "<group>"; };
+		DF6ABE4E20A444F200D2E2BE /* YLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLButton.h; sourceTree = "<group>"; };
+		DF6ABE4F20A444F200D2E2BE /* YLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLButton.m; sourceTree = "<group>"; };
+		DF6DB12F209C47C400040096 /* ELScreenShotsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELScreenShotsViewController.h; sourceTree = "<group>"; };
+		DF6DB130209C47C400040096 /* ELScreenShotsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELScreenShotsViewController.m; sourceTree = "<group>"; };
+		DF6DB133209C482500040096 /* ELRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELRefreshViewController.h; sourceTree = "<group>"; };
+		DF6DB134209C482500040096 /* ELRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELRefreshViewController.m; sourceTree = "<group>"; };
+		DF6DB137209C484C00040096 /* ELCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCollectionViewCell.h; sourceTree = "<group>"; };
+		DF6DB138209C484C00040096 /* ELCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCollectionViewCell.m; sourceTree = "<group>"; };
+		DF6DB139209C484C00040096 /* ELCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCollectionViewController.h; sourceTree = "<group>"; };
+		DF6DB13A209C484C00040096 /* ELCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCollectionViewController.m; sourceTree = "<group>"; };
 		DF6EBB432074DB2C000A893C /* ELTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6EBB462074DB2C000A893C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DF6EBB472074DB2C000A893C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -154,12 +178,18 @@
 		DF6EBB662074DB2C000A893C /* ELToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ELToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6EBB6A2074DB2C000A893C /* ELToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELToolUITests.m; sourceTree = "<group>"; };
 		DF6EBB6C2074DB2C000A893C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF9C0D8420876E100039C531 /* ELCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCollectionViewController.h; sourceTree = "<group>"; };
-		DF9C0D8520876E100039C531 /* ELCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELCollectionViewController.m; sourceTree = "<group>"; };
-		DF9C0D8720877AB50039C531 /* ELCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCollectionViewCell.h; sourceTree = "<group>"; };
-		DF9C0D8820877AB50039C531 /* ELCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELCollectionViewCell.m; sourceTree = "<group>"; };
+		DF83F1FA20A9245A009D1289 /* ElWindowTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElWindowTestViewController.h; sourceTree = "<group>"; };
+		DF83F1FB20A9245A009D1289 /* ElWindowTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElWindowTestViewController.m; sourceTree = "<group>"; };
 		DFB7178A20941B4C00AFB200 /* FirstTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstTestViewController.h; sourceTree = "<group>"; };
 		DFB7178B20941B4C00AFB200 /* FirstTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstTestViewController.m; sourceTree = "<group>"; };
+		DFC974B220A529A800C9EEAA /* ELScreenShotInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELScreenShotInstance.h; sourceTree = "<group>"; };
+		DFC974B320A529A800C9EEAA /* ELScreenShotInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELScreenShotInstance.m; sourceTree = "<group>"; };
+		DFC974B620A5307200C9EEAA /* ELWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELWebViewController.h; sourceTree = "<group>"; };
+		DFC974B720A5307200C9EEAA /* ELWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELWebViewController.m; sourceTree = "<group>"; };
+		DFC974BA20A56C6900C9EEAA /* ELCircularReferenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCircularReferenceViewController.h; sourceTree = "<group>"; };
+		DFC974BB20A56C6900C9EEAA /* ELCircularReferenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELCircularReferenceViewController.m; sourceTree = "<group>"; };
+		DFE6E61E20A2BD580018DB92 /* NSTableViewTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTableViewTestViewController.h; sourceTree = "<group>"; };
+		DFE6E61F20A2BD580018DB92 /* NSTableViewTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTableViewTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +381,75 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		DF605EBE20A1A44F000AB9EF /* ELNSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				DF605EBF20A1A460000AB9EF /* NSTimerViewController.h */,
+				DF605EC020A1A460000AB9EF /* NSTimerViewController.m */,
+			);
+			path = ELNSTimer;
+			sourceTree = "<group>";
+		};
+		DF6ABE4420A4153700D2E2BE /* ELSimpleFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				DF6ABE4520A4154900D2E2BE /* ELSimpleFunctionViewController.h */,
+				DF6ABE4620A4154900D2E2BE /* ELSimpleFunctionViewController.m */,
+			);
+			path = ELSimpleFunctions;
+			sourceTree = "<group>";
+		};
+		DF6ABE4920A4443200D2E2BE /* ELSnapShotViews */ = {
+			isa = PBXGroup;
+			children = (
+				DF6ABE4A20A4443200D2E2BE /* DPScreenshotsPopView.h */,
+				DF6ABE4B20A4443200D2E2BE /* DPScreenshotsPopView.m */,
+			);
+			path = ELSnapShotViews;
+			sourceTree = "<group>";
+		};
+		DF6ABE4D20A444F200D2E2BE /* YLButton */ = {
+			isa = PBXGroup;
+			children = (
+				DF6ABE4E20A444F200D2E2BE /* YLButton.h */,
+				DF6ABE4F20A444F200D2E2BE /* YLButton.m */,
+			);
+			path = YLButton;
+			sourceTree = "<group>";
+		};
+		DF6DB12E209C479F00040096 /* ELScreenShots */ = {
+			isa = PBXGroup;
+			children = (
+				DF6ABE4D20A444F200D2E2BE /* YLButton */,
+				DF6ABE4920A4443200D2E2BE /* ELSnapShotViews */,
+				DF6DB12F209C47C400040096 /* ELScreenShotsViewController.h */,
+				DF6DB130209C47C400040096 /* ELScreenShotsViewController.m */,
+				DFC974B220A529A800C9EEAA /* ELScreenShotInstance.h */,
+				DFC974B320A529A800C9EEAA /* ELScreenShotInstance.m */,
+			);
+			path = ELScreenShots;
+			sourceTree = "<group>";
+		};
+		DF6DB132209C480900040096 /* ELRefreshTableView */ = {
+			isa = PBXGroup;
+			children = (
+				DF6DB133209C482500040096 /* ELRefreshViewController.h */,
+				DF6DB134209C482500040096 /* ELRefreshViewController.m */,
+			);
+			path = ELRefreshTableView;
+			sourceTree = "<group>";
+		};
+		DF6DB136209C484B00040096 /* ELCollectionViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DF6DB137209C484C00040096 /* ELCollectionViewCell.h */,
+				DF6DB138209C484C00040096 /* ELCollectionViewCell.m */,
+				DF6DB139209C484C00040096 /* ELCollectionViewController.h */,
+				DF6DB13A209C484C00040096 /* ELCollectionViewController.m */,
+			);
+			path = ELCollectionViewDemo;
+			sourceTree = "<group>";
+		};
 		DF6EBB3A2074DB2B000A893C = {
 			isa = PBXGroup;
 			children = (
@@ -412,16 +511,28 @@
 			path = ELToolUITests;
 			sourceTree = "<group>";
 		};
+		DF83F1F920A9244A009D1289 /* ELWindow */ = {
+			isa = PBXGroup;
+			children = (
+				DF83F1FA20A9245A009D1289 /* ElWindowTestViewController.h */,
+				DF83F1FB20A9245A009D1289 /* ElWindowTestViewController.m */,
+			);
+			path = ELWindow;
+			sourceTree = "<group>";
+		};
 		DF9C0D8320876DFE0039C531 /* FunctionViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				DF83F1F920A9244A009D1289 /* ELWindow */,
+				DFC974B920A56C5300C9EEAA /* ELCircularReference */,
+				DFC974B520A5305200C9EEAA /* ELWebViewControllerDemo */,
+				DF6ABE4420A4153700D2E2BE /* ELSimpleFunctions */,
+				DFE6E61D20A2BD430018DB92 /* ELTableViewDemo */,
+				DF605EBE20A1A44F000AB9EF /* ELNSTimer */,
+				DF6DB136209C484B00040096 /* ELCollectionViewDemo */,
+				DF6DB132209C480900040096 /* ELRefreshTableView */,
+				DF6DB12E209C479F00040096 /* ELScreenShots */,
 				DF3E67A6208E12760089211E /* ELPieChart */,
-				DF40BE3C208B12B800BA97C9 /* ELRefreshViewController.h */,
-				DF40BE3D208B12B800BA97C9 /* ELRefreshViewController.m */,
-				DF9C0D8420876E100039C531 /* ELCollectionViewController.h */,
-				DF9C0D8520876E100039C531 /* ELCollectionViewController.m */,
-				DF9C0D8720877AB50039C531 /* ELCollectionViewCell.h */,
-				DF9C0D8820877AB50039C531 /* ELCollectionViewCell.m */,
 			);
 			path = FunctionViewControllers;
 			sourceTree = "<group>";
@@ -433,6 +544,33 @@
 				DFB7178B20941B4C00AFB200 /* FirstTestViewController.m */,
 			);
 			path = testDocuments;
+			sourceTree = "<group>";
+		};
+		DFC974B520A5305200C9EEAA /* ELWebViewControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DFC974B620A5307200C9EEAA /* ELWebViewController.h */,
+				DFC974B720A5307200C9EEAA /* ELWebViewController.m */,
+			);
+			path = ELWebViewControllerDemo;
+			sourceTree = "<group>";
+		};
+		DFC974B920A56C5300C9EEAA /* ELCircularReference */ = {
+			isa = PBXGroup;
+			children = (
+				DFC974BA20A56C6900C9EEAA /* ELCircularReferenceViewController.h */,
+				DFC974BB20A56C6900C9EEAA /* ELCircularReferenceViewController.m */,
+			);
+			path = ELCircularReference;
+			sourceTree = "<group>";
+		};
+		DFE6E61D20A2BD430018DB92 /* ELTableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DFE6E61E20A2BD580018DB92 /* NSTableViewTestViewController.h */,
+				DFE6E61F20A2BD580018DB92 /* NSTableViewTestViewController.m */,
+			);
+			path = ELTableViewDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -640,32 +778,42 @@
 				DF6EBB4B2074DB2C000A893C /* ViewController.m in Sources */,
 				DF40BE28208B129400BA97C9 /* MJRefreshAutoFooter.m in Sources */,
 				DF40BE2F208B129400BA97C9 /* MJRefreshAutoStateFooter.m in Sources */,
+				DF6DB131209C47C400040096 /* ELScreenShotsViewController.m in Sources */,
 				DFB7178C20941B4C00AFB200 /* FirstTestViewController.m in Sources */,
 				DF40BE32208B129400BA97C9 /* MJRefreshBackStateFooter.m in Sources */,
 				DF506023207B656F00C38FFC /* ELUtilityHelper.m in Sources */,
+				DF6DB13C209C484C00040096 /* ELCollectionViewController.m in Sources */,
+				DF6ABE5020A444F200D2E2BE /* YLButton.m in Sources */,
 				DF40BE35208B129400BA97C9 /* MJRefreshStateHeader.m in Sources */,
+				DF6DB13B209C484C00040096 /* ELCollectionViewCell.m in Sources */,
 				DF3E67A9208E166E0089211E /* ELFoodPieModel.m in Sources */,
 				DF6EBB562074DB2C000A893C /* main.m in Sources */,
 				DF40BE39208B129400BA97C9 /* UIScrollView+MJExtension.m in Sources */,
 				DF40BE33208B129400BA97C9 /* MJRefreshGifHeader.m in Sources */,
 				DF40BE31208B129400BA97C9 /* MJRefreshBackNormalFooter.m in Sources */,
-				DF9C0D8620876E100039C531 /* ELCollectionViewController.m in Sources */,
 				DF40BE2A208B129400BA97C9 /* MJRefreshComponent.m in Sources */,
 				DF40BE2E208B129400BA97C9 /* MJRefreshAutoNormalFooter.m in Sources */,
+				DFC974BC20A56C6900C9EEAA /* ELCircularReferenceViewController.m in Sources */,
 				DF6EBB482074DB2C000A893C /* AppDelegate.m in Sources */,
 				DF40BE2D208B129400BA97C9 /* MJRefreshAutoGifFooter.m in Sources */,
 				DF40BE29208B129400BA97C9 /* MJRefreshBackFooter.m in Sources */,
 				DF40BE3B208B129400BA97C9 /* UIView+MJExtension.m in Sources */,
 				DF40BE38208B129400BA97C9 /* NSBundle+MJRefresh.m in Sources */,
-				DF9C0D8920877AB50039C531 /* ELCollectionViewCell.m in Sources */,
+				DF6ABE4C20A4443200D2E2BE /* DPScreenshotsPopView.m in Sources */,
 				DF40BE2B208B129400BA97C9 /* MJRefreshFooter.m in Sources */,
+				DFC974B420A529A800C9EEAA /* ELScreenShotInstance.m in Sources */,
 				DF40BE37208B129400BA97C9 /* MJRefreshConst.m in Sources */,
 				DF40BE3A208B129400BA97C9 /* UIScrollView+MJRefresh.m in Sources */,
+				DFC974B820A5307200C9EEAA /* ELWebViewController.m in Sources */,
+				DF6DB135209C482500040096 /* ELRefreshViewController.m in Sources */,
 				DF40BE30208B129400BA97C9 /* MJRefreshBackGifFooter.m in Sources */,
-				DF40BE3E208B12B800BA97C9 /* ELRefreshViewController.m in Sources */,
 				DF40BE2C208B129400BA97C9 /* MJRefreshHeader.m in Sources */,
 				DF40BE34208B129400BA97C9 /* MJRefreshNormalHeader.m in Sources */,
+				DF83F1FC20A9245A009D1289 /* ElWindowTestViewController.m in Sources */,
+				DF6ABE4720A4154900D2E2BE /* ELSimpleFunctionViewController.m in Sources */,
+				DFE6E62020A2BD580018DB92 /* NSTableViewTestViewController.m in Sources */,
 				DF3E67AC208E16DE0089211E /* ELPieCenterView.m in Sources */,
+				DF605EC120A1A460000AB9EF /* NSTimerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
