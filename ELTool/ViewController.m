@@ -18,6 +18,8 @@
 #import "ELWebViewController.h"
 #import "ELCircularReferenceViewController.h"
 #import "ElWindowTestViewController.h"
+#import "ELNewFunctionGuideViewController.h"
+#import "ELFirstPresentViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *homeTableView;
@@ -49,7 +51,7 @@
 - (void)initUserData
 {
     NSArray *tempDataArray = @[@"AFNetworking",@"CollectionView",@"MJRefresh",@"ScreenShots",@"NSTimer"
-                               ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow"];
+                               ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC"];
     self.homedataArray = [[NSMutableArray alloc] initWithArray:tempDataArray];
 }
 
@@ -148,10 +150,35 @@
             [self createWindowViewController];
         }
             break;
+            
+        case 10: //FuntionGuide
+        {
+            [self createFuntionGuideViewController];
+        }
+            break;
+        case 11: //模态视图
+        {
+            [self createPresentViewController];
+        }
+            break;
 
         default:
             break;
     }
+}
+
+- (void)createPresentViewController
+{
+    ELFirstPresentViewController *firstPresentVC = [[ELFirstPresentViewController alloc] init];
+    [self presentViewController:firstPresentVC animated:YES completion:^{
+        NSLog(@"presentFirstVC");
+    }];
+}
+
+- (void)createFuntionGuideViewController
+{
+    ELNewFunctionGuideViewController *newFuncionVC = [[ELNewFunctionGuideViewController alloc] init];
+    [self.navigationController pushViewController:newFuncionVC animated:YES];
 }
 
 - (void)createWindowViewController

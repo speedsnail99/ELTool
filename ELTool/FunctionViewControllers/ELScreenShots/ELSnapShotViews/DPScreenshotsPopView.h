@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 typedef NS_ENUM(NSInteger, SelectSheetType) {
-    QQSelectSheetType,
+    OASelectSheetType,
     WeiXinSelectSheetType,
-    WeiXinCircleSelectSheetType
+    QQSelectSheetType
 };
 typedef void (^ActionSheetDidSelectSheetBlock)(SelectSheetType type);
 typedef void (^ActionSheetDidHiddenBlock)(void);

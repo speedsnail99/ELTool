@@ -20,33 +20,29 @@
     // Do any additional setup after loading the view.
     self.title = @"仿微博截图分享";
     _isHidden = YES;
-   
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
+    
     //初始化状态
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(userDidTakeScreenshot:) name:UIApplicationUserDidTakeScreenshotNotification
                                                object:nil];
+   
 }
 
 
 - (void)userDidTakeScreenshot:(NSNotification *)noti
 {
     NSLog(@"检测到截屏");
-    
     //人为截屏, 模拟用户截屏行为, 获取所截图片
     UIImage *image_ = [self imageWithScreenshot];
     UIWindow *keyWindow=[[UIApplication sharedApplication]keyWindow];
     if (_isHidden) {
         DPScreenshotsPopView *popView=[DPScreenshotsPopView initWithScreenShots:image_ selectSheetBlock:^(SelectSheetType type) {
-            if (type==QQSelectSheetType) {
-                NSLog(@"点击的是QQ分享");
+            if (type==OASelectSheetType) {
+                NSLog(@"点击的是OA分享");
             }else if (type==WeiXinSelectSheetType){
                 NSLog(@"点击的是微信好友分享");
-            }else if (type==WeiXinCircleSelectSheetType){
-                NSLog(@"点击的是微信朋友圈分享");
+            }else if (type==QQSelectSheetType){
+                NSLog(@"点击的是QQ分享");
             }
         }];
         [popView show];

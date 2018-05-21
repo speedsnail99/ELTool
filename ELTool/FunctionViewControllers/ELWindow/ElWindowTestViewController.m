@@ -30,10 +30,12 @@
     NSLog(@"windowLevels:%f,%f,%f",UIWindowLevelNormal,UIWindowLevelAlert,UIWindowLevelStatusBar);
     
     UIButton *tempBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    tempBtn.frame = CGRectMake(100, 100, 100, 100);
-    tempBtn.backgroundColor = [UIColor cyanColor];
+    tempBtn.frame = CGRectMake(100, 100, 30, 30);
+//    tempBtn.backgroundColor = [UIColor cyanColor];
     // 通过按钮的点击事件生成不同windowLevel级别的window
     [tempBtn addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
+//    [tempBtn setImage:[UIImage imageNamed:@"quickselectHisDelete.png"] forState:UIControlStateNormal];
+    [tempBtn setBackgroundImage:[UIImage imageNamed:@"quickselectHisDelete.png"] forState:UIControlStateNormal];
     [self.view addSubview:tempBtn];
     
 }
@@ -41,7 +43,7 @@
 - (void)clickBtn:(UIButton *)btn
 {
 //    [self test1];
-    [self test2];
+//    [self test2];
 //    [self test3];
 }
 

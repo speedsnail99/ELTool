@@ -39,16 +39,19 @@ static const float RealSrceenWidth =  375.0;
 }
 -(UIImageView *)shotsImageView{
     if (_shotsImageView==nil) {
-        _shotsImageView=[[UIImageView alloc]initWithFrame:CGRectMake((DPSCREEN_WIDTH-DPAdaptationW(274))/2, DPAdaptationH(22), DPAdaptationW(274), DPAdaptationH(474))];
+        
+        CGFloat width = 188 * 1.1; //188
+        CGFloat height = 334 * 1.1;   //334*(240/188);
+//        _shotsImageView=[[UIImageView alloc]initWithFrame:CGRectMake((DPSCREEN_WIDTH-DPAdaptationW(274))/2, DPAdaptationH(22), DPAdaptationW(274), DPAdaptationH(474))];
+        _shotsImageView=[[UIImageView alloc]initWithFrame:CGRectMake((DPSCREEN_WIDTH-DPAdaptationW(width))/2, DPAdaptationH(70), DPAdaptationW(width), DPAdaptationH(height))];
         
     }
     return _shotsImageView;
 }
 -(UIView *)bottomView{
     if (_bottomView==nil) {
-        _bottomView=[[UIView alloc]initWithFrame:CGRectMake(0, DPSCREEN_HEIGHT, DPSCREEN_WIDTH, DPAdaptationH(160))];
-        _bottomView.backgroundColor=DPRGBCOLOR(235, 235, 235);
-        
+        _bottomView=[[UIView alloc]initWithFrame:CGRectMake(0, DPSCREEN_HEIGHT, DPSCREEN_WIDTH, DPAdaptationH(160 + 50))];
+//        _bottomView.backgroundColor=DPRGBCOLOR(235, 235, 235);
     }
     return _bottomView;
 }
@@ -77,7 +80,7 @@ static const float RealSrceenWidth =  375.0;
     }];
     
     [UIView animateWithDuration:0.6 animations:^{
-        self.bottomView.frame = CGRectMake(0, DPSCREEN_HEIGHT-DPAdaptationH(160), DPSCREEN_WIDTH, DPAdaptationH(160));
+        self.bottomView.frame = CGRectMake(0, DPSCREEN_HEIGHT-DPAdaptationH(160 - 50), DPSCREEN_WIDTH, DPAdaptationH(160 + 50));
     }];
 }
 -(void)hiddenView{
@@ -106,7 +109,7 @@ static const float RealSrceenWidth =  375.0;
 -(void)layoutBottomSubViews{
     UILabel *titleLabel=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, DPSCREEN_WIDTH, DPAdaptationH(40))];
     titleLabel.text=@"截图分享到";
-    titleLabel.textColor=[UIColor blackColor];
+    titleLabel.textColor=[UIColor whiteColor];
     titleLabel.font=[UIFont systemFontOfSize:DPAdapationLabelFont(18)];
     titleLabel.textAlignment=NSTextAlignmentCenter;
     [self.bottomView addSubview:titleLabel];
@@ -116,25 +119,26 @@ static const float RealSrceenWidth =  375.0;
     CGFloat btnH=DPAdaptationH(70);
     CGFloat margin=(DPSCREEN_WIDTH-btnW*3)/4;
     
-    
-    YLButton *WeiXinButton=[YLButton buttonWithType:UIButtonTypeCustom];
-    [WeiXinButton setImage:[UIImage imageNamed:@"share_wx_friend"] forState:UIControlStateNormal];
-    WeiXinButton.titleLabel.font = [UIFont systemFontOfSize:DPAdapationLabelFont(16)];
-    [WeiXinButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];;
-    WeiXinButton.frame = CGRectMake(margin, DPAdaptationH(40), btnW, btnH);
-    WeiXinButton.imageRect = CGRectMake(DPAdaptationW(4), DPAdaptationW(4), btnW-DPAdaptationW(8), btnW-DPAdaptationW(8));
-    WeiXinButton.titleRect = CGRectMake(0, btnW, btnW,btnH-btnW);
-    WeiXinButton.titleLabel.font=[UIFont systemFontOfSize:DPAdapationLabelFont(14)];
-    WeiXinButton.titleLabel.textAlignment=NSTextAlignmentCenter;
-    [WeiXinButton setTitle:@"微信好友" forState:UIControlStateNormal];
-    [WeiXinButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-    WeiXinButton.tag=WeiXinSelectSheetType;
-    [WeiXinButton addTarget:self action:@selector(btnDidClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.bottomView addSubview:WeiXinButton];
+    YLButton *oaFriendButton=[YLButton buttonWithType:UIButtonTypeCustom];
+    [oaFriendButton setImage:[UIImage imageNamed:@"SFScrennSharedOAFriend.png"] forState:UIControlStateNormal];
+    oaFriendButton.titleLabel.font = [UIFont systemFontOfSize:DPAdapationLabelFont(16)];
+    [oaFriendButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];;
+    oaFriendButton.frame = CGRectMake(margin, DPAdaptationH(40), btnW, btnH);
+    oaFriendButton.imageRect = CGRectMake(DPAdaptationW(4), DPAdaptationW(4), btnW-DPAdaptationW(8), btnW-DPAdaptationW(8));
+    oaFriendButton.titleRect = CGRectMake(0, btnW, btnW,btnH-btnW);
+    oaFriendButton.titleLabel.font=[UIFont systemFontOfSize:DPAdapationLabelFont(14)];
+    oaFriendButton.titleLabel.textAlignment=NSTextAlignmentCenter;
+    [oaFriendButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+    oaFriendButton.tag=OASelectSheetType;
+    [oaFriendButton addTarget:self action:@selector(btnDidClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.bottomView addSubview:oaFriendButton];
+    //设置显示OA label
+    [self createShareShowLabelWithButton:oaFriendButton WithText:@"好友"];
+  
     
     
     YLButton *WeiXinCircleButton=[YLButton buttonWithType:UIButtonTypeCustom];
-    [WeiXinCircleButton setImage:[UIImage imageNamed:@"share_wx_pengyouquan"] forState:UIControlStateNormal];
+    [WeiXinCircleButton setImage:[UIImage imageNamed:@"SFScrennSharedWXFriend.png"] forState:UIControlStateNormal];
     WeiXinCircleButton.titleLabel.font = [UIFont systemFontOfSize:DPAdapationLabelFont(16)];
     [WeiXinCircleButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];;
     WeiXinCircleButton.frame = CGRectMake(margin*2+btnW, DPAdaptationH(40), btnW, btnH);
@@ -142,14 +146,16 @@ static const float RealSrceenWidth =  375.0;
     WeiXinCircleButton.titleRect = CGRectMake(0, btnW, btnW,btnH-btnW);
     WeiXinCircleButton.titleLabel.font=[UIFont systemFontOfSize:DPAdapationLabelFont(14)];
     WeiXinCircleButton.titleLabel.textAlignment=NSTextAlignmentCenter;
-    [WeiXinCircleButton setTitle:@"朋友圈" forState:UIControlStateNormal];
     [WeiXinCircleButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-    WeiXinCircleButton.tag=WeiXinCircleSelectSheetType;
+    WeiXinCircleButton.tag=WeiXinSelectSheetType;
     [WeiXinCircleButton addTarget:self action:@selector(btnDidClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.bottomView addSubview:WeiXinCircleButton];
+    //设置显示微信 label
+    [self createShareShowLabelWithButton:WeiXinCircleButton WithText:@"微信"];
+    
     
     YLButton *QQButton=[YLButton buttonWithType:UIButtonTypeCustom];
-    [QQButton setImage:[UIImage imageNamed:@"share_qq_friend"] forState:UIControlStateNormal];
+    [QQButton setImage:[UIImage imageNamed:@"SFScrennSharedQQFriend.png"] forState:UIControlStateNormal];
     QQButton.titleLabel.font = [UIFont systemFontOfSize:DPAdapationLabelFont(16)];
     [QQButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];;
     QQButton.frame = CGRectMake(margin*3+btnW*2, DPAdaptationH(40), btnW, btnH);
@@ -157,21 +163,34 @@ static const float RealSrceenWidth =  375.0;
     QQButton.titleRect = CGRectMake(0, btnW, btnW,btnH-btnW);
     QQButton.titleLabel.font=[UIFont systemFontOfSize:DPAdapationLabelFont(14)];
     QQButton.titleLabel.textAlignment=NSTextAlignmentCenter;
-    [QQButton setTitle:@"QQ" forState:UIControlStateNormal];
     [QQButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     QQButton.tag=QQSelectSheetType;
     [QQButton addTarget:self action:@selector(btnDidClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.bottomView addSubview:QQButton];
+    //设置显示QQ label
+    [self createShareShowLabelWithButton:QQButton WithText:@"QQ"];
     
     
-    UIButton *btn=[[UIButton alloc]initWithFrame:CGRectMake(0, DPAdaptationH(120), DPSCREEN_WIDTH, DPAdaptationH(40))];
-    [btn setTitle:@"取消" forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(hiddenView) forControlEvents:UIControlEventTouchUpInside];
-    btn.backgroundColor=[UIColor whiteColor];
-    [self.bottomView addSubview:btn];
+    CGFloat cancelWidth = DPAdaptationH(35);
+    UIButton *cancelButton=[[UIButton alloc]initWithFrame:CGRectMake((DPSCREEN_WIDTH - cancelWidth)/2, CGRectGetMaxY(WeiXinCircleButton.frame)+ 20 + 10, cancelWidth, cancelWidth)];
+    [cancelButton setBackgroundImage:[UIImage imageNamed:@"SFScreenShotClose.png"] forState:UIControlStateNormal];
+    [cancelButton addTarget:self action:@selector(hiddenView) forControlEvents:UIControlEventTouchUpInside];
+    [self.bottomView addSubview:cancelButton];
     
 }
+
+
+- (void)createShareShowLabelWithButton:(UIButton *)showButton WithText:(NSString *)text
+{
+    CGFloat labelH = DPAdaptationH(20);
+    CGFloat labelW = DPAdaptationW(58);
+    UILabel *showLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMinX(showButton.frame),CGRectGetMaxY(showButton.frame), labelW,labelH)];
+    showLabel.text = text;
+    showLabel.textAlignment = NSTextAlignmentCenter;
+    showLabel.textColor = [UIColor whiteColor];
+    [self.bottomView addSubview:showLabel];
+}
+
 -(void)btnDidClick:(YLButton *)sender{
     if (_selectSheetBlock) {
         _selectSheetBlock(sender.tag);
