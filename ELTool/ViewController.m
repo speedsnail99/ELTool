@@ -20,6 +20,7 @@
 #import "ElWindowTestViewController.h"
 #import "ELNewFunctionGuideViewController.h"
 #import "ELFirstPresentViewController.h"
+#import "ELXMLParseViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *homeTableView;
@@ -51,7 +52,7 @@
 - (void)initUserData
 {
     NSArray *tempDataArray = @[@"AFNetworking",@"CollectionView",@"MJRefresh",@"ScreenShots",@"NSTimer"
-                               ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC"];
+                               ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser"];
     self.homedataArray = [[NSMutableArray alloc] initWithArray:tempDataArray];
 }
 
@@ -161,18 +162,33 @@
             [self createPresentViewController];
         }
             break;
+        case 12: //xml解析
+        {
+            [self createXMLParserViewController];
+        }
+            break;
 
         default:
             break;
     }
 }
 
+- (void)createXMLParserViewController
+{
+    ELXMLParseViewController *xmlParserVC = [[ELXMLParseViewController alloc] init];
+    [self.navigationController pushViewController:xmlParserVC animated:YES];
+}
+
 - (void)createPresentViewController
 {
     ELFirstPresentViewController *firstPresentVC = [[ELFirstPresentViewController alloc] init];
     [self presentViewController:firstPresentVC animated:YES completion:^{
+        
+        NSLog(@"presentedVC:%@",self.presentedViewController);
+        NSLog(@"presentingVC:%@",self.presentingViewController);
         NSLog(@"presentFirstVC");
     }];
+    
 }
 
 - (void)createFuntionGuideViewController

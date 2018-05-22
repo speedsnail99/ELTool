@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<resp>
+    <titleBar>
+        <style>1</style>
+        <bgcolor>#ffffff</bgcolor>
+        <widthheight>12.5</widthheight>
+    </titleBar>
+    
+    
+    <adBar>
+        <position>adBar</position>
+        <bgcolor>#ffffff</bgcolor>
+        <widthheight>2.2</widthheight>
+        <ad>
+            <advertisementId>65619</advertisementId>
+            <advName>1</advName>
+            <adveUrl>sdmtv://subjectView?subjectId=4799</adveUrl>
+            <adimage>http://s.allook.cn/uploadFile/1510271358587674.jpg</adimage>
+        </ad>
+        <ad>
+            <advertisementId>65539</advertisementId>
+            <advName>2</advName>
+            <adveUrl>sdmtv://liveVideoView?liveVideoId=113</adveUrl>
+            <adimage>http://s.allook.cn/uploadFile/1510261000524755.jpg</adimage>
+        </ad>
+        <ad>
+            <advertisementId>65539</advertisementId>
+            <advName>3</advName>
+            <adveUrl>http://www.baidu.com</adveUrl>
+            <adimage>http://s.allook.cn/uploadFile/151023134514307.jpg</adimage>
+        </ad>
+    </adBar>
+    
+</resp>
+

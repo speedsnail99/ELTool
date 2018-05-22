@@ -29,6 +29,10 @@
     [closeButton setTitle:@"close" forState:UIControlStateNormal];
     [closeButton addTarget:self  action:@selector(closePresentVC:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:closeButton];
+    
+    NSLog(@"firstPresentedVC:%@",self.presentedViewController);
+    NSLog(@"firstPresentingVC:%@",self.presentingViewController);
+    NSLog(@"");
 }
 
 

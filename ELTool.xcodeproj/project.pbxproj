@@ -12,6 +12,10 @@
 		D3E28E8F91A8C09C6862A34F /* libPods-ELTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54001BB0439D49AC1C142A0B /* libPods-ELTool.a */; };
 		DF324A3A20B2A191000E5CC6 /* ELFirstPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF324A3920B2A191000E5CC6 /* ELFirstPresentViewController.m */; };
 		DF324A3D20B2A1A1000E5CC6 /* ELSecondPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF324A3C20B2A1A1000E5CC6 /* ELSecondPresentViewController.m */; };
+		DF324A4120B2D668000E5CC6 /* ELXMLParseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF324A4020B2D668000E5CC6 /* ELXMLParseViewController.m */; };
+		DF324A4920B2EA3F000E5CC6 /* ELXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DF324A4820B2EA3F000E5CC6 /* ELXMLParser.m */; };
+		DF324A4D20B306A5000E5CC6 /* demoFirst.xml in Resources */ = {isa = PBXBuildFile; fileRef = DF324A4C20B306A5000E5CC6 /* demoFirst.xml */; };
+		DF324A4F20B306F5000E5CC6 /* oaMessage.xml in Resources */ = {isa = PBXBuildFile; fileRef = DF324A4E20B306F5000E5CC6 /* oaMessage.xml */; };
 		DF3E67A9208E166E0089211E /* ELFoodPieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3E67A8208E166E0089211E /* ELFoodPieModel.m */; };
 		DF3E67AC208E16DE0089211E /* ELPieCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3E67AB208E16DE0089211E /* ELPieCenterView.m */; };
 		DF40BE28208B129400BA97C9 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BDFC208B129400BA97C9 /* MJRefreshAutoFooter.m */; };
@@ -121,6 +125,12 @@
 		DF324A3920B2A191000E5CC6 /* ELFirstPresentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELFirstPresentViewController.m; sourceTree = "<group>"; };
 		DF324A3B20B2A1A1000E5CC6 /* ELSecondPresentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELSecondPresentViewController.h; sourceTree = "<group>"; };
 		DF324A3C20B2A1A1000E5CC6 /* ELSecondPresentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELSecondPresentViewController.m; sourceTree = "<group>"; };
+		DF324A3F20B2D668000E5CC6 /* ELXMLParseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELXMLParseViewController.h; sourceTree = "<group>"; };
+		DF324A4020B2D668000E5CC6 /* ELXMLParseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELXMLParseViewController.m; sourceTree = "<group>"; };
+		DF324A4720B2EA3F000E5CC6 /* ELXMLParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELXMLParser.h; sourceTree = "<group>"; };
+		DF324A4820B2EA3F000E5CC6 /* ELXMLParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELXMLParser.m; sourceTree = "<group>"; };
+		DF324A4C20B306A5000E5CC6 /* demoFirst.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = demoFirst.xml; sourceTree = "<group>"; };
+		DF324A4E20B306F5000E5CC6 /* oaMessage.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = oaMessage.xml; sourceTree = "<group>"; };
 		DF3E67A7208E166E0089211E /* ELFoodPieModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELFoodPieModel.h; sourceTree = "<group>"; };
 		DF3E67A8208E166E0089211E /* ELFoodPieModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELFoodPieModel.m; sourceTree = "<group>"; };
 		DF3E67AA208E16DE0089211E /* ELPieCenterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELPieCenterView.h; sourceTree = "<group>"; };
@@ -326,6 +336,19 @@
 				DF324A3C20B2A1A1000E5CC6 /* ELSecondPresentViewController.m */,
 			);
 			path = ELPresentViewControllerTest;
+			sourceTree = "<group>";
+		};
+		DF324A3E20B2D654000E5CC6 /* ELXMLParse */ = {
+			isa = PBXGroup;
+			children = (
+				DF324A4C20B306A5000E5CC6 /* demoFirst.xml */,
+				DF324A4E20B306F5000E5CC6 /* oaMessage.xml */,
+				DF324A3F20B2D668000E5CC6 /* ELXMLParseViewController.h */,
+				DF324A4020B2D668000E5CC6 /* ELXMLParseViewController.m */,
+				DF324A4720B2EA3F000E5CC6 /* ELXMLParser.h */,
+				DF324A4820B2EA3F000E5CC6 /* ELXMLParser.m */,
+			);
+			path = ELXMLParse;
 			sourceTree = "<group>";
 		};
 		DF3E67A6208E12760089211E /* ELPieChart */ = {
@@ -621,6 +644,7 @@
 		DF9C0D8320876DFE0039C531 /* FunctionViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				DF324A3E20B2D654000E5CC6 /* ELXMLParse */,
 				DF324A3720B2A148000E5CC6 /* ELPresentViewControllerTest */,
 				DFFEEFF220B0115D00BD9EF9 /* ELNewFunctionGuide */,
 				DF83F1F920A9244A009D1289 /* ELWindow */,
@@ -839,11 +863,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF324A4F20B306F5000E5CC6 /* oaMessage.xml in Resources */,
 				DF40BE36208B129400BA97C9 /* MJRefresh.bundle in Resources */,
 				DFDD2CA420AC0DD000720C2A /* SFScreenShotClose@3x.png in Resources */,
 				DF6EBB532074DB2C000A893C /* LaunchScreen.storyboard in Resources */,
 				DFE3C80320B013AF00ABEB31 /* payQRGuideImage@3x.png in Resources */,
 				DFDD2C8E20AC024900720C2A /* processCate_unselected@3x.png in Resources */,
+				DF324A4D20B306A5000E5CC6 /* demoFirst.xml in Resources */,
 				DFDD2CA520AC0DD000720C2A /* SFScreenShotClose@2x.png in Resources */,
 				DFDD2C8D20AC024900720C2A /* processCate_unselected@2x.png in Resources */,
 				DFDD2C9F20AC034300720C2A /* SFScrennSharedQQFriend@3x.png in Resources */,
@@ -974,6 +1000,7 @@
 				DF324A3A20B2A191000E5CC6 /* ELFirstPresentViewController.m in Sources */,
 				DF6C616320AD740500E8E884 /* NSObject+MJKeyValue.m in Sources */,
 				DFFEEFF520B0117600BD9EF9 /* ELNewFunctionGuideViewController.m in Sources */,
+				DF324A4120B2D668000E5CC6 /* ELXMLParseViewController.m in Sources */,
 				DF6EBB482074DB2C000A893C /* AppDelegate.m in Sources */,
 				DF40BE2D208B129400BA97C9 /* MJRefreshAutoGifFooter.m in Sources */,
 				DF40BE29208B129400BA97C9 /* MJRefreshBackFooter.m in Sources */,
@@ -992,6 +1019,7 @@
 				DF40BE34208B129400BA97C9 /* MJRefreshNormalHeader.m in Sources */,
 				DF83F1FC20A9245A009D1289 /* ElWindowTestViewController.m in Sources */,
 				DF6ABE4720A4154900D2E2BE /* ELSimpleFunctionViewController.m in Sources */,
+				DF324A4920B2EA3F000E5CC6 /* ELXMLParser.m in Sources */,
 				DFE6E62020A2BD580018DB92 /* NSTableViewTestViewController.m in Sources */,
 				DF324A3D20B2A1A1000E5CC6 /* ELSecondPresentViewController.m in Sources */,
 				DF3E67AC208E16DE0089211E /* ELPieCenterView.m in Sources */,
