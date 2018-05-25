@@ -20,8 +20,8 @@
 #import "ElWindowTestViewController.h"
 #import "ELNewFunctionGuideViewController.h"
 #import "ELFirstPresentViewController.h"
-
 #import "ELXMLParseViewController.h"
+#import "ELFMDBHomeViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *homeTableView;
@@ -53,7 +53,7 @@
 - (void)initUserData
 {
     NSArray *tempDataArray = @[@"AFNetworking",@"CollectionView",@"MJRefresh",@"ScreenShots",@"NSTimer"
-                               ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser"];
+                               ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB"];
     self.homedataArray = [[NSMutableArray alloc] initWithArray:tempDataArray];
 }
 
@@ -168,10 +168,21 @@
             [self createXMLParserViewController];
         }
             break;
+        case 13: //FMDB
+        {
+            [self createFMDBViewController];
+        }
+            break;
 
         default:
             break;
     }
+}
+
+- (void)createFMDBViewController
+{
+    ELFMDBHomeViewController *fmVC = [[ELFMDBHomeViewController alloc] init];
+    [self.navigationController pushViewController:fmVC animated:YES];
 }
 
 - (void)createXMLParserViewController
