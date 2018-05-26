@@ -11,6 +11,13 @@
 		A4B45BDC20B86D7C00BBFA64 /* ELFMDBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B45BDB20B86D7C00BBFA64 /* ELFMDBHomeViewController.m */; };
 		BBE64FC78A32E22C92A69775 /* libPods-ELToolTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC059C560104A6133D9C1D0 /* libPods-ELToolTests.a */; };
 		D3E28E8F91A8C09C6862A34F /* libPods-ELTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54001BB0439D49AC1C142A0B /* libPods-ELTool.a */; };
+		DF31BCCA20B9555E00A7F0E0 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31BCBE20B9555E00A7F0E0 /* FMDatabase.m */; };
+		DF31BCCB20B9555E00A7F0E0 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31BCC020B9555E00A7F0E0 /* FMDatabaseAdditions.m */; };
+		DF31BCCC20B9555E00A7F0E0 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31BCC220B9555E00A7F0E0 /* FMDatabasePool.m */; };
+		DF31BCCD20B9555E00A7F0E0 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31BCC420B9555E00A7F0E0 /* FMDatabaseQueue.m */; };
+		DF31BCCE20B9555E00A7F0E0 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31BCC720B9555E00A7F0E0 /* FMResultSet.m */; };
+		DF31BCCF20B9555E00A7F0E0 /* JQFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31BCC920B9555E00A7F0E0 /* JQFMDB.m */; };
+		DF31BCD220B9578700A7F0E0 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31BCD020B9578700A7F0E0 /* Person.m */; };
 		DF324A3A20B2A191000E5CC6 /* ELFirstPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF324A3920B2A191000E5CC6 /* ELFirstPresentViewController.m */; };
 		DF324A3D20B2A1A1000E5CC6 /* ELSecondPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF324A3C20B2A1A1000E5CC6 /* ELSecondPresentViewController.m */; };
 		DF324A4120B2D668000E5CC6 /* ELXMLParseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF324A4020B2D668000E5CC6 /* ELXMLParseViewController.m */; };
@@ -124,6 +131,21 @@
 		A4B45BDB20B86D7C00BBFA64 /* ELFMDBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELFMDBHomeViewController.m; sourceTree = "<group>"; };
 		BBC456D4C2790CA75EDD4982 /* Pods-ELToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELToolTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELToolTests/Pods-ELToolTests.release.xcconfig"; sourceTree = "<group>"; };
 		C6C24736763CF3344F12AC3B /* Pods-ELTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELTool/Pods-ELTool.release.xcconfig"; sourceTree = "<group>"; };
+		DF31BCBD20B9555E00A7F0E0 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		DF31BCBE20B9555E00A7F0E0 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		DF31BCBF20B9555E00A7F0E0 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		DF31BCC020B9555E00A7F0E0 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		DF31BCC120B9555E00A7F0E0 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		DF31BCC220B9555E00A7F0E0 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		DF31BCC320B9555E00A7F0E0 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		DF31BCC420B9555E00A7F0E0 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		DF31BCC520B9555E00A7F0E0 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		DF31BCC620B9555E00A7F0E0 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		DF31BCC720B9555E00A7F0E0 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		DF31BCC820B9555E00A7F0E0 /* JQFMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQFMDB.h; sourceTree = "<group>"; };
+		DF31BCC920B9555E00A7F0E0 /* JQFMDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQFMDB.m; sourceTree = "<group>"; };
+		DF31BCD020B9578700A7F0E0 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		DF31BCD120B9578700A7F0E0 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		DF324A3820B2A191000E5CC6 /* ELFirstPresentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELFirstPresentViewController.h; sourceTree = "<group>"; };
 		DF324A3920B2A191000E5CC6 /* ELFirstPresentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELFirstPresentViewController.m; sourceTree = "<group>"; };
 		DF324A3B20B2A1A1000E5CC6 /* ELSecondPresentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELSecondPresentViewController.h; sourceTree = "<group>"; };
@@ -309,6 +331,9 @@
 		A4B45BD920B86D7C00BBFA64 /* ELFMDB */ = {
 			isa = PBXGroup;
 			children = (
+				DF31BCBB20B9555E00A7F0E0 /* JQFMDB */,
+				DF31BCD120B9578700A7F0E0 /* Person.h */,
+				DF31BCD020B9578700A7F0E0 /* Person.m */,
 				A4B45BDA20B86D7C00BBFA64 /* ELFMDBHomeViewController.h */,
 				A4B45BDB20B86D7C00BBFA64 /* ELFMDBHomeViewController.m */,
 			);
@@ -337,6 +362,34 @@
 				DFDD2C8820AC024900720C2A /* imSearchImages */,
 			);
 			path = ImageFiles;
+			sourceTree = "<group>";
+		};
+		DF31BCBB20B9555E00A7F0E0 /* JQFMDB */ = {
+			isa = PBXGroup;
+			children = (
+				DF31BCBC20B9555E00A7F0E0 /* FMDB */,
+				DF31BCC820B9555E00A7F0E0 /* JQFMDB.h */,
+				DF31BCC920B9555E00A7F0E0 /* JQFMDB.m */,
+			);
+			path = JQFMDB;
+			sourceTree = "<group>";
+		};
+		DF31BCBC20B9555E00A7F0E0 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				DF31BCBD20B9555E00A7F0E0 /* FMDatabase.h */,
+				DF31BCBE20B9555E00A7F0E0 /* FMDatabase.m */,
+				DF31BCBF20B9555E00A7F0E0 /* FMDatabaseAdditions.h */,
+				DF31BCC020B9555E00A7F0E0 /* FMDatabaseAdditions.m */,
+				DF31BCC120B9555E00A7F0E0 /* FMDatabasePool.h */,
+				DF31BCC220B9555E00A7F0E0 /* FMDatabasePool.m */,
+				DF31BCC320B9555E00A7F0E0 /* FMDatabaseQueue.h */,
+				DF31BCC420B9555E00A7F0E0 /* FMDatabaseQueue.m */,
+				DF31BCC520B9555E00A7F0E0 /* FMDB.h */,
+				DF31BCC620B9555E00A7F0E0 /* FMResultSet.h */,
+				DF31BCC720B9555E00A7F0E0 /* FMResultSet.m */,
+			);
+			path = FMDB;
 			sourceTree = "<group>";
 		};
 		DF324A3720B2A148000E5CC6 /* ELPresentViewControllerTest */ = {
@@ -991,6 +1044,7 @@
 				DF40BE28208B129400BA97C9 /* MJRefreshAutoFooter.m in Sources */,
 				DF40BE2F208B129400BA97C9 /* MJRefreshAutoStateFooter.m in Sources */,
 				DF6C616020AD740500E8E884 /* MJPropertyType.m in Sources */,
+				DF31BCCF20B9555E00A7F0E0 /* JQFMDB.m in Sources */,
 				DF6DB131209C47C400040096 /* ELScreenShotsViewController.m in Sources */,
 				DFB7178C20941B4C00AFB200 /* FirstTestViewController.m in Sources */,
 				DF6C616520AD740500E8E884 /* NSString+MJExtension.m in Sources */,
@@ -1009,6 +1063,8 @@
 				DF40BE31208B129400BA97C9 /* MJRefreshBackNormalFooter.m in Sources */,
 				DF40BE2A208B129400BA97C9 /* MJRefreshComponent.m in Sources */,
 				DF40BE2E208B129400BA97C9 /* MJRefreshAutoNormalFooter.m in Sources */,
+				DF31BCD220B9578700A7F0E0 /* Person.m in Sources */,
+				DF31BCCE20B9555E00A7F0E0 /* FMResultSet.m in Sources */,
 				DF6C616420AD740500E8E884 /* NSObject+MJProperty.m in Sources */,
 				DFC974BC20A56C6900C9EEAA /* ELCircularReferenceViewController.m in Sources */,
 				DF324A3A20B2A191000E5CC6 /* ELFirstPresentViewController.m in Sources */,
@@ -1024,6 +1080,7 @@
 				DF6C615E20AD740500E8E884 /* MJProperty.m in Sources */,
 				DF6ABE4C20A4443200D2E2BE /* DPScreenshotsPopView.m in Sources */,
 				DF40BE2B208B129400BA97C9 /* MJRefreshFooter.m in Sources */,
+				DF31BCCC20B9555E00A7F0E0 /* FMDatabasePool.m in Sources */,
 				DF40BE37208B129400BA97C9 /* MJRefreshConst.m in Sources */,
 				DF40BE3A208B129400BA97C9 /* UIScrollView+MJRefresh.m in Sources */,
 				DFC974B820A5307200C9EEAA /* ELWebViewController.m in Sources */,
@@ -1031,13 +1088,16 @@
 				DF40BE30208B129400BA97C9 /* MJRefreshBackGifFooter.m in Sources */,
 				DF40BE2C208B129400BA97C9 /* MJRefreshHeader.m in Sources */,
 				DF40BE34208B129400BA97C9 /* MJRefreshNormalHeader.m in Sources */,
+				DF31BCCB20B9555E00A7F0E0 /* FMDatabaseAdditions.m in Sources */,
 				DF83F1FC20A9245A009D1289 /* ElWindowTestViewController.m in Sources */,
 				DF6ABE4720A4154900D2E2BE /* ELSimpleFunctionViewController.m in Sources */,
 				DF324A4920B2EA3F000E5CC6 /* ELXMLParser.m in Sources */,
 				DFE6E62020A2BD580018DB92 /* NSTableViewTestViewController.m in Sources */,
 				DF324A3D20B2A1A1000E5CC6 /* ELSecondPresentViewController.m in Sources */,
 				DF3E67AC208E16DE0089211E /* ELPieCenterView.m in Sources */,
+				DF31BCCA20B9555E00A7F0E0 /* FMDatabase.m in Sources */,
 				DF605EC120A1A460000AB9EF /* NSTimerViewController.m in Sources */,
+				DF31BCCD20B9555E00A7F0E0 /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1200,6 +1260,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3F869D03C4DE876BC923F207 /* Pods-ELTool.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JS6ECCHXUK;
@@ -1217,6 +1278,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C6C24736763CF3344F12AC3B /* Pods-ELTool.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JS6ECCHXUK;

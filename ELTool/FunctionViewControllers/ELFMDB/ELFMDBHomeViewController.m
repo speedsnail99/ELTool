@@ -7,6 +7,8 @@
 //
 
 #import "ELFMDBHomeViewController.h"
+#import "JQFMDB.h"
+#import "Person.h"
 
 @interface ELFMDBHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *listTable;
@@ -31,10 +33,18 @@
  */
 - (void)createListData
 {
-    self.listDataArray = [[NSMutableArray alloc] init];
-    [self.listDataArray addObject:@"0"];
-    [self.listDataArray addObject:@"1"];
-    [self.listTable reloadData];
+    NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    
+    NSString *sqlitePath = [documentPath stringByAppendingPathComponent:@"OAFMDBDirectory"];
+    JQFMDB *db = [[JQFMDB shareDatabase] initWithDBName:@"OAFMDB.sqlite" path:sqlitePath];
+    
+    //创建表
+    if (![db jq_isExistTable:@"user"]) {
+        [db jq_createTable:@"user" dicOrModel:[Person class]];  
+    }
+    
+    self.listDataArray = [NSMutableArray arrayWithArray:[db jq_lookupTable:@"user" dicOrModel:[Person class] whereFormat:nil]];
+    
 }
 
 
@@ -50,6 +60,33 @@
     listTableView.delegate = self;
     listTableView.dataSource = self;
     [self.view addSubview:listTableView];
+    self.listTable = listTableView;
+    
+    //创建barbutton
+    UIBarButtonItem *addDataButton  = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addData)];
+
+
+    self.navigationItem.rightBarButtonItems = @[addDataButton];
+}
+
+- (void)addData
+{
+    Person *person = [[Person alloc] init];
+    person.name = [self randomName];
+    person.phoneNum = @(18866668888);
+    person.photoData = UIImagePNGRepresentation([UIImage imageNamed:@"bg.jpg"]);
+    person.luckyNum = 7;
+    person.sex = 0;
+    person.age = 26;
+    person.height = 172.12;
+    person.weight = 120.4555;
+    
+    [[JQFMDB shareDatabase] jq_insertTable:@"user" dicOrModel:person];
+    
+    //查找表中所有数据
+    NSArray *personArr = [[JQFMDB shareDatabase] jq_lookupTable:@"user" dicOrModel:[Person class] whereFormat:nil];
+    self.listDataArray = [NSMutableArray arrayWithArray:personArr];
+    [self.listTable reloadData];
 }
 
 #pragma mark - UITableViewDelegate
@@ -65,17 +102,66 @@
     static NSString *cellId = @"firstCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellId];
         cell.backgroundColor = [UIColor cyanColor];
     }
-    NSString *cellText = self.listDataArray[indexPath.row];
-    cell.textLabel.text = cellText;
+    if (self.listDataArray.count > indexPath.row) {
+        Person *personModel = self.listDataArray[indexPath.row];
+        cell.textLabel.text = personModel.name;
+    }
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        Person *person = self.listDataArray[indexPath.row];
+        
+//        [[DataBase sharedDataBase] deletePerson:person];
+//        [JQFMDB shareDatabase]
+        
+//        @"WHERE rowid = (SELECT max(rowid) FROM user)"
+        
+        NSString *queryStr = [NSString stringWithFormat:@"where name = '%@'",person.name];
+        BOOL deleResult = [[JQFMDB shareDatabase] jq_deleteTable:@"user" whereFormat:queryStr];
+        
+//        self.dataArray = [[DataBase sharedDataBase] getAllPerson];
+        
+        NSArray *lookupArray = [[JQFMDB shareDatabase] jq_lookupTable:@"user" dicOrModel:[Person class] whereFormat:nil];
+        
+        self.listDataArray = [NSMutableArray arrayWithArray:lookupArray];
+        [self.listTable reloadData];
+    }
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Get/Set 方法
+- (NSMutableArray *)listDataArray{
+    if (!_listDataArray) {
+        _listDataArray = [[NSMutableArray alloc] init];
+    }
+    return _listDataArray;
+}
+
+
+// 获得随机字符名称
+- (NSString *)randomName{
+    
+    NSString *string = [[NSString alloc]init];
+    for (int i = 0; i < 7; i++) {
+        int figure = (arc4random() % 26) + 97;
+        char character = figure;
+        NSString *tempString = [NSString stringWithFormat:@"%c", character];
+        string = [string stringByAppendingString:tempString];
+    }
+    
+    return string;
 }
 
 /*
