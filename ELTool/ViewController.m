@@ -22,6 +22,7 @@
 #import "ELFirstPresentViewController.h"
 #import "ELXMLParseViewController.h"
 #import "ELFMDBHomeViewController.h"
+#import "ELJQFMDBHomeViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *homeTableView;
@@ -53,7 +54,7 @@
 - (void)initUserData
 {
     NSArray *tempDataArray = @[@"AFNetworking",@"CollectionView",@"MJRefresh",@"ScreenShots",@"NSTimer"
-                               ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB"];
+                               ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"JQFMDBLearming"];
     self.homedataArray = [[NSMutableArray alloc] initWithArray:tempDataArray];
 }
 
@@ -173,10 +174,22 @@
             [self createFMDBViewController];
         }
             break;
+            
+        case 14: //JQFMDB
+        {
+            [self createJQFMDBViewController];
+        }
+            break;
 
         default:
             break;
     }
+}
+
+- (void)createJQFMDBViewController
+{
+    ELJQFMDBHomeViewController *jqfmVC = [[ELJQFMDBHomeViewController alloc] init];
+    [self.navigationController pushViewController:jqfmVC animated:YES];
 }
 
 - (void)createFMDBViewController
@@ -311,54 +324,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
- - (void)createMutipleFunctionButtons
- {
- 
- 
- static const CGFloat  buttonWidth = 200;
- static const CGFloat  buttonHeight = 52;
- //creatAfNetRequest
- UIButton *requestButton = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, buttonWidth, buttonHeight)];
- [self.view addSubview:requestButton];
- requestButton.backgroundColor = [UIColor cyanColor];
- [requestButton setTitle:@"AFNet" forState:UIControlStateNormal];
- [requestButton addTarget:self action:@selector(creatAfNetRequest) forControlEvents:UIControlEventTouchUpInside];
- //创建collectioViewController跳转接Button
- UIButton *collectionVCBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, CGRectGetMaxY(requestButton.frame)+10, buttonWidth, buttonHeight)];
- [collectionVCBtn addTarget:self action:@selector(jumpToCollectionVC) forControlEvents:UIControlEventTouchUpInside];
- collectionVCBtn.backgroundColor = [UIColor cyanColor];
- [collectionVCBtn setTitle:@"CollectionVCJump" forState:UIControlStateNormal];
- [self.view addSubview:collectionVCBtn];
- //MJRefresh
- UIButton *mjRefreshBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, CGRectGetMaxY(collectionVCBtn.frame)+10, buttonWidth, buttonHeight)];
- [mjRefreshBtn addTarget:self action:@selector(createMjRefreshViewController) forControlEvents:UIControlEventTouchUpInside];
- mjRefreshBtn.backgroundColor = [UIColor cyanColor];
- [mjRefreshBtn setTitle:@"MJRefresh" forState:UIControlStateNormal];
- [self.view addSubview:mjRefreshBtn];
- 
- // screenShotsBtn
- UIButton *screenShotsBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, CGRectGetMaxY(mjRefreshBtn.frame)+10, buttonWidth, buttonHeight)];
- [screenShotsBtn addTarget:self action:@selector(createsSreenShotsBtnViewController) forControlEvents:UIControlEventTouchUpInside];
- screenShotsBtn.backgroundColor = [UIColor cyanColor];
- [screenShotsBtn setTitle:@"screenBtn" forState:UIControlStateNormal];
- [self.view addSubview:screenShotsBtn];
- 
- // screenShotsBtn
- UIButton *timerBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, CGRectGetMaxY(screenShotsBtn.frame)+10, buttonWidth, buttonHeight)];
- [timerBtn addTarget:self action:@selector(createsTimerViewController) forControlEvents:UIControlEventTouchUpInside];
- timerBtn.backgroundColor = [UIColor cyanColor];
- [timerBtn setTitle:@"timerBtn" forState:UIControlStateNormal];
- [self.view addSubview:timerBtn];
- 
- // screenShotsBtn
- UIButton *tableBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, CGRectGetMaxY(timerBtn.frame)+10, buttonWidth, buttonHeight)];
- [tableBtn addTarget:self action:@selector(createTableViewController) forControlEvents:UIControlEventTouchUpInside];
- tableBtn.backgroundColor = [UIColor cyanColor];
- [tableBtn setTitle:@"tableBtn" forState:UIControlStateNormal];
- [self.view addSubview:tableBtn];
- }
- */
+
 
 
 @end

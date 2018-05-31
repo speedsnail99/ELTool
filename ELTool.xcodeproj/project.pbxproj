@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		997400A860CB25F08BF3D1D3 /* libPods-ELToolUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DAC2C08DC3485434DEBDAD7 /* libPods-ELToolUITests.a */; };
 		A4B45BDC20B86D7C00BBFA64 /* ELFMDBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B45BDB20B86D7C00BBFA64 /* ELFMDBHomeViewController.m */; };
+		A4B45C1E20C04D2E00BBFA64 /* ELJQFMDBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B45C1D20C04D2E00BBFA64 /* ELJQFMDBHomeViewController.m */; };
+		A4B45C2120C04F1A00BBFA64 /* ProductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B45C2020C04F1A00BBFA64 /* ProductionView.m */; };
 		BBE64FC78A32E22C92A69775 /* libPods-ELToolTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC059C560104A6133D9C1D0 /* libPods-ELToolTests.a */; };
 		D3E28E8F91A8C09C6862A34F /* libPods-ELTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54001BB0439D49AC1C142A0B /* libPods-ELTool.a */; };
 		DF31BCCA20B9555E00A7F0E0 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31BCBE20B9555E00A7F0E0 /* FMDatabase.m */; };
@@ -129,6 +131,10 @@
 		9251A8FFC661C4006BF2AEA9 /* Pods-ELToolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELToolTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELToolTests/Pods-ELToolTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A4B45BDA20B86D7C00BBFA64 /* ELFMDBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELFMDBHomeViewController.h; sourceTree = "<group>"; };
 		A4B45BDB20B86D7C00BBFA64 /* ELFMDBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELFMDBHomeViewController.m; sourceTree = "<group>"; };
+		A4B45C1C20C04D2E00BBFA64 /* ELJQFMDBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELJQFMDBHomeViewController.h; sourceTree = "<group>"; };
+		A4B45C1D20C04D2E00BBFA64 /* ELJQFMDBHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELJQFMDBHomeViewController.m; sourceTree = "<group>"; };
+		A4B45C1F20C04F1A00BBFA64 /* ProductionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductionView.h; sourceTree = "<group>"; };
+		A4B45C2020C04F1A00BBFA64 /* ProductionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductionView.m; sourceTree = "<group>"; };
 		BBC456D4C2790CA75EDD4982 /* Pods-ELToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELToolTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELToolTests/Pods-ELToolTests.release.xcconfig"; sourceTree = "<group>"; };
 		C6C24736763CF3344F12AC3B /* Pods-ELTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELTool/Pods-ELTool.release.xcconfig"; sourceTree = "<group>"; };
 		DF31BCBD20B9555E00A7F0E0 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -338,6 +344,17 @@
 				A4B45BDB20B86D7C00BBFA64 /* ELFMDBHomeViewController.m */,
 			);
 			path = ELFMDB;
+			sourceTree = "<group>";
+		};
+		A4B45C1B20C04D1D00BBFA64 /* JQFMDBLearning */ = {
+			isa = PBXGroup;
+			children = (
+				A4B45C1C20C04D2E00BBFA64 /* ELJQFMDBHomeViewController.h */,
+				A4B45C1D20C04D2E00BBFA64 /* ELJQFMDBHomeViewController.m */,
+				A4B45C1F20C04F1A00BBFA64 /* ProductionView.h */,
+				A4B45C2020C04F1A00BBFA64 /* ProductionView.m */,
+			);
+			path = JQFMDBLearning;
 			sourceTree = "<group>";
 		};
 		BF9E141D9C8F27F5664405EB /* Pods */ = {
@@ -709,6 +726,7 @@
 		DF9C0D8320876DFE0039C531 /* FunctionViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A4B45C1B20C04D1D00BBFA64 /* JQFMDBLearning */,
 				A4B45BD920B86D7C00BBFA64 /* ELFMDB */,
 				DF324A3E20B2D654000E5CC6 /* ELXMLParse */,
 				DF324A3720B2A148000E5CC6 /* ELPresentViewControllerTest */,
@@ -1055,6 +1073,7 @@
 				DF40BE35208B129400BA97C9 /* MJRefreshStateHeader.m in Sources */,
 				DF6DB13B209C484C00040096 /* ELCollectionViewCell.m in Sources */,
 				DF6C616220AD740500E8E884 /* NSObject+MJCoding.m in Sources */,
+				A4B45C1E20C04D2E00BBFA64 /* ELJQFMDBHomeViewController.m in Sources */,
 				DF3E67A9208E166E0089211E /* ELFoodPieModel.m in Sources */,
 				DF6EBB562074DB2C000A893C /* main.m in Sources */,
 				DF40BE39208B129400BA97C9 /* UIScrollView+MJExtension.m in Sources */,
@@ -1095,6 +1114,7 @@
 				DFE6E62020A2BD580018DB92 /* NSTableViewTestViewController.m in Sources */,
 				DF324A3D20B2A1A1000E5CC6 /* ELSecondPresentViewController.m in Sources */,
 				DF3E67AC208E16DE0089211E /* ELPieCenterView.m in Sources */,
+				A4B45C2120C04F1A00BBFA64 /* ProductionView.m in Sources */,
 				DF31BCCA20B9555E00A7F0E0 /* FMDatabase.m in Sources */,
 				DF605EC120A1A460000AB9EF /* NSTimerViewController.m in Sources */,
 				DF31BCCD20B9555E00A7F0E0 /* FMDatabaseQueue.m in Sources */,
