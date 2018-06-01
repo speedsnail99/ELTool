@@ -23,6 +23,8 @@
 #import "ELXMLParseViewController.h"
 #import "ELFMDBHomeViewController.h"
 #import "ELJQFMDBHomeViewController.h"
+#import "ELAVPlayerViewController.h"
+
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *homeTableView;
@@ -53,8 +55,7 @@
  */
 - (void)initUserData
 {
-    NSArray *tempDataArray = @[@"AFNetworking",@"CollectionView",@"MJRefresh",@"ScreenShots",@"NSTimer"
-                               ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"JQFMDBLearming"];
+    NSArray *tempDataArray = @[@"AFNetworking",@"CollectionView",@"MJRefresh",@"ScreenShots",@"NSTimer" ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"AVPlyaerViewController",@"JQFMDBLearming",@"JQFMDBDemo"];
     self.homedataArray = [[NSMutableArray alloc] initWithArray:tempDataArray];
 }
 
@@ -67,7 +68,6 @@
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
-    
     tableView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:tableView];
     [self.view addSubview:tableView];
@@ -101,95 +101,96 @@
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    switch (indexPath.row) {
-        case 0: //AFNetWorking
-        {
-            [self creatAfNetRequest];
-        }
-            break;
-        case 1: //CollectionView
-        {
-            [self jumpToCollectionVC];
-        }
-            break;
-        case 2: //MJRefresh
-        {
-            [self createMjRefreshViewController];
-        }
-            break;
-        case 3: //ScreenShots
-        {
-            [self createsSreenShotsBtnViewController];
-        }
-            break;
-        case 4: //NSTimer
-        {
-            [self createsTimerViewController];
-        }
-            break;
-        case 5: //TabelView
-        {
-            [self createTableViewController];
-        }
-            break;
-        case 6: //simpleVC
-        {
-            [self createSimpleViewController];
-        }
-            break;
-        case 7: //webVC
-        {
-            [self createWebViewViewController];
-        }
-            break;
-            
-        case 8: //circleReference
-        {
-            [self createCircleReferenceViewController];
-        }
-            break;
-        case 9: //widow
-        {
-            [self createWindowViewController];
-        }
-            break;
-            
-        case 10: //FuntionGuide
-        {
-            [self createFuntionGuideViewController];
-        }
-            break;
-        case 11: //模态视图
-        {
-            [self createPresentViewController];
-        }
-            break;
-        case 12: //xml解析
-        {
-            [self createXMLParserViewController];
-        }
-            break;
-        case 13: //FMDB
-        {
-            [self createFMDBViewController];
-        }
-            break;
-            
-        case 14: //JQFMDB
-        {
-            [self createJQFMDBViewController];
-        }
-            break;
-
-        default:
-            break;
+    NSString *name = [self.homedataArray objectAtIndex:indexPath.row];
+    if ([name isEqualToString:@"AFNetworking"]) {
+        
+        [self creatAfNetRequest];
+        
+    } else if ([name isEqualToString:@"CollectionView"]) {
+        [self jumpToCollectionVC];
+        
+    } else if ([name isEqualToString:@"MJRefresh"]) {
+        
+        [self createMjRefreshViewController];
+        
+    } else if ([name isEqualToString:@"ScreenShots"]) {
+        
+        [self createsSreenShotsBtnViewController];
+        
+    } else if ([name isEqualToString:@"NSTimer"]) {
+        
+        [self createsTimerViewController];
+        
+    } else if ([name isEqualToString:@"TableView"]) {
+        
+        [self createTableViewController];
+        
+    } else if ([name isEqualToString:@"SimpleFunction"]) {
+        
+        [self createSimpleViewController];
+        
+    } else if ([name isEqualToString:@"ELWebVC"]) {
+        
+        [self createWebViewViewController];
+        
+    } else if ([name isEqualToString:@"CircularReference"]) {
+        
+        [self createCircleReferenceViewController];
+        
+    } else if ([name isEqualToString:@"ELWindow"]) {
+        
+        [self createWindowViewController];
+        
+    } else if ([name isEqualToString:@"ELNewFunctionGuide"]) {
+        
+        [self createFuntionGuideViewController];
+        
+    } else if ([name isEqualToString:@"ELPresentVC"]) {
+        
+        [self createPresentViewController];
+        
+    } else if ([name isEqualToString:@"XMLParser"]) {
+        
+        [self createXMLParserViewController];
+        
+    } else if ([name isEqualToString:@"ELFMDB"]) {
+        
+        [self createFMDBViewController];
+        
+    } else if ([name isEqualToString:@"AVPlyaerViewController"]) {
+        
+        [self createAVPlayerViewController];
+        
+    } else if ([name isEqualToString:@"JQFMDBLearming"]) {
+        
+        [self createLearningJQFMDBViewController];
+        
+    } else if ([name isEqualToString:@"JQFMDBDemo"]) {
+        
+        [self createJQFMDBViewController];
+        
     }
+    
 }
 
+
+- (void)createLearningJQFMDBViewController
+{
+    ELJQFMDBHomeViewController *jqfmVC = [[ELJQFMDBHomeViewController alloc] init];
+    [self.navigationController pushViewController:jqfmVC animated:YES];
+}
 - (void)createJQFMDBViewController
 {
     ELJQFMDBHomeViewController *jqfmVC = [[ELJQFMDBHomeViewController alloc] init];
     [self.navigationController pushViewController:jqfmVC animated:YES];
+}
+
+
+
+- (void)createAVPlayerViewController
+{
+    ELAVPlayerViewController *avPlayer = [[ELAVPlayerViewController alloc] init];
+    [self.navigationController pushViewController:avPlayer animated:YES];
 }
 
 - (void)createFMDBViewController
@@ -323,7 +324,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 
 

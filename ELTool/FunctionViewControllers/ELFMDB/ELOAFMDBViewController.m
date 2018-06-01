@@ -6,19 +6,21 @@
 //  Copyright © 2018年 speedsnail. All rights reserved.
 //
 
-#import "ELFMDBHomeViewController.h"
+#import "ELOAFMDBViewController.h"
 #import "JQFMDB.h"
-#import "Person.h"
+#import "SFIMHistorySynModel.h"
 
 #define kScreenWidth    [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight   [UIScreen mainScreen].bounds.size.height
 
-@interface ELFMDBHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
+#define imSynHitoryTable @"imSynHitoryTable"
+
+@interface ELOAFMDBViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *listTable;
 @property (nonatomic, strong) NSMutableArray *listDataArray;
 @end
 
-@implementation ELFMDBHomeViewController
+@implementation ELOAFMDBViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,7 +29,7 @@
     
     [self createListData];
     [self createUserInterface];
-
+    
 }
 
 
@@ -44,18 +46,16 @@
         [fileManager createDirectoryAtPath:sqliteDocPath withIntermediateDirectories:YES attributes:nil error:nil];
     }
     
-//    com_OAIM_Sqlite
+    //    com_OAIM_Sqlite
     JQFMDB *db = [JQFMDB shareDatabase:@"OAFMDB.sqlite" path:sqliteDocPath];
     
-//    JQFMDB *db = [JQFMDB shareDatabase];
+    //    JQFMDB *db = [JQFMDB shareDatabase];
     //创建表
     if (![db jq_isExistTable:@"user"]) {
-        BOOL createResult = [db jq_createTable:@"user" dicOrModel:[Person class]];
-        
-        
+        [db jq_createTable:@"user" dicOrModel:[SFIMHistorySynModel class]];
     }
     
-    self.listDataArray = [NSMutableArray arrayWithArray:[db jq_lookupTable:@"user" dicOrModel:[Person class] whereFormat:nil]];
+    self.listDataArray = [NSMutableArray arrayWithArray:[db jq_lookupTable:@"user" dicOrModel:[SFIMHistorySynModel class] whereFormat:nil]];
     
 }
 
@@ -99,12 +99,12 @@
     
     /*创建BarButton*/
     UIBarButtonItem *addDataButton  = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addData)];
-
+    
     self.navigationItem.rightBarButtonItems = @[addDataButton];
 }
 - (void)showAllData
 {
-    NSArray *resultArray = [[JQFMDB shareDatabase] jq_lookupTable:@"user" dicOrModel:[Person class] whereFormat:nil];
+    NSArray *resultArray = [[JQFMDB shareDatabase] jq_lookupTable:@"user" dicOrModel:[SFIMHistorySynModel class] whereFormat:nil];
     NSLog(@"searchResult:%@",resultArray);
     self.listDataArray = [NSMutableArray arrayWithArray:resultArray];
     [self.listTable reloadData];
@@ -112,9 +112,9 @@
 
 - (void)searchAction
 {
-    NSString *searchName = @"xbjvbjr";
-    NSString *searchSQLStr = [NSString stringWithFormat:@"WHERE name = '%@'",searchName];
-    NSArray *resultArray = [[JQFMDB shareDatabase] jq_lookupTable:@"user" dicOrModel:[Person class] whereFormat:searchSQLStr];
+    NSString *searchName = @"vruqrpz";
+    NSString *searchSQLStr = [NSString stringWithFormat:@"where name = '%@'",searchName];
+    NSArray *resultArray = [[JQFMDB shareDatabase] jq_lookupTable:@"user" dicOrModel:[SFIMHistorySynModel class] whereFormat:searchSQLStr];
     NSLog(@"searchResult:%@",resultArray);
     self.listDataArray = [NSMutableArray arrayWithArray:resultArray];
     [self.listTable reloadData];
@@ -122,23 +122,13 @@
 
 - (void)addData
 {
-    Person *person = [[Person alloc] init];
-    person.name = [self randomName];
-    person.phoneNum = @(18866668888);
-    person.photoData = UIImagePNGRepresentation([UIImage imageNamed:@"bg.jpg"]);
-    person.luckyNum = 7;
-    person.sex = 0;
-    person.age = 26;
-    person.height = 172.12;
-    person.weight = 120.4555;
-//    person.from = @"ccc";
+    SFIMHistorySynModel *person = [[SFIMHistorySynModel alloc] init];
     
+  
     [[JQFMDB shareDatabase] jq_insertTable:@"user" dicOrModel:person];
     
-    
-    
     //查找表中所有数据
-    NSArray *personArr = [[JQFMDB shareDatabase] jq_lookupTable:@"user" dicOrModel:[Person class] whereFormat:nil];
+    NSArray *personArr = [[JQFMDB shareDatabase] jq_lookupTable:@"user" dicOrModel:[SFIMHistorySynModel class] whereFormat:nil];
     self.listDataArray = [NSMutableArray arrayWithArray:personArr];
     [self.listTable reloadData];
 }
@@ -151,15 +141,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    Person *selectPerson =self.listDataArray[indexPath.row];
-    
-    NSString *queryStr = [NSString stringWithFormat:@"where name = '%@'",selectPerson.name];
-    BOOL deleResult = [[JQFMDB shareDatabase] jq_deleteTable:@"user" whereFormat:queryStr];
-    NSLog(@"deleteResult:%d",deleResult);
-   
-    NSArray *lookupArray = [[JQFMDB shareDatabase] jq_lookupTable:@"user" dicOrModel:[Person class] whereFormat:nil];
-    self.listDataArray = [NSMutableArray arrayWithArray:lookupArray];
-    [self.listTable reloadData];
+//    SFIMHistorySynModel *selectPerson =self.listDataArray[indexPath.row];
+//
+//    NSString *queryStr = [NSString stringWithFormat:@"where name = '%@'",selectPerson.messageType];
+//    BOOL deleResult = [[JQFMDB shareDatabase] jq_deleteTable:@"user" whereFormat:queryStr];
+//    NSLog(@"deleteResult:%d",deleResult);
+//
+//    NSArray *lookupArray = [[JQFMDB shareDatabase] jq_lookupTable:@"user" dicOrModel:[SFIMHistorySynModel class] whereFormat:nil];
+//    self.listDataArray = [NSMutableArray arrayWithArray:lookupArray];
+//    [self.listTable reloadData];
 }
 
 
@@ -173,8 +163,8 @@
         cell.backgroundColor = [UIColor cyanColor];
     }
     if (self.listDataArray.count > indexPath.row) {
-        Person *personModel = self.listDataArray[indexPath.row];
-        cell.textLabel.text = personModel.name;
+        SFIMHistorySynModel *personModel = self.listDataArray[indexPath.row];
+        
     }
     return cell;
 }
@@ -182,19 +172,19 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        Person *person = self.listDataArray[indexPath.row];
+        SFIMHistorySynModel *person = self.listDataArray[indexPath.row];
         
-//        [[DataBase sharedDataBase] deletePerson:person];
-//        [JQFMDB shareDatabase]
+        //        [[DataBase sharedDataBase] deletePerson:person];
+        //        [JQFMDB shareDatabase]
         
-//        @"WHERE rowid = (SELECT max(rowid) FROM user)"
+        //        @"WHERE rowid = (SELECT max(rowid) FROM user)"
         
-        NSString *queryStr = [NSString stringWithFormat:@"where name = '%@'",person.name];
+        NSString *queryStr = @"";
         BOOL deleResult = [[JQFMDB shareDatabase] jq_deleteTable:@"user" whereFormat:queryStr];
         
-//        self.dataArray = [[DataBase sharedDataBase] getAllPerson];
+        //        self.dataArray = [[DataBase sharedDataBase] getAllPerson];
         
-        NSArray *lookupArray = [[JQFMDB shareDatabase] jq_lookupTable:@"user" dicOrModel:[Person class] whereFormat:nil];
+        NSArray *lookupArray = [[JQFMDB shareDatabase] jq_lookupTable:@"user" dicOrModel:[SFIMHistorySynModel class] whereFormat:nil];
         
         self.listDataArray = [NSMutableArray arrayWithArray:lookupArray];
         [self.listTable reloadData];
@@ -232,13 +222,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

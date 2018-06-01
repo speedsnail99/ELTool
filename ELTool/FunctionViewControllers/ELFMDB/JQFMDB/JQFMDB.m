@@ -55,7 +55,7 @@ static JQFMDB *jqdb = nil;
         if (!dbPath) {
             path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:dbName];
         } else {
-            path = dbPath;
+            path = [dbPath stringByAppendingPathComponent:dbName];
         }
         
         FMDatabase *fmdb = [FMDatabase databaseWithPath:path];
@@ -136,7 +136,7 @@ static JQFMDB *jqdb = nil;
 
 - (NSString *)createTable:(NSString *)tableName dictionary:(NSDictionary *)dic excludeName:(NSArray *)nameArr
 {
-    NSMutableString *fieldStr = [[NSMutableString alloc] initWithFormat:@"CREATE TABLE %@ (", tableName];
+    NSMutableString *fieldStr = [[NSMutableString alloc] initWithFormat:@"CREATE TABLE %@ (primaryid INTEGER PRIMARY KEY AUTOINCREMENT,", tableName];
     
     int keyCount = 0;
     for (NSString *key in dic) {
@@ -158,7 +158,7 @@ static JQFMDB *jqdb = nil;
 
 - (NSString *)createTable:(NSString *)tableName model:(Class)cls excludeName:(NSArray *)nameArr
 {
-    NSMutableString *fieldStr = [[NSMutableString alloc] initWithFormat:@"CREATE TABLE %@ (", tableName];
+    NSMutableString *fieldStr = [[NSMutableString alloc] initWithFormat:@"CREATE TABLE %@ (primaryid INTEGER PRIMARY KEY AUTOINCREMENT,", tableName];
     
     NSDictionary *dic = [self modelToDictionary:cls excludePropertyName:nameArr];
     int keyCount = 0;

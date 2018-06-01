@@ -77,6 +77,8 @@
 		DF6EBB602074DB2C000A893C /* ELToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB5F2074DB2C000A893C /* ELToolTests.m */; };
 		DF6EBB6B2074DB2C000A893C /* ELToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB6A2074DB2C000A893C /* ELToolUITests.m */; };
 		DF83F1FC20A9245A009D1289 /* ElWindowTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF83F1FB20A9245A009D1289 /* ElWindowTestViewController.m */; };
+		DF901BF720BA720900B4A3FB /* SFIMHistorySynModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF901BF620BA720900B4A3FB /* SFIMHistorySynModel.m */; };
+		DF901BFA20BA72BA00B4A3FB /* ELOAFMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF901BF920BA72BA00B4A3FB /* ELOAFMDBViewController.m */; };
 		DFB7178C20941B4C00AFB200 /* FirstTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB7178B20941B4C00AFB200 /* FirstTestViewController.m */; };
 		DFC974B820A5307200C9EEAA /* ELWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC974B720A5307200C9EEAA /* ELWebViewController.m */; };
 		DFC974BC20A56C6900C9EEAA /* ELCircularReferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC974BB20A56C6900C9EEAA /* ELCircularReferenceViewController.m */; };
@@ -101,6 +103,7 @@
 		DFE3C80220B013AF00ABEB31 /* payQRGuideImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFE3C80020B013AE00ABEB31 /* payQRGuideImage@2x.png */; };
 		DFE3C80320B013AF00ABEB31 /* payQRGuideImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFE3C80120B013AE00ABEB31 /* payQRGuideImage@3x.png */; };
 		DFE6E62020A2BD580018DB92 /* NSTableViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE6E61F20A2BD580018DB92 /* NSTableViewTestViewController.m */; };
+		DFF67B8320BEA90F0044E707 /* ELAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF67B8220BEA90F0044E707 /* ELAVPlayerViewController.m */; };
 		DFFEEFF520B0117600BD9EF9 /* ELNewFunctionGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFEEFF420B0117600BD9EF9 /* ELNewFunctionGuideViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -264,12 +267,18 @@
 		DF6EBB6C2074DB2C000A893C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF83F1FA20A9245A009D1289 /* ElWindowTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElWindowTestViewController.h; sourceTree = "<group>"; };
 		DF83F1FB20A9245A009D1289 /* ElWindowTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElWindowTestViewController.m; sourceTree = "<group>"; };
+		DF901BF520BA720900B4A3FB /* SFIMHistorySynModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFIMHistorySynModel.h; sourceTree = "<group>"; };
+		DF901BF620BA720900B4A3FB /* SFIMHistorySynModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFIMHistorySynModel.m; sourceTree = "<group>"; };
+		DF901BF820BA72BA00B4A3FB /* ELOAFMDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELOAFMDBViewController.h; sourceTree = "<group>"; };
+		DF901BF920BA72BA00B4A3FB /* ELOAFMDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELOAFMDBViewController.m; sourceTree = "<group>"; };
 		DFB7178A20941B4C00AFB200 /* FirstTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstTestViewController.h; sourceTree = "<group>"; };
 		DFB7178B20941B4C00AFB200 /* FirstTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstTestViewController.m; sourceTree = "<group>"; };
 		DFC974B620A5307200C9EEAA /* ELWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELWebViewController.h; sourceTree = "<group>"; };
 		DFC974B720A5307200C9EEAA /* ELWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELWebViewController.m; sourceTree = "<group>"; };
 		DFC974BA20A56C6900C9EEAA /* ELCircularReferenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCircularReferenceViewController.h; sourceTree = "<group>"; };
 		DFC974BB20A56C6900C9EEAA /* ELCircularReferenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELCircularReferenceViewController.m; sourceTree = "<group>"; };
+		DFDCF05B20C0E57500CB1D7D /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		DFDCF05D20C0E73700CB1D7D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		DFDD2C8020AC024900720C2A /* processCate_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "processCate_selected@2x.png"; sourceTree = "<group>"; };
 		DFDD2C8120AC024900720C2A /* processCate_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "processCate_selected@3x.png"; sourceTree = "<group>"; };
 		DFDD2C8220AC024900720C2A /* processCate_unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "processCate_unselected@2x.png"; sourceTree = "<group>"; };
@@ -292,6 +301,8 @@
 		DFE3C80120B013AE00ABEB31 /* payQRGuideImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "payQRGuideImage@3x.png"; sourceTree = "<group>"; };
 		DFE6E61E20A2BD580018DB92 /* NSTableViewTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTableViewTestViewController.h; sourceTree = "<group>"; };
 		DFE6E61F20A2BD580018DB92 /* NSTableViewTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTableViewTestViewController.m; sourceTree = "<group>"; };
+		DFF67B8120BEA90F0044E707 /* ELAVPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELAVPlayerViewController.h; sourceTree = "<group>"; };
+		DFF67B8220BEA90F0044E707 /* ELAVPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELAVPlayerViewController.m; sourceTree = "<group>"; };
 		DFFEEFF320B0117600BD9EF9 /* ELNewFunctionGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELNewFunctionGuideViewController.h; sourceTree = "<group>"; };
 		DFFEEFF420B0117600BD9EF9 /* ELNewFunctionGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELNewFunctionGuideViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -340,8 +351,12 @@
 				DF31BCBB20B9555E00A7F0E0 /* JQFMDB */,
 				DF31BCD120B9578700A7F0E0 /* Person.h */,
 				DF31BCD020B9578700A7F0E0 /* Person.m */,
+				DF901BF520BA720900B4A3FB /* SFIMHistorySynModel.h */,
+				DF901BF620BA720900B4A3FB /* SFIMHistorySynModel.m */,
 				A4B45BDA20B86D7C00BBFA64 /* ELFMDBHomeViewController.h */,
 				A4B45BDB20B86D7C00BBFA64 /* ELFMDBHomeViewController.m */,
+				DF901BF820BA72BA00B4A3FB /* ELOAFMDBViewController.h */,
+				DF901BF920BA72BA00B4A3FB /* ELOAFMDBViewController.m */,
 			);
 			path = ELFMDB;
 			sourceTree = "<group>";
@@ -691,6 +706,8 @@
 				DF6EBB4F2074DB2C000A893C /* Assets.xcassets */,
 				DF6EBB512074DB2C000A893C /* LaunchScreen.storyboard */,
 				DF6EBB542074DB2C000A893C /* Info.plist */,
+				DFDCF05D20C0E73700CB1D7D /* PrefixHeader.pch */,
+				DFDCF05B20C0E57500CB1D7D /* Macro.h */,
 				DF6EBB552074DB2C000A893C /* main.m */,
 			);
 			path = ELTool;
@@ -727,6 +744,7 @@
 			isa = PBXGroup;
 			children = (
 				A4B45C1B20C04D1D00BBFA64 /* JQFMDBLearning */,
+				DFF67B8020BEA8FF0044E707 /* ELAVPlayerViewController */,
 				A4B45BD920B86D7C00BBFA64 /* ELFMDB */,
 				DF324A3E20B2D654000E5CC6 /* ELXMLParse */,
 				DF324A3720B2A148000E5CC6 /* ELPresentViewControllerTest */,
@@ -827,6 +845,15 @@
 				DFE6E61F20A2BD580018DB92 /* NSTableViewTestViewController.m */,
 			);
 			path = ELTableViewDemo;
+			sourceTree = "<group>";
+		};
+		DFF67B8020BEA8FF0044E707 /* ELAVPlayerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DFF67B8120BEA90F0044E707 /* ELAVPlayerViewController.h */,
+				DFF67B8220BEA90F0044E707 /* ELAVPlayerViewController.m */,
+			);
+			path = ELAVPlayerViewController;
 			sourceTree = "<group>";
 		};
 		DFFEEFF220B0115D00BD9EF9 /* ELNewFunctionGuide */ = {
@@ -1064,6 +1091,7 @@
 				DF6C616020AD740500E8E884 /* MJPropertyType.m in Sources */,
 				DF31BCCF20B9555E00A7F0E0 /* JQFMDB.m in Sources */,
 				DF6DB131209C47C400040096 /* ELScreenShotsViewController.m in Sources */,
+				DFF67B8320BEA90F0044E707 /* ELAVPlayerViewController.m in Sources */,
 				DFB7178C20941B4C00AFB200 /* FirstTestViewController.m in Sources */,
 				DF6C616520AD740500E8E884 /* NSString+MJExtension.m in Sources */,
 				DF40BE32208B129400BA97C9 /* MJRefreshBackStateFooter.m in Sources */,
@@ -1110,7 +1138,9 @@
 				DF31BCCB20B9555E00A7F0E0 /* FMDatabaseAdditions.m in Sources */,
 				DF83F1FC20A9245A009D1289 /* ElWindowTestViewController.m in Sources */,
 				DF6ABE4720A4154900D2E2BE /* ELSimpleFunctionViewController.m in Sources */,
+				DF901BF720BA720900B4A3FB /* SFIMHistorySynModel.m in Sources */,
 				DF324A4920B2EA3F000E5CC6 /* ELXMLParser.m in Sources */,
+				DF901BFA20BA72BA00B4A3FB /* ELOAFMDBViewController.m in Sources */,
 				DFE6E62020A2BD580018DB92 /* NSTableViewTestViewController.m in Sources */,
 				DF324A3D20B2A1A1000E5CC6 /* ELSecondPresentViewController.m in Sources */,
 				DF3E67AC208E16DE0089211E /* ELPieCenterView.m in Sources */,
@@ -1285,6 +1315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JS6ECCHXUK;
 				GCC_INPUT_FILETYPE = automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ELTool/PrefixHeader.pch";
 				INFOPLIST_FILE = ELTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1303,6 +1334,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JS6ECCHXUK;
 				GCC_INPUT_FILETYPE = automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ELTool/PrefixHeader.pch";
 				INFOPLIST_FILE = ELTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

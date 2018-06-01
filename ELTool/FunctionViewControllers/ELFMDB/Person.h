@@ -14,6 +14,9 @@
 @property (nonatomic, strong)NSNumber *phoneNum;
 @property (nonatomic, strong)NSData *photoData;
 @property (nonatomic, assign)NSInteger luckyNum;
+//@property (nonatomic, strong)NSString *from;
+
+
 @property (nonatomic, assign)BOOL sex;
 @property (nonatomic, assign)int age;
 @property (nonatomic, assign)float height;  //float类型存入172.12会变成172.19995,取值时%.2f等于原值172.12
