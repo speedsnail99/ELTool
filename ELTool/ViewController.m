@@ -24,6 +24,7 @@
 #import "ELFMDBHomeViewController.h"
 #import "ELJQFMDBHomeViewController.h"
 #import "ELAVPlayerViewController.h"
+#import "ELAlgorithmViewController.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -55,7 +56,7 @@
  */
 - (void)initUserData
 {
-    NSArray *tempDataArray = @[@"AFNetworking",@"CollectionView",@"MJRefresh",@"ScreenShots",@"NSTimer" ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"AVPlyaerViewController",@"JQFMDBLearming",@"JQFMDBDemo"];
+    NSArray *tempDataArray = @[@"AFNetworking",@"CollectionView",@"MJRefresh",@"AlgorithmViewController",@"ScreenShots",@"NSTimer" ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"AVPlyaerViewController",@"JQFMDBLearming"];
     self.homedataArray = [[NSMutableArray alloc] initWithArray:tempDataArray];
 }
 
@@ -164,13 +165,17 @@
     } else if ([name isEqualToString:@"JQFMDBLearming"]) {
         
         [self createLearningJQFMDBViewController];
+    } else if ([name isEqualToString:@"AlgorithmViewController"]) {
         
-    } else if ([name isEqualToString:@"JQFMDBDemo"]) {
-        
-        [self createJQFMDBViewController];
-        
+        [self createAlgorithmViewController];
     }
     
+}
+
+- (void)createAlgorithmViewController
+{
+    ELAlgorithmViewController *algorithmVC = [[ELAlgorithmViewController alloc] init];
+    [self.navigationController pushViewController:algorithmVC animated:YES];
 }
 
 
@@ -179,12 +184,6 @@
     ELJQFMDBHomeViewController *jqfmVC = [[ELJQFMDBHomeViewController alloc] init];
     [self.navigationController pushViewController:jqfmVC animated:YES];
 }
-- (void)createJQFMDBViewController
-{
-    ELJQFMDBHomeViewController *jqfmVC = [[ELJQFMDBHomeViewController alloc] init];
-    [self.navigationController pushViewController:jqfmVC animated:YES];
-}
-
 
 
 - (void)createAVPlayerViewController
@@ -325,6 +324,69 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)deleteRepititeChracter
+{
+    NSString *orinStr = @"aabcad";
+    NSMutableArray *characterArray = [[NSMutableArray alloc] initWithCapacity:orinStr.length];
+    for (int i = 0; i < orinStr.length ; i ++) {
+        NSRange characterRange = NSMakeRange(i, 1);
+        NSString *subStr = [orinStr substringWithRange:characterRange];
+        [characterArray addObject:subStr];
+    }
+    
+    for (int i = 0 ; i < characterArray.count ; i ++) {
+        NSString *masterCharact = characterArray[i];
+        for (int j = i+1 ; j < characterArray.count - i; j ++) {
+            NSString *subCharact = characterArray[j];
+            
+        }
+    }
+    
+    ELLogDebug(@"character%@",characterArray);
+}
 
+- (void)removeRepeatWord:(NSString *)string {
+    
+    // 分词
+    NSString * word = @"";
+    NSMutableArray * allArray = [NSMutableArray new];
+    NSMutableArray * repeatWordArray = [NSMutableArray new];
+   
+    for (NSInteger i = 0; i < string.length; i ++) {
+        
+        NSString * charStr = [string substringWithRange:NSMakeRange(i, 1)];
+        if (![repeatWordArray containsObject:charStr]) {
+            
+            [repeatWordArray addObject:charStr];
+        }
+        if ([word hasSuffix:charStr]) {
+            
+            word = [NSString stringWithFormat:@"%@%@", word, charStr];
+        }
+        else {
+            
+            if (word.length > 1) [allArray addObject:word];
+            else [allArray addObject:charStr];
+            word = charStr;
+        }
+    }
+    
+    NSString * resultStr = @"";
+    for (NSString * str in allArray) {
+        
+        if (str.length == 1) {
+            
+            if (![repeatWordArray containsObject:str]) {
+                
+                resultStr = [NSString stringWithFormat:@"%@%@", resultStr, str];
+            }
+        }
+        else {
+            
+            resultStr = [NSString stringWithFormat:@"%@%@", resultStr, str];
+        }
+    }
+    NSLog(@"%@", resultStr);
+}
 
 @end

@@ -82,6 +82,7 @@
 		DFB7178C20941B4C00AFB200 /* FirstTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB7178B20941B4C00AFB200 /* FirstTestViewController.m */; };
 		DFC974B820A5307200C9EEAA /* ELWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC974B720A5307200C9EEAA /* ELWebViewController.m */; };
 		DFC974BC20A56C6900C9EEAA /* ELCircularReferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC974BB20A56C6900C9EEAA /* ELCircularReferenceViewController.m */; };
+		DFDCF0DD20C141F400CB1D7D /* ELAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDCF0DC20C141F400CB1D7D /* ELAlgorithmViewController.m */; };
 		DFDD2C8B20AC024900720C2A /* processCate_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDD2C8020AC024900720C2A /* processCate_selected@2x.png */; };
 		DFDD2C8C20AC024900720C2A /* processCate_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDD2C8120AC024900720C2A /* processCate_selected@3x.png */; };
 		DFDD2C8D20AC024900720C2A /* processCate_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDD2C8220AC024900720C2A /* processCate_unselected@2x.png */; };
@@ -279,6 +280,8 @@
 		DFC974BB20A56C6900C9EEAA /* ELCircularReferenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELCircularReferenceViewController.m; sourceTree = "<group>"; };
 		DFDCF05B20C0E57500CB1D7D /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		DFDCF05D20C0E73700CB1D7D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DFDCF0DB20C141F400CB1D7D /* ELAlgorithmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELAlgorithmViewController.h; sourceTree = "<group>"; };
+		DFDCF0DC20C141F400CB1D7D /* ELAlgorithmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELAlgorithmViewController.m; sourceTree = "<group>"; };
 		DFDD2C8020AC024900720C2A /* processCate_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "processCate_selected@2x.png"; sourceTree = "<group>"; };
 		DFDD2C8120AC024900720C2A /* processCate_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "processCate_selected@3x.png"; sourceTree = "<group>"; };
 		DFDD2C8220AC024900720C2A /* processCate_unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "processCate_unselected@2x.png"; sourceTree = "<group>"; };
@@ -743,6 +746,7 @@
 		DF9C0D8320876DFE0039C531 /* FunctionViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				DFDCF0DA20C141D900CB1D7D /* ELAlgorithmViewController */,
 				A4B45C1B20C04D1D00BBFA64 /* JQFMDBLearning */,
 				DFF67B8020BEA8FF0044E707 /* ELAVPlayerViewController */,
 				A4B45BD920B86D7C00BBFA64 /* ELFMDB */,
@@ -788,6 +792,15 @@
 				DFC974BB20A56C6900C9EEAA /* ELCircularReferenceViewController.m */,
 			);
 			path = ELCircularReference;
+			sourceTree = "<group>";
+		};
+		DFDCF0DA20C141D900CB1D7D /* ELAlgorithmViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DFDCF0DB20C141F400CB1D7D /* ELAlgorithmViewController.h */,
+				DFDCF0DC20C141F400CB1D7D /* ELAlgorithmViewController.m */,
+			);
+			path = ELAlgorithmViewController;
 			sourceTree = "<group>";
 		};
 		DFDD2C7F20AC024900720C2A /* firstImageFiles */ = {
@@ -1141,6 +1154,7 @@
 				DF901BF720BA720900B4A3FB /* SFIMHistorySynModel.m in Sources */,
 				DF324A4920B2EA3F000E5CC6 /* ELXMLParser.m in Sources */,
 				DF901BFA20BA72BA00B4A3FB /* ELOAFMDBViewController.m in Sources */,
+				DFDCF0DD20C141F400CB1D7D /* ELAlgorithmViewController.m in Sources */,
 				DFE6E62020A2BD580018DB92 /* NSTableViewTestViewController.m in Sources */,
 				DF324A3D20B2A1A1000E5CC6 /* ELSecondPresentViewController.m in Sources */,
 				DF3E67AC208E16DE0089211E /* ELPieCenterView.m in Sources */,
