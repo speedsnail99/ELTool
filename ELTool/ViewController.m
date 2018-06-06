@@ -25,6 +25,7 @@
 #import "ELJQFMDBHomeViewController.h"
 #import "ELAVPlayerViewController.h"
 #import "ELAlgorithmViewController.h"
+#import "ELGCDSemaphoreViewController.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -56,7 +57,7 @@
  */
 - (void)initUserData
 {
-    NSArray *tempDataArray = @[@"AFNetworking",@"CollectionView",@"MJRefresh",@"AlgorithmViewController",@"ScreenShots",@"NSTimer" ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"AVPlyaerViewController",@"JQFMDBLearming"];
+    NSArray *tempDataArray = @[@"fingerprintUnlock",@"AFNetworking",@"CollectionView",@"MJRefresh",@"AlgorithmViewController",@"ScreenShots",@"NSTimer" ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"AVPlyaerViewController",@"JQFMDBLearming",@"GCDSemaphore"];
     self.homedataArray = [[NSMutableArray alloc] initWithArray:tempDataArray];
 }
 
@@ -168,8 +169,19 @@
     } else if ([name isEqualToString:@"AlgorithmViewController"]) {
         
         [self createAlgorithmViewController];
+    } else if ([name isEqualToString:@"GCDSemaphore"]) {
+        
+        [self createGCDSemaphoreViewController];
+    } else if ([name isEqualToString:@"fingerprintUnlock"]) {
+        //指纹解锁
     }
     
+}
+
+- (void)createGCDSemaphoreViewController
+{
+    ELGCDSemaphoreViewController *semaphoreVC = [[ELGCDSemaphoreViewController alloc] init];
+    [self.navigationController pushViewController:semaphoreVC animated:YES];
 }
 
 - (void)createAlgorithmViewController

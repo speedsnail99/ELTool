@@ -13,6 +13,8 @@
 		A4B45C2120C04F1A00BBFA64 /* ProductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B45C2020C04F1A00BBFA64 /* ProductionView.m */; };
 		BBE64FC78A32E22C92A69775 /* libPods-ELToolTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC059C560104A6133D9C1D0 /* libPods-ELToolTests.a */; };
 		D3E28E8F91A8C09C6862A34F /* libPods-ELTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54001BB0439D49AC1C142A0B /* libPods-ELTool.a */; };
+		DF25CA2620C7B8D400CC7818 /* ELGCDSemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF25CA2520C7B8D400CC7818 /* ELGCDSemaphoreViewController.m */; };
+		DF25CA2A20C7E27900CC7818 /* ELFingerprintUnlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF25CA2920C7E27900CC7818 /* ELFingerprintUnlockViewController.m */; };
 		DF31BCCA20B9555E00A7F0E0 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31BCBE20B9555E00A7F0E0 /* FMDatabase.m */; };
 		DF31BCCB20B9555E00A7F0E0 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31BCC020B9555E00A7F0E0 /* FMDatabaseAdditions.m */; };
 		DF31BCCC20B9555E00A7F0E0 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31BCC220B9555E00A7F0E0 /* FMDatabasePool.m */; };
@@ -79,6 +81,7 @@
 		DF83F1FC20A9245A009D1289 /* ElWindowTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF83F1FB20A9245A009D1289 /* ElWindowTestViewController.m */; };
 		DF901BF720BA720900B4A3FB /* SFIMHistorySynModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF901BF620BA720900B4A3FB /* SFIMHistorySynModel.m */; };
 		DF901BFA20BA72BA00B4A3FB /* ELOAFMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF901BF920BA72BA00B4A3FB /* ELOAFMDBViewController.m */; };
+		DF910DA020C7E5FE00624C7A /* TDTouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = DF910D9F20C7E5FE00624C7A /* TDTouchID.m */; };
 		DFB7178C20941B4C00AFB200 /* FirstTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB7178B20941B4C00AFB200 /* FirstTestViewController.m */; };
 		DFC974B820A5307200C9EEAA /* ELWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC974B720A5307200C9EEAA /* ELWebViewController.m */; };
 		DFC974BC20A56C6900C9EEAA /* ELCircularReferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC974BB20A56C6900C9EEAA /* ELCircularReferenceViewController.m */; };
@@ -141,6 +144,10 @@
 		A4B45C2020C04F1A00BBFA64 /* ProductionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductionView.m; sourceTree = "<group>"; };
 		BBC456D4C2790CA75EDD4982 /* Pods-ELToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELToolTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELToolTests/Pods-ELToolTests.release.xcconfig"; sourceTree = "<group>"; };
 		C6C24736763CF3344F12AC3B /* Pods-ELTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELTool/Pods-ELTool.release.xcconfig"; sourceTree = "<group>"; };
+		DF25CA2420C7B8D400CC7818 /* ELGCDSemaphoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELGCDSemaphoreViewController.h; sourceTree = "<group>"; };
+		DF25CA2520C7B8D400CC7818 /* ELGCDSemaphoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELGCDSemaphoreViewController.m; sourceTree = "<group>"; };
+		DF25CA2820C7E27800CC7818 /* ELFingerprintUnlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELFingerprintUnlockViewController.h; sourceTree = "<group>"; };
+		DF25CA2920C7E27900CC7818 /* ELFingerprintUnlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELFingerprintUnlockViewController.m; sourceTree = "<group>"; };
 		DF31BCBD20B9555E00A7F0E0 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		DF31BCBE20B9555E00A7F0E0 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		DF31BCBF20B9555E00A7F0E0 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -272,6 +279,9 @@
 		DF901BF620BA720900B4A3FB /* SFIMHistorySynModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFIMHistorySynModel.m; sourceTree = "<group>"; };
 		DF901BF820BA72BA00B4A3FB /* ELOAFMDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELOAFMDBViewController.h; sourceTree = "<group>"; };
 		DF901BF920BA72BA00B4A3FB /* ELOAFMDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELOAFMDBViewController.m; sourceTree = "<group>"; };
+		DF910D9C20C7E59700624C7A /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		DF910D9E20C7E5FE00624C7A /* TDTouchID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDTouchID.h; sourceTree = "<group>"; };
+		DF910D9F20C7E5FE00624C7A /* TDTouchID.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDTouchID.m; sourceTree = "<group>"; };
 		DFB7178A20941B4C00AFB200 /* FirstTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstTestViewController.h; sourceTree = "<group>"; };
 		DFB7178B20941B4C00AFB200 /* FirstTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstTestViewController.m; sourceTree = "<group>"; };
 		DFC974B620A5307200C9EEAA /* ELWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELWebViewController.h; sourceTree = "<group>"; };
@@ -341,6 +351,7 @@
 		0253202EE6D4FDF9E3F5C734 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF910D9C20C7E59700624C7A /* LocalAuthentication.framework */,
 				54001BB0439D49AC1C142A0B /* libPods-ELTool.a */,
 				8CC059C560104A6133D9C1D0 /* libPods-ELToolTests.a */,
 				7DAC2C08DC3485434DEBDAD7 /* libPods-ELToolUITests.a */,
@@ -397,6 +408,26 @@
 				DFDD2C8820AC024900720C2A /* imSearchImages */,
 			);
 			path = ImageFiles;
+			sourceTree = "<group>";
+		};
+		DF25CA2320C7B8BF00CC7818 /* ELGCD_Semaphore */ = {
+			isa = PBXGroup;
+			children = (
+				DF25CA2420C7B8D400CC7818 /* ELGCDSemaphoreViewController.h */,
+				DF25CA2520C7B8D400CC7818 /* ELGCDSemaphoreViewController.m */,
+			);
+			path = ELGCD_Semaphore;
+			sourceTree = "<group>";
+		};
+		DF25CA2720C7E25E00CC7818 /* ELFingerprintUnlockViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DF25CA2820C7E27800CC7818 /* ELFingerprintUnlockViewController.h */,
+				DF25CA2920C7E27900CC7818 /* ELFingerprintUnlockViewController.m */,
+				DF910D9E20C7E5FE00624C7A /* TDTouchID.h */,
+				DF910D9F20C7E5FE00624C7A /* TDTouchID.m */,
+			);
+			path = ELFingerprintUnlockViewController;
 			sourceTree = "<group>";
 		};
 		DF31BCBB20B9555E00A7F0E0 /* JQFMDB */ = {
@@ -746,6 +777,8 @@
 		DF9C0D8320876DFE0039C531 /* FunctionViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				DF25CA2720C7E25E00CC7818 /* ELFingerprintUnlockViewController */,
+				DF25CA2320C7B8BF00CC7818 /* ELGCD_Semaphore */,
 				DFDCF0DA20C141D900CB1D7D /* ELAlgorithmViewController */,
 				A4B45C1B20C04D1D00BBFA64 /* JQFMDBLearning */,
 				DFF67B8020BEA8FF0044E707 /* ELAVPlayerViewController */,
@@ -1115,6 +1148,7 @@
 				DF6DB13B209C484C00040096 /* ELCollectionViewCell.m in Sources */,
 				DF6C616220AD740500E8E884 /* NSObject+MJCoding.m in Sources */,
 				A4B45C1E20C04D2E00BBFA64 /* ELJQFMDBHomeViewController.m in Sources */,
+				DF910DA020C7E5FE00624C7A /* TDTouchID.m in Sources */,
 				DF3E67A9208E166E0089211E /* ELFoodPieModel.m in Sources */,
 				DF6EBB562074DB2C000A893C /* main.m in Sources */,
 				DF40BE39208B129400BA97C9 /* UIScrollView+MJExtension.m in Sources */,
@@ -1130,6 +1164,7 @@
 				DF324A3A20B2A191000E5CC6 /* ELFirstPresentViewController.m in Sources */,
 				DF6C616320AD740500E8E884 /* NSObject+MJKeyValue.m in Sources */,
 				DFFEEFF520B0117600BD9EF9 /* ELNewFunctionGuideViewController.m in Sources */,
+				DF25CA2620C7B8D400CC7818 /* ELGCDSemaphoreViewController.m in Sources */,
 				DF324A4120B2D668000E5CC6 /* ELXMLParseViewController.m in Sources */,
 				DF6EBB482074DB2C000A893C /* AppDelegate.m in Sources */,
 				DF40BE2D208B129400BA97C9 /* MJRefreshAutoGifFooter.m in Sources */,
@@ -1145,6 +1180,7 @@
 				DF40BE3A208B129400BA97C9 /* UIScrollView+MJRefresh.m in Sources */,
 				DFC974B820A5307200C9EEAA /* ELWebViewController.m in Sources */,
 				DF6DB135209C482500040096 /* ELRefreshViewController.m in Sources */,
+				DF25CA2A20C7E27900CC7818 /* ELFingerprintUnlockViewController.m in Sources */,
 				DF40BE30208B129400BA97C9 /* MJRefreshBackGifFooter.m in Sources */,
 				DF40BE2C208B129400BA97C9 /* MJRefreshHeader.m in Sources */,
 				DF40BE34208B129400BA97C9 /* MJRefreshNormalHeader.m in Sources */,
