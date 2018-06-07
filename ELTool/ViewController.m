@@ -26,6 +26,9 @@
 #import "ELAVPlayerViewController.h"
 #import "ELAlgorithmViewController.h"
 #import "ELGCDSemaphoreViewController.h"
+#import "ELFingerprintUnlockViewController.h"
+
+#import "LGAlertView.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -40,6 +43,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"HOME";
   
+    
+    LGAlertView *alertView = [LGAlertView alertViewWithTitle:@"" message:@"" style:nil buttonTitles:nil cancelButtonTitle:@"" destructiveButtonTitle:@""];
 //    //使用url
 //    [self createCustomeUrl];
 //    //系统排序方法
@@ -174,8 +179,15 @@
         [self createGCDSemaphoreViewController];
     } else if ([name isEqualToString:@"fingerprintUnlock"]) {
         //指纹解锁
+        [self createFingerprintUnlockViewController];
     }
     
+}
+
+- (void)createFingerprintUnlockViewController
+{
+    ELFingerprintUnlockViewController *fingerVC = [[ELFingerprintUnlockViewController alloc] init];
+    [self.navigationController pushViewController:fingerVC animated:YES];
 }
 
 - (void)createGCDSemaphoreViewController

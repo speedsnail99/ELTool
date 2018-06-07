@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "646FFAC347E89D17A334782D6BADB3B1"
+               BlueprintIdentifier = "CC6106FC54AA65DA326CB04FA0884462"
                BlueprintName = "Pods-ELTool"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-ELTool.a">

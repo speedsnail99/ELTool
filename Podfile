@@ -18,4 +18,6 @@ target 'ELTool' do
   end
 pod 'AFNetworking'
 
+pod 'LGAlertView'
+
 end

@@ -78,6 +78,8 @@
 		DF6EBB562074DB2C000A893C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB552074DB2C000A893C /* main.m */; };
 		DF6EBB602074DB2C000A893C /* ELToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB5F2074DB2C000A893C /* ELToolTests.m */; };
 		DF6EBB6B2074DB2C000A893C /* ELToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB6A2074DB2C000A893C /* ELToolUITests.m */; };
+		DF7CCE2820C8FDB600877061 /* touchID@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7CCE2620C8FDB600877061 /* touchID@2x.png */; };
+		DF7CCE2920C8FDB600877061 /* touchID@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7CCE2720C8FDB600877061 /* touchID@3x.png */; };
 		DF83F1FC20A9245A009D1289 /* ElWindowTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF83F1FB20A9245A009D1289 /* ElWindowTestViewController.m */; };
 		DF901BF720BA720900B4A3FB /* SFIMHistorySynModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF901BF620BA720900B4A3FB /* SFIMHistorySynModel.m */; };
 		DF901BFA20BA72BA00B4A3FB /* ELOAFMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF901BF920BA72BA00B4A3FB /* ELOAFMDBViewController.m */; };
@@ -273,6 +275,8 @@
 		DF6EBB662074DB2C000A893C /* ELToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ELToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6EBB6A2074DB2C000A893C /* ELToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELToolUITests.m; sourceTree = "<group>"; };
 		DF6EBB6C2074DB2C000A893C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF7CCE2620C8FDB600877061 /* touchID@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "touchID@2x.png"; sourceTree = "<group>"; };
+		DF7CCE2720C8FDB600877061 /* touchID@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "touchID@3x.png"; sourceTree = "<group>"; };
 		DF83F1FA20A9245A009D1289 /* ElWindowTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElWindowTestViewController.h; sourceTree = "<group>"; };
 		DF83F1FB20A9245A009D1289 /* ElWindowTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElWindowTestViewController.m; sourceTree = "<group>"; };
 		DF901BF520BA720900B4A3FB /* SFIMHistorySynModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFIMHistorySynModel.h; sourceTree = "<group>"; };
@@ -402,6 +406,7 @@
 		DF1B19022089F54200DAE209 /* ImageFiles */ = {
 			isa = PBXGroup;
 			children = (
+				DF7CCE2520C8FDB600877061 /* touchIDImages */,
 				DFE3C7FF20B013AE00ABEB31 /* newfuntionGuideImages */,
 				DFDD2C9520AC034300720C2A /* screenShotImages */,
 				DFDD2C7F20AC024900720C2A /* firstImageFiles */,
@@ -765,6 +770,15 @@
 			path = ELToolUITests;
 			sourceTree = "<group>";
 		};
+		DF7CCE2520C8FDB600877061 /* touchIDImages */ = {
+			isa = PBXGroup;
+			children = (
+				DF7CCE2620C8FDB600877061 /* touchID@2x.png */,
+				DF7CCE2720C8FDB600877061 /* touchID@3x.png */,
+			);
+			path = touchIDImages;
+			sourceTree = "<group>";
+		};
 		DF83F1F920A9244A009D1289 /* ELWindow */ = {
 			isa = PBXGroup;
 			children = (
@@ -1023,9 +1037,11 @@
 				DF324A4F20B306F5000E5CC6 /* oaMessage.xml in Resources */,
 				DF40BE36208B129400BA97C9 /* MJRefresh.bundle in Resources */,
 				DFDD2CA420AC0DD000720C2A /* SFScreenShotClose@3x.png in Resources */,
+				DF7CCE2820C8FDB600877061 /* touchID@2x.png in Resources */,
 				DF6EBB532074DB2C000A893C /* LaunchScreen.storyboard in Resources */,
 				DFE3C80320B013AF00ABEB31 /* payQRGuideImage@3x.png in Resources */,
 				DFDD2C8E20AC024900720C2A /* processCate_unselected@3x.png in Resources */,
+				DF7CCE2920C8FDB600877061 /* touchID@3x.png in Resources */,
 				DF324A4D20B306A5000E5CC6 /* demoFirst.xml in Resources */,
 				DFDD2CA520AC0DD000720C2A /* SFScreenShotClose@2x.png in Resources */,
 				DFDD2C8D20AC024900720C2A /* processCate_unselected@2x.png in Resources */,

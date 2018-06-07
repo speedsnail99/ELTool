@@ -67,8 +67,15 @@ typedef NS_ENUM(NSInteger ,TDTouchIDState) {
 
 @interface TDTouchID : LAContext
 
-typedef void (^StateBlock) (TDTouchIDState state, NSError *error);
+typedef void (^StateBlock)(TDTouchIDState state,NSError *error);
 
+
+/**
+ 启动TouchID进行验证
+
+ @param desc Touch显示的描述
+ @param block 回调状态的block
+ */
 
 -(void)td_showTouchIDWithDescribe:(NSString *)desc BlockState:(StateBlock)block;
 

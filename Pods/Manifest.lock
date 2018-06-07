@@ -14,17 +14,21 @@ PODS:
   - AFNetworking/Serialization (3.2.0)
   - AFNetworking/UIKit (3.2.0):
     - AFNetworking/NSURLSession
+  - LGAlertView (2.4.0)
 
 DEPENDENCIES:
   - AFNetworking
+  - LGAlertView
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - LGAlertView
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  LGAlertView: 2f5e83dd5cc2537de57d98727650609e86197d1a
 
-PODFILE CHECKSUM: 4b1457e8536ff2d408b38516495f8bd193d552f1
+PODFILE CHECKSUM: 6a4e4ad597e25e6444a4f4c3e92c3c79cd2264f9
 
 COCOAPODS: 1.5.0
