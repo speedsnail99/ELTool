@@ -20,4 +20,6 @@ pod 'AFNetworking'
 
 pod 'LGAlertView'
 
+pod 'Masonry'
+
 end

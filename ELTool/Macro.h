@@ -48,5 +48,6 @@ _Pragma("clang diagnostic pop") \
 #define ELSystemVersion [[[UIDevice currentDevice] systemVersion] floatValue]
 
 #import "LGAlertView.h"
+#import "Masonry.h"
 
 #endif /* Macro_h */
