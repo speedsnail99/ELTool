@@ -12,6 +12,9 @@
 #define kWidth [UIScreen mainScreen].bounds.size.width
 #define kHeight [UIScreen mainScreen].bounds.size.height
 
+
+static const int kStatusAndNaviHeight = 64;
+
 @interface ELJQFMDBHomeViewController ()
 
 @end
@@ -27,7 +30,7 @@
 
 - (void)createUserInterface
 {
-    ProductionView *productView = [[ProductionView alloc] initWithFrame:CGRectMake(0, 0, kWidth, kHeight/2)];
+    ProductionView *productView = [[ProductionView alloc] initWithFrame:CGRectMake(0, 64, kWidth, kHeight/2)];
     productView.backgroundColor = [UIColor redColor];
     [self.view addSubview:productView];
 }

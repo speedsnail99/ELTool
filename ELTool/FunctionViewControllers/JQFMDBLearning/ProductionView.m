@@ -46,8 +46,6 @@
     
     //
     [self createSegmentAndSubViews];
-    
-    
 }
 
 - (void)createSegmentAndSubViews
@@ -55,18 +53,34 @@
     static CGFloat segmentHeight = 30;
     NSArray *segmentItemArray = @[@"插入", @"删除", @"更改", @"查找", @"事务操作"];
     UISegmentedControl *segmentControl = [[UISegmentedControl alloc] initWithItems:segmentItemArray];
+    //设置segmentControl 尺寸颜色
     segmentControl.frame = CGRectMake(0, 0, kWidth, segmentHeight);
     segmentControl.tintColor = [UIColor blueColor];
     segmentControl.backgroundColor = [UIColor whiteColor];
+    //设置默认选中项
     [segmentControl setSelectedSegmentIndex:0];
+    //添加segmentControl 方法
+    [segmentControl addTarget:self action:@selector(segmentChange:) forControlEvents:UIControlEventValueChanged];
+    
     self.segment = segmentControl;
     [self addSubview:segmentControl];
     
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(segmentControl.frame), kWidth, kHeight/2)];
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, segmentControl.frame.origin.y + segmentControl.frame.size.height, kWidth, kHeight/2)];
     scrollView.contentSize = CGSizeMake(kWidth * segmentItemArray.count, kHeight/2);
     self.sView = scrollView;
     [self addSubview:self.sView];
-    
+}
+
+
+/**
+ segmentControl target
+
+ @param segmentControl 选择控制
+ */
+- (void)segmentChange:(UISegmentedControl *)segmentControl
+{
+    NSInteger selectInteger = segmentControl.selectedSegmentIndex;
+    [self.sView setContentOffset:CGPointMake(kWidth*selectInteger, 0) animated:YES];
 }
 
 /*

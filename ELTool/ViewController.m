@@ -30,6 +30,8 @@
 
 #import "LGAlertView.h"
 
+#import "ELScrollViewController.h"
+
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *homeTableView;
@@ -62,7 +64,7 @@
  */
 - (void)initUserData
 {
-    NSArray *tempDataArray = @[@"fingerprintUnlock",@"AFNetworking",@"CollectionView",@"MJRefresh",@"AlgorithmViewController",@"ScreenShots",@"NSTimer" ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"AVPlyaerViewController",@"JQFMDBLearming",@"GCDSemaphore"];
+    NSArray *tempDataArray = @[@"fingerprintUnlock",@"AFNetworking",@"CollectionView",@"MJRefresh",@"AlgorithmViewController",@"ScreenShots",@"NSTimer" ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"AVPlyaerViewController",@"JQFMDBLearming",@"GCDSemaphore",@"ELScrollViewController"];
     self.homedataArray = [[NSMutableArray alloc] initWithArray:tempDataArray];
 }
 
@@ -180,8 +182,16 @@
     } else if ([name isEqualToString:@"fingerprintUnlock"]) {
         //指纹解锁
         [self createFingerprintUnlockViewController];
+    } else if ([name isEqualToString:@"ELScrollViewController"]) {
+        [self createELScrollViewController];
     }
     
+}
+
+- (void)createELScrollViewController
+{
+    ELScrollViewController *srollVC = [[ELScrollViewController alloc] init];
+    [self.navigationController pushViewController:srollVC animated:YES];
 }
 
 - (void)createFingerprintUnlockViewController

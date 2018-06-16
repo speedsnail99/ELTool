@@ -11,6 +11,8 @@
 		A4B45BDC20B86D7C00BBFA64 /* ELFMDBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B45BDB20B86D7C00BBFA64 /* ELFMDBHomeViewController.m */; };
 		A4B45C1E20C04D2E00BBFA64 /* ELJQFMDBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B45C1D20C04D2E00BBFA64 /* ELJQFMDBHomeViewController.m */; };
 		A4B45C2120C04F1A00BBFA64 /* ProductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B45C2020C04F1A00BBFA64 /* ProductionView.m */; };
+		A4E3B8EC20C3E8EE0092E765 /* ELScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E3B8EB20C3E8EE0092E765 /* ELScrollViewController.m */; };
+		A4E3B8EE20C3F2F70092E765 /* jay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4E3B8ED20C3F2F60092E765 /* jay.jpg */; };
 		BBE64FC78A32E22C92A69775 /* libPods-ELToolTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC059C560104A6133D9C1D0 /* libPods-ELToolTests.a */; };
 		D3E28E8F91A8C09C6862A34F /* libPods-ELTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54001BB0439D49AC1C142A0B /* libPods-ELTool.a */; };
 		DF25CA2620C7B8D400CC7818 /* ELGCDSemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF25CA2520C7B8D400CC7818 /* ELGCDSemaphoreViewController.m */; };
@@ -144,6 +146,9 @@
 		A4B45C1D20C04D2E00BBFA64 /* ELJQFMDBHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELJQFMDBHomeViewController.m; sourceTree = "<group>"; };
 		A4B45C1F20C04F1A00BBFA64 /* ProductionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductionView.h; sourceTree = "<group>"; };
 		A4B45C2020C04F1A00BBFA64 /* ProductionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductionView.m; sourceTree = "<group>"; };
+		A4E3B8EA20C3E8EE0092E765 /* ELScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELScrollViewController.h; sourceTree = "<group>"; };
+		A4E3B8EB20C3E8EE0092E765 /* ELScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELScrollViewController.m; sourceTree = "<group>"; };
+		A4E3B8ED20C3F2F60092E765 /* jay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jay.jpg; sourceTree = "<group>"; };
 		BBC456D4C2790CA75EDD4982 /* Pods-ELToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELToolTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELToolTests/Pods-ELToolTests.release.xcconfig"; sourceTree = "<group>"; };
 		C6C24736763CF3344F12AC3B /* Pods-ELTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELTool/Pods-ELTool.release.xcconfig"; sourceTree = "<group>"; };
 		DF25CA2420C7B8D400CC7818 /* ELGCDSemaphoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELGCDSemaphoreViewController.h; sourceTree = "<group>"; };
@@ -388,6 +393,16 @@
 				A4B45C2020C04F1A00BBFA64 /* ProductionView.m */,
 			);
 			path = JQFMDBLearning;
+			sourceTree = "<group>";
+		};
+		A4E3B8E920C3E8DF0092E765 /* ELScrollViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A4E3B8EA20C3E8EE0092E765 /* ELScrollViewController.h */,
+				A4E3B8EB20C3E8EE0092E765 /* ELScrollViewController.m */,
+				A4E3B8ED20C3F2F60092E765 /* jay.jpg */,
+			);
+			path = ELScrollViewController;
 			sourceTree = "<group>";
 		};
 		BF9E141D9C8F27F5664405EB /* Pods */ = {
@@ -791,9 +806,13 @@
 		DF9C0D8320876DFE0039C531 /* FunctionViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+
 				DF25CA2720C7E25E00CC7818 /* ELFingerprintUnlockViewController */,
 				DF25CA2320C7B8BF00CC7818 /* ELGCD_Semaphore */,
 				DFDCF0DA20C141D900CB1D7D /* ELAlgorithmViewController */,
+
+				A4E3B8E920C3E8DF0092E765 /* ELScrollViewController */,
+
 				A4B45C1B20C04D1D00BBFA64 /* JQFMDBLearning */,
 				DFF67B8020BEA8FF0044E707 /* ELAVPlayerViewController */,
 				A4B45BD920B86D7C00BBFA64 /* ELFMDB */,
@@ -1050,6 +1069,7 @@
 				DF6EBB502074DB2C000A893C /* Assets.xcassets in Resources */,
 				DFDD2CA120AC034300720C2A /* SFScrennSharedWXFriend@3x.png in Resources */,
 				DF6C615B20AD740500E8E884 /* Info.plist in Resources */,
+				A4E3B8EE20C3F2F70092E765 /* jay.jpg in Resources */,
 				DFDD2C8B20AC024900720C2A /* processCate_selected@2x.png in Resources */,
 				DFDD2C9C20AC034300720C2A /* SFScrennSharedOAFriend@2x.png in Resources */,
 				DFDD2C9E20AC034300720C2A /* SFScrennSharedQQFriend@2x.png in Resources */,
@@ -1198,6 +1218,7 @@
 				DF6DB135209C482500040096 /* ELRefreshViewController.m in Sources */,
 				DF25CA2A20C7E27900CC7818 /* ELFingerprintUnlockViewController.m in Sources */,
 				DF40BE30208B129400BA97C9 /* MJRefreshBackGifFooter.m in Sources */,
+				A4E3B8EC20C3E8EE0092E765 /* ELScrollViewController.m in Sources */,
 				DF40BE2C208B129400BA97C9 /* MJRefreshHeader.m in Sources */,
 				DF40BE34208B129400BA97C9 /* MJRefreshNormalHeader.m in Sources */,
 				DF31BCCB20B9555E00A7F0E0 /* FMDatabaseAdditions.m in Sources */,
