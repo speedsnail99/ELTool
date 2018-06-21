@@ -111,6 +111,8 @@
 		DFE3C80220B013AF00ABEB31 /* payQRGuideImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFE3C80020B013AE00ABEB31 /* payQRGuideImage@2x.png */; };
 		DFE3C80320B013AF00ABEB31 /* payQRGuideImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFE3C80120B013AE00ABEB31 /* payQRGuideImage@3x.png */; };
 		DFE6E62020A2BD580018DB92 /* NSTableViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE6E61F20A2BD580018DB92 /* NSTableViewTestViewController.m */; };
+		DFF0F5B320DA55D600F85B8E /* UIImageView+SFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF0F5B220DA55D600F85B8E /* UIImageView+SFImageView.m */; };
+		DFF0F5B820DA599600F85B8E /* cc.png in Resources */ = {isa = PBXBuildFile; fileRef = DFF0F5B720DA599600F85B8E /* cc.png */; };
 		DFF67B8320BEA90F0044E707 /* ELAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF67B8220BEA90F0044E707 /* ELAVPlayerViewController.m */; };
 		DFFEEFF520B0117600BD9EF9 /* ELNewFunctionGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFEEFF420B0117600BD9EF9 /* ELNewFunctionGuideViewController.m */; };
 /* End PBXBuildFile section */
@@ -323,6 +325,9 @@
 		DFE3C80120B013AE00ABEB31 /* payQRGuideImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "payQRGuideImage@3x.png"; sourceTree = "<group>"; };
 		DFE6E61E20A2BD580018DB92 /* NSTableViewTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTableViewTestViewController.h; sourceTree = "<group>"; };
 		DFE6E61F20A2BD580018DB92 /* NSTableViewTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTableViewTestViewController.m; sourceTree = "<group>"; };
+		DFF0F5B120DA55D600F85B8E /* UIImageView+SFImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SFImageView.h"; sourceTree = "<group>"; };
+		DFF0F5B220DA55D600F85B8E /* UIImageView+SFImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SFImageView.m"; sourceTree = "<group>"; };
+		DFF0F5B720DA599600F85B8E /* cc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cc.png; sourceTree = "<group>"; };
 		DFF67B8120BEA90F0044E707 /* ELAVPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELAVPlayerViewController.h; sourceTree = "<group>"; };
 		DFF67B8220BEA90F0044E707 /* ELAVPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELAVPlayerViewController.m; sourceTree = "<group>"; };
 		DFFEEFF320B0117600BD9EF9 /* ELNewFunctionGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELNewFunctionGuideViewController.h; sourceTree = "<group>"; };
@@ -400,7 +405,10 @@
 			children = (
 				A4E3B8EA20C3E8EE0092E765 /* ELScrollViewController.h */,
 				A4E3B8EB20C3E8EE0092E765 /* ELScrollViewController.m */,
+				DFF0F5B120DA55D600F85B8E /* UIImageView+SFImageView.h */,
+				DFF0F5B220DA55D600F85B8E /* UIImageView+SFImageView.m */,
 				A4E3B8ED20C3F2F60092E765 /* jay.jpg */,
+				DFF0F5B720DA599600F85B8E /* cc.png */,
 			);
 			path = ELScrollViewController;
 			sourceTree = "<group>";
@@ -806,13 +814,10 @@
 		DF9C0D8320876DFE0039C531 /* FunctionViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-
 				DF25CA2720C7E25E00CC7818 /* ELFingerprintUnlockViewController */,
 				DF25CA2320C7B8BF00CC7818 /* ELGCD_Semaphore */,
 				DFDCF0DA20C141D900CB1D7D /* ELAlgorithmViewController */,
-
 				A4E3B8E920C3E8DF0092E765 /* ELScrollViewController */,
-
 				A4B45C1B20C04D1D00BBFA64 /* JQFMDBLearning */,
 				DFF67B8020BEA8FF0044E707 /* ELAVPlayerViewController */,
 				A4B45BD920B86D7C00BBFA64 /* ELFMDB */,
@@ -1071,6 +1076,7 @@
 				DF6C615B20AD740500E8E884 /* Info.plist in Resources */,
 				A4E3B8EE20C3F2F70092E765 /* jay.jpg in Resources */,
 				DFDD2C8B20AC024900720C2A /* processCate_selected@2x.png in Resources */,
+				DFF0F5B820DA599600F85B8E /* cc.png in Resources */,
 				DFDD2C9C20AC034300720C2A /* SFScrennSharedOAFriend@2x.png in Resources */,
 				DFDD2C9E20AC034300720C2A /* SFScrennSharedQQFriend@2x.png in Resources */,
 				DF6EBB4E2074DB2C000A893C /* Main.storyboard in Resources */,
@@ -1198,6 +1204,7 @@
 				DF6C616420AD740500E8E884 /* NSObject+MJProperty.m in Sources */,
 				DFC974BC20A56C6900C9EEAA /* ELCircularReferenceViewController.m in Sources */,
 				DF324A3A20B2A191000E5CC6 /* ELFirstPresentViewController.m in Sources */,
+				DFF0F5B320DA55D600F85B8E /* UIImageView+SFImageView.m in Sources */,
 				DF6C616320AD740500E8E884 /* NSObject+MJKeyValue.m in Sources */,
 				DFFEEFF520B0117600BD9EF9 /* ELNewFunctionGuideViewController.m in Sources */,
 				DF25CA2620C7B8D400CC7818 /* ELGCDSemaphoreViewController.m in Sources */,
