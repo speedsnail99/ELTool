@@ -1,12 +1,12 @@
 //
-//  ViewController.m
+//  HomeViewController.m
 //  ELTool
 //
 //  Created by speedsnail on 2018/4/4.
 //  Copyright © 2018年 speedsnail. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeViewController.h"
 #import "ELUtilityHelper.h"
 #import "AFNetworking.h"
 #import "ELCollectionViewController.h"
@@ -33,12 +33,12 @@
 #import "ELScrollViewController.h"
 
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *homeTableView;
 @property (nonatomic, strong) NSMutableArray *homedataArray;
 @end
 
-@implementation ViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
