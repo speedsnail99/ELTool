@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef void (^ccBlock) (void);
 
 @interface ELSimpleFunctionViewController : UIViewController
-
+@property (nonatomic, copy)ccBlock myBlock;
 @end

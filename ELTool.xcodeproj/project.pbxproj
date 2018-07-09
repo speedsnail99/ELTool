@@ -231,7 +231,7 @@
 		DF605EBF20A1A460000AB9EF /* NSTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
 		DF605EC020A1A460000AB9EF /* NSTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
 		DF6ABE4520A4154900D2E2BE /* ELSimpleFunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELSimpleFunctionViewController.h; sourceTree = "<group>"; };
-		DF6ABE4620A4154900D2E2BE /* ELSimpleFunctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELSimpleFunctionViewController.m; sourceTree = "<group>"; };
+		DF6ABE4620A4154900D2E2BE /* ELSimpleFunctionViewController.m */ = {isa = PBXFileReference; indentWidth = 3; lastKnownFileType = sourcecode.c.objc; path = ELSimpleFunctionViewController.m; sourceTree = "<group>"; };
 		DF6ABE4A20A4443200D2E2BE /* DPScreenshotsPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPScreenshotsPopView.h; sourceTree = "<group>"; };
 		DF6ABE4B20A4443200D2E2BE /* DPScreenshotsPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPScreenshotsPopView.m; sourceTree = "<group>"; };
 		DF6ABE4E20A444F200D2E2BE /* YLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLButton.h; sourceTree = "<group>"; };
