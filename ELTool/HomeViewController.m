@@ -25,6 +25,7 @@
 #import "ELJQFMDBHomeViewController.h"
 #import "ELAVPlayerViewController.h"
 #import "ELAlgorithmViewController.h"
+#import "ELAOPViewController.h"
 #import "ELGCDSemaphoreViewController.h"
 #import "ELFingerprintUnlockViewController.h"
 
@@ -64,7 +65,7 @@
  */
 - (void)initUserData
 {
-    NSArray *tempDataArray = @[@"fingerprintUnlock",@"AFNetworking",@"CollectionView",@"MJRefresh",@"AlgorithmViewController",@"ScreenShots",@"NSTimer" ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"AVPlyaerViewController",@"JQFMDBLearming",@"GCDSemaphore",@"ELScrollViewController"];
+    NSArray *tempDataArray = @[@"fingerprintUnlock",@"AFNetworking",@"AOPViewcontroller",@"CollectionView",@"MJRefresh",@"AlgorithmViewController",@"ScreenShots",@"NSTimer" ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"AVPlyaerViewController",@"JQFMDBLearming",@"GCDSemaphore",@"ELScrollViewController"];
     self.homedataArray = [[NSMutableArray alloc] initWithArray:tempDataArray];
 }
 
@@ -117,6 +118,9 @@
         
     } else if ([name isEqualToString:@"CollectionView"]) {
         [self jumpToCollectionVC];
+        
+    } else if ([name isEqualToString:@"AOPViewcontroller"]){
+        [self createAOPViewController];
         
     } else if ([name isEqualToString:@"MJRefresh"]) {
         
@@ -186,6 +190,12 @@
         [self createELScrollViewController];
     }
     
+}
+
+- (void)createAOPViewController
+{
+    ELAOPViewController *aopVC = [[ELAOPViewController alloc] init];
+    [self.navigationController pushViewController:aopVC animated:YES];
 }
 
 - (void)createELScrollViewController

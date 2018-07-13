@@ -8,6 +8,7 @@
 
 #import "ELFingerprintUnlockViewController.h"
 #import "TDTouchID.h"
+#import "NSMutableArray+safe.h"
 
 
 @interface ELFingerprintUnlockViewController ()

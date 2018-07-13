@@ -15,6 +15,7 @@
 		A4E3B8EE20C3F2F70092E765 /* jay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4E3B8ED20C3F2F60092E765 /* jay.jpg */; };
 		BBE64FC78A32E22C92A69775 /* libPods-ELToolTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC059C560104A6133D9C1D0 /* libPods-ELToolTests.a */; };
 		D3E28E8F91A8C09C6862A34F /* libPods-ELTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54001BB0439D49AC1C142A0B /* libPods-ELTool.a */; };
+		DF13479820F5AECF006E6287 /* UIViewController+safeViewAppear.m in Sources */ = {isa = PBXBuildFile; fileRef = DF13479720F5AECF006E6287 /* UIViewController+safeViewAppear.m */; };
 		DF25CA2620C7B8D400CC7818 /* ELGCDSemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF25CA2520C7B8D400CC7818 /* ELGCDSemaphoreViewController.m */; };
 		DF25CA2A20C7E27900CC7818 /* ELFingerprintUnlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF25CA2920C7E27900CC7818 /* ELFingerprintUnlockViewController.m */; };
 		DF31BCCA20B9555E00A7F0E0 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31BCBE20B9555E00A7F0E0 /* FMDatabase.m */; };
@@ -87,6 +88,8 @@
 		DF901BFA20BA72BA00B4A3FB /* ELOAFMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF901BF920BA72BA00B4A3FB /* ELOAFMDBViewController.m */; };
 		DF910DA020C7E5FE00624C7A /* TDTouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = DF910D9F20C7E5FE00624C7A /* TDTouchID.m */; };
 		DFB7178C20941B4C00AFB200 /* FirstTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB7178B20941B4C00AFB200 /* FirstTestViewController.m */; };
+		DFBD4AF820F333B0008671CE /* ELAOPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBD4AF720F333B0008671CE /* ELAOPViewController.m */; };
+		DFBD4AFB20F34324008671CE /* NSMutableArray+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBD4AFA20F34324008671CE /* NSMutableArray+safe.m */; };
 		DFC974B820A5307200C9EEAA /* ELWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC974B720A5307200C9EEAA /* ELWebViewController.m */; };
 		DFC974BC20A56C6900C9EEAA /* ELCircularReferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC974BB20A56C6900C9EEAA /* ELCircularReferenceViewController.m */; };
 		DFDCF0DD20C141F400CB1D7D /* ELAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDCF0DC20C141F400CB1D7D /* ELAlgorithmViewController.m */; };
@@ -153,6 +156,8 @@
 		A4E3B8ED20C3F2F60092E765 /* jay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jay.jpg; sourceTree = "<group>"; };
 		BBC456D4C2790CA75EDD4982 /* Pods-ELToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELToolTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELToolTests/Pods-ELToolTests.release.xcconfig"; sourceTree = "<group>"; };
 		C6C24736763CF3344F12AC3B /* Pods-ELTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELTool/Pods-ELTool.release.xcconfig"; sourceTree = "<group>"; };
+		DF13479620F5AECF006E6287 /* UIViewController+safeViewAppear.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+safeViewAppear.h"; sourceTree = "<group>"; };
+		DF13479720F5AECF006E6287 /* UIViewController+safeViewAppear.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+safeViewAppear.m"; sourceTree = "<group>"; };
 		DF25CA2420C7B8D400CC7818 /* ELGCDSemaphoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELGCDSemaphoreViewController.h; sourceTree = "<group>"; };
 		DF25CA2520C7B8D400CC7818 /* ELGCDSemaphoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELGCDSemaphoreViewController.m; sourceTree = "<group>"; };
 		DF25CA2820C7E27800CC7818 /* ELFingerprintUnlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELFingerprintUnlockViewController.h; sourceTree = "<group>"; };
@@ -295,6 +300,10 @@
 		DF910D9F20C7E5FE00624C7A /* TDTouchID.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDTouchID.m; sourceTree = "<group>"; };
 		DFB7178A20941B4C00AFB200 /* FirstTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstTestViewController.h; sourceTree = "<group>"; };
 		DFB7178B20941B4C00AFB200 /* FirstTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstTestViewController.m; sourceTree = "<group>"; };
+		DFBD4AF620F333B0008671CE /* ELAOPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELAOPViewController.h; sourceTree = "<group>"; };
+		DFBD4AF720F333B0008671CE /* ELAOPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELAOPViewController.m; sourceTree = "<group>"; };
+		DFBD4AF920F34324008671CE /* NSMutableArray+safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+safe.h"; sourceTree = "<group>"; };
+		DFBD4AFA20F34324008671CE /* NSMutableArray+safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+safe.m"; sourceTree = "<group>"; };
 		DFC974B620A5307200C9EEAA /* ELWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELWebViewController.h; sourceTree = "<group>"; };
 		DFC974B720A5307200C9EEAA /* ELWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELWebViewController.m; sourceTree = "<group>"; };
 		DFC974BA20A56C6900C9EEAA /* ELCircularReferenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCircularReferenceViewController.h; sourceTree = "<group>"; };
@@ -815,6 +824,7 @@
 			isa = PBXGroup;
 			children = (
 				DF25CA2720C7E25E00CC7818 /* ELFingerprintUnlockViewController */,
+				DFBD4AF520F3339B008671CE /* ELAOPViewController */,
 				DF25CA2320C7B8BF00CC7818 /* ELGCD_Semaphore */,
 				DFDCF0DA20C141D900CB1D7D /* ELAlgorithmViewController */,
 				A4E3B8E920C3E8DF0092E765 /* ELScrollViewController */,
@@ -845,6 +855,19 @@
 				DFB7178B20941B4C00AFB200 /* FirstTestViewController.m */,
 			);
 			path = testDocuments;
+			sourceTree = "<group>";
+		};
+		DFBD4AF520F3339B008671CE /* ELAOPViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DFBD4AF620F333B0008671CE /* ELAOPViewController.h */,
+				DFBD4AF720F333B0008671CE /* ELAOPViewController.m */,
+				DFBD4AF920F34324008671CE /* NSMutableArray+safe.h */,
+				DFBD4AFA20F34324008671CE /* NSMutableArray+safe.m */,
+				DF13479620F5AECF006E6287 /* UIViewController+safeViewAppear.h */,
+				DF13479720F5AECF006E6287 /* UIViewController+safeViewAppear.m */,
+			);
+			path = ELAOPViewController;
 			sourceTree = "<group>";
 		};
 		DFC974B520A5305200C9EEAA /* ELWebViewControllerDemo */ = {
@@ -1196,6 +1219,7 @@
 				DF40BE39208B129400BA97C9 /* UIScrollView+MJExtension.m in Sources */,
 				DF6C616120AD740500E8E884 /* NSObject+MJClass.m in Sources */,
 				DF40BE33208B129400BA97C9 /* MJRefreshGifHeader.m in Sources */,
+				DFBD4AFB20F34324008671CE /* NSMutableArray+safe.m in Sources */,
 				DF40BE31208B129400BA97C9 /* MJRefreshBackNormalFooter.m in Sources */,
 				DF40BE2A208B129400BA97C9 /* MJRefreshComponent.m in Sources */,
 				DF40BE2E208B129400BA97C9 /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -1219,8 +1243,10 @@
 				DF6ABE4C20A4443200D2E2BE /* DPScreenshotsPopView.m in Sources */,
 				DF40BE2B208B129400BA97C9 /* MJRefreshFooter.m in Sources */,
 				DF31BCCC20B9555E00A7F0E0 /* FMDatabasePool.m in Sources */,
+				DF13479820F5AECF006E6287 /* UIViewController+safeViewAppear.m in Sources */,
 				DF40BE37208B129400BA97C9 /* MJRefreshConst.m in Sources */,
 				DF40BE3A208B129400BA97C9 /* UIScrollView+MJRefresh.m in Sources */,
+				DFBD4AF820F333B0008671CE /* ELAOPViewController.m in Sources */,
 				DFC974B820A5307200C9EEAA /* ELWebViewController.m in Sources */,
 				DF6DB135209C482500040096 /* ELRefreshViewController.m in Sources */,
 				DF25CA2A20C7E27900CC7818 /* ELFingerprintUnlockViewController.m in Sources */,

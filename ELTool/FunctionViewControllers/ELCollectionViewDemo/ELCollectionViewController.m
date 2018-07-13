@@ -40,8 +40,7 @@ UITableViewDataSource>
 
 - (void)initUserData
 {
-//    NSArray *nameArray = @[@"http://img11.soufunimg.com/sfwork/2018_03/14/M13/1B/2D/ChCE4Vqo_HGIMdGGAABPZh7R_iIABAEjgOl81gAAE9-168.jpg",@"http://img11.soufunimg.com/sfwork/2018_03/15/M0A/1B/31/ChCE4FqqIrOIWbbZAAIbQwUlaCsABAGKgO4xBoAAhtb154.jpg",@"http://img11.soufunimg.com/sfwork/2018_04/02/M0F/1B/8F/ChCE4FrB2AWIJXHwAAB3_b30eQsABAqrQPY9kUAAHgV402.jpg",@"http://img11.soufunimg.com/sfwork/2018_03/07/M14/1A/FC/ChCE4FqfRQaIU3-wAABbLEUsw-8AA_xmQITzbIAAFtE493.jpg"];
-     NSArray *nameArray = @[@"http://img11.soufunimg.com/sfwork/2018_04/02/M0F/1B/8F/ChCE4FrB2AWIJXHwAAB3_b30eQsABAqrQPY9kUAAHgV402.jpg",@"http://img11.soufunimg.com/sfwork/2018_03/07/M14/1A/FC/ChCE4FqfRQaIU3-wAABbLEUsw-8AA_xmQITzbIAAFtE493.jpg"];
+    NSArray *nameArray = @[]; //数组添加头像地址
     self.dataArray = [NSMutableArray arrayWithArray:nameArray];
 }
 
