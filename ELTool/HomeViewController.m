@@ -28,6 +28,8 @@
 #import "ELAOPViewController.h"
 #import "ELGCDSemaphoreViewController.h"
 #import "ELFingerprintUnlockViewController.h"
+#import "ELKVOAndKVCViewController.h"
+#import "ELSudoLayoutViewController.h"
 
 #import "LGAlertView.h"
 
@@ -65,7 +67,7 @@
  */
 - (void)initUserData
 {
-    NSArray *tempDataArray = @[@"fingerprintUnlock",@"AFNetworking",@"AOPViewcontroller",@"CollectionView",@"MJRefresh",@"AlgorithmViewController",@"ScreenShots",@"NSTimer" ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"AVPlyaerViewController",@"JQFMDBLearming",@"GCDSemaphore",@"ELScrollViewController"];
+    NSArray *tempDataArray = @[@"fingerprintUnlock",@"AFNetworking",@"KVCKVOViewController",@"AOPViewcontroller",@"CollectionView",@"MJRefresh",@"AlgorithmViewController",@"ScreenShots",@"NSTimer" ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"AVPlyaerViewController",@"JQFMDBLearming",@"GCDSemaphore",@"ELScrollViewController",@"SudoLayoutViewController"];
     self.homedataArray = [[NSMutableArray alloc] initWithArray:tempDataArray];
 }
 
@@ -116,11 +118,21 @@
         
         [self creatAfNetRequest];
         
+    } else if ([name isEqualToString:@"KVCKVOViewController"]) {
+        
+        [self createKVCAndKVOViewController];
+        
     } else if ([name isEqualToString:@"CollectionView"]) {
         [self jumpToCollectionVC];
         
+    } else if ([name isEqualToString:@"SudoLayoutViewController"]) {
+        [self createSudoLayoutViewController];
+        
     } else if ([name isEqualToString:@"AOPViewcontroller"]){
         [self createAOPViewController];
+        
+    } else if ([name isEqualToString:@"KVCKVOViewController"]) {
+        [self createKVCAndKVOViewController];
         
     } else if ([name isEqualToString:@"MJRefresh"]) {
         
@@ -190,6 +202,18 @@
         [self createELScrollViewController];
     }
     
+}
+
+- (void)createSudoLayoutViewController
+{
+    ELSudoLayoutViewController *sudoLayVC = [[ELSudoLayoutViewController alloc] init];
+    [self.navigationController pushViewController:sudoLayVC animated:YES];
+}
+
+- (void)createKVCAndKVOViewController
+{
+    ELKVOAndKVCViewController *vovc = [[ELKVOAndKVCViewController alloc] init];
+    [self.navigationController pushViewController:vovc animated:YES];
 }
 
 - (void)createAOPViewController

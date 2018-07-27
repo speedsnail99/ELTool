@@ -24,28 +24,84 @@
 
 - (void)createUserInterface
 {
-   self.view.backgroundColor = [UIColor whiteColor];
-   static const CGFloat buttonWidth = 100;
-   static const CGFloat buttonHeight = 50;
-   UIButton *soretedBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, buttonWidth, buttonHeight)];
-   [soretedBtn addTarget:self action:@selector(soredArrayItems) forControlEvents:UIControlEventTouchUpInside];
-   soretedBtn.backgroundColor = [UIColor cyanColor];
-   [soretedBtn setTitle:@"soretedBtn" forState:UIControlStateNormal];
-   [self.view addSubview:soretedBtn];
+//   self.view.backgroundColor = [UIColor whiteColor];
+//   static const CGFloat buttonWidth = 100;
+//   static const CGFloat buttonHeight = 50;
+//   UIButton *soretedBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, buttonWidth, buttonHeight)];
+//   [soretedBtn addTarget:self action:@selector(soredArrayItems) forControlEvents:UIControlEventTouchUpInside];
+//   soretedBtn.backgroundColor = [UIColor cyanColor];
+//   [soretedBtn setTitle:@"soretedBtn" forState:UIControlStateNormal];
+//   [self.view addSubview:soretedBtn];
+//
+//   UIButton *blockBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100 + buttonHeight + 50, buttonWidth, buttonHeight)];
+//   [blockBtn addTarget:self action:@selector(blockChange) forControlEvents:UIControlEventTouchUpInside];
+//   blockBtn.backgroundColor = [UIColor cyanColor];
+//   [blockBtn setTitle:@"BlockBtn" forState:UIControlStateNormal];
+//   [self.view addSubview:blockBtn];
+//
+//
+//
+//   self.page = 3;
+//   __weak __typeof(&*self)weakSelf = self;
+//   self.myBlock = ^{
+//      weakSelf.page ++;
+//   };
    
-   UIButton *blockBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100 + buttonHeight + 50, buttonWidth, buttonHeight)];
-   [blockBtn addTarget:self action:@selector(blockChange) forControlEvents:UIControlEventTouchUpInside];
-   blockBtn.backgroundColor = [UIColor cyanColor];
-   [blockBtn setTitle:@"BlockBtn" forState:UIControlStateNormal];
-   [self.view addSubview:blockBtn];
+//   UIView *firstView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+//   [self.view addSubview:firstView];
+//   firstView.backgroundColor = [UIColor cyanColor];
+//
+//   UIView *secondView = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 100, 100)];
+//   secondView.backgroundColor = [UIColor greenColor];
+//
+//   [firstView addSubview:secondView];
    
+   CGFloat btnWidth = 80;
+   CGFloat btnHeight = 20;
+   UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+   button.frame = CGRectMake(100, 100, btnWidth, btnHeight);
+   button.backgroundColor = [UIColor clearColor];
+   //设置button正常状态下的图片
+//   [button setImage:[UIImage imageNamed:@"chatVCImageReloadBtn.png"] forState:UIControlStateNormal];
+   //设置button高亮状态下的图片
+//   [button setImage:[UIImage imageNamed:@"chatVCImageReloadBtn.png"] forState:UIControlStateHighlighted];
+//   CGFloat btnImageWidth = button.imageView.frame.size.width;
+//   //设置button正常状态下的背景图
+//   [button setBackgroundImage:[UIImage imageNamed:@"_normal.png"] forState:UIControlStateNormal];
+//   //设置button高亮状态下的背景图
+//   [button setBackgroundImage:[UIImage imageNamed:@"_highlighted.png"] forState:UIControlStateHighlighted];
+   //button图片的偏移量，距上左下右分别(10, 10, 10, 60)像素点
+//   button.imageEdgeInsets = UIEdgeInsetsMake(0, -(btnWidth - btnImageWidth), 0, 0);
+//   [button setTitle:@"重" forState:UIControlStateNormal];
+//   button.titleLabel.adjustsFontSizeToFitWidth = YES;
+   //button标题的偏移量，这个偏移量是相对于图片的
+//   button.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+   //设置button正常状态下的标题颜色
+   [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+   //设置button高亮状态下的标题颜色
+   [button setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
+   button.titleLabel.font = [UIFont systemFontOfSize:12];
+   [self.view addSubview:button];
+   button.backgroundColor = [UIColor cyanColor];
+   [button addTarget:self action:@selector(userTap:) forControlEvents:UIControlEventTouchUpInside];
    
-   
-   self.page = 3;
-   __weak __typeof(&*self)weakSelf = self;
-   self.myBlock = ^{
-      weakSelf.page ++;
-   };
+   //uiimageView
+   UIImage *picImage = [UIImage imageNamed:@"chatVCImageReloadBtn.png"];
+   UIImageView *picImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, btnHeight, btnHeight)];
+   [picImageView setImage:picImage];
+   [button addSubview:picImageView];
+   // uilabel
+   UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(picImageView.frame), CGRectGetMinY(picImageView.frame), btnWidth - btnHeight, btnHeight)];
+   titleLabel.textAlignment = NSTextAlignmentLeft;
+   titleLabel.textColor = [UIColor blueColor];
+   titleLabel.font = [UIFont systemFontOfSize:12];
+   titleLabel.text = @"重新加载";
+   [button addSubview:titleLabel];
+}
+
+- (void)userTap:(UIButton *)btn
+{
+   ELLogDebug(@"babyHasTouch");
 }
 
 

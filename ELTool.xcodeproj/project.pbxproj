@@ -16,6 +16,9 @@
 		BBE64FC78A32E22C92A69775 /* libPods-ELToolTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC059C560104A6133D9C1D0 /* libPods-ELToolTests.a */; };
 		D3E28E8F91A8C09C6862A34F /* libPods-ELTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54001BB0439D49AC1C142A0B /* libPods-ELTool.a */; };
 		DF13479820F5AECF006E6287 /* UIViewController+safeViewAppear.m in Sources */ = {isa = PBXBuildFile; fileRef = DF13479720F5AECF006E6287 /* UIViewController+safeViewAppear.m */; };
+		DF19C7DD20F83B2A007E2A30 /* ELKVOAndKVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19C7DC20F83B2A007E2A30 /* ELKVOAndKVCViewController.m */; };
+		DF19C7E020F83E3A007E2A30 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19C7DF20F83E3A007E2A30 /* Dog.m */; };
+		DF19C7E320F87D24007E2A30 /* CarMan.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19C7E220F87D24007E2A30 /* CarMan.m */; };
 		DF25CA2620C7B8D400CC7818 /* ELGCDSemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF25CA2520C7B8D400CC7818 /* ELGCDSemaphoreViewController.m */; };
 		DF25CA2A20C7E27900CC7818 /* ELFingerprintUnlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF25CA2920C7E27900CC7818 /* ELFingerprintUnlockViewController.m */; };
 		DF31BCCA20B9555E00A7F0E0 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31BCBE20B9555E00A7F0E0 /* FMDatabase.m */; };
@@ -55,6 +58,8 @@
 		DF40BE3B208B129400BA97C9 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40BE27208B129400BA97C9 /* UIView+MJExtension.m */; };
 		DF506023207B656F00C38FFC /* ELUtilityHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DF506022207B656F00C38FFC /* ELUtilityHelper.m */; };
 		DF605EC120A1A460000AB9EF /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF605EC020A1A460000AB9EF /* NSTimerViewController.m */; };
+		DF6A40B920FDBB370005D4C8 /* chatVCImageReloadBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF6A40B720FDBB370005D4C8 /* chatVCImageReloadBtn@2x.png */; };
+		DF6A40BA20FDBB370005D4C8 /* chatVCImageReloadBtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF6A40B820FDBB370005D4C8 /* chatVCImageReloadBtn@3x.png */; };
 		DF6ABE4720A4154900D2E2BE /* ELSimpleFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6ABE4620A4154900D2E2BE /* ELSimpleFunctionViewController.m */; };
 		DF6ABE4C20A4443200D2E2BE /* DPScreenshotsPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6ABE4B20A4443200D2E2BE /* DPScreenshotsPopView.m */; };
 		DF6ABE5020A444F200D2E2BE /* YLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6ABE4F20A444F200D2E2BE /* YLButton.m */; };
@@ -81,6 +86,7 @@
 		DF6EBB562074DB2C000A893C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB552074DB2C000A893C /* main.m */; };
 		DF6EBB602074DB2C000A893C /* ELToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB5F2074DB2C000A893C /* ELToolTests.m */; };
 		DF6EBB6B2074DB2C000A893C /* ELToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6EBB6A2074DB2C000A893C /* ELToolUITests.m */; };
+		DF756694210AEB1A00782A94 /* ELSudoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF756693210AEB1A00782A94 /* ELSudoLayoutViewController.m */; };
 		DF7CCE2820C8FDB600877061 /* touchID@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7CCE2620C8FDB600877061 /* touchID@2x.png */; };
 		DF7CCE2920C8FDB600877061 /* touchID@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7CCE2720C8FDB600877061 /* touchID@3x.png */; };
 		DF83F1FC20A9245A009D1289 /* ElWindowTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF83F1FB20A9245A009D1289 /* ElWindowTestViewController.m */; };
@@ -158,6 +164,12 @@
 		C6C24736763CF3344F12AC3B /* Pods-ELTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELTool/Pods-ELTool.release.xcconfig"; sourceTree = "<group>"; };
 		DF13479620F5AECF006E6287 /* UIViewController+safeViewAppear.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+safeViewAppear.h"; sourceTree = "<group>"; };
 		DF13479720F5AECF006E6287 /* UIViewController+safeViewAppear.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+safeViewAppear.m"; sourceTree = "<group>"; };
+		DF19C7DB20F83B2A007E2A30 /* ELKVOAndKVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELKVOAndKVCViewController.h; sourceTree = "<group>"; };
+		DF19C7DC20F83B2A007E2A30 /* ELKVOAndKVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELKVOAndKVCViewController.m; sourceTree = "<group>"; };
+		DF19C7DE20F83E3A007E2A30 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		DF19C7DF20F83E3A007E2A30 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		DF19C7E120F87D24007E2A30 /* CarMan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarMan.h; sourceTree = "<group>"; };
+		DF19C7E220F87D24007E2A30 /* CarMan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarMan.m; sourceTree = "<group>"; };
 		DF25CA2420C7B8D400CC7818 /* ELGCDSemaphoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELGCDSemaphoreViewController.h; sourceTree = "<group>"; };
 		DF25CA2520C7B8D400CC7818 /* ELGCDSemaphoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELGCDSemaphoreViewController.m; sourceTree = "<group>"; };
 		DF25CA2820C7E27800CC7818 /* ELFingerprintUnlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELFingerprintUnlockViewController.h; sourceTree = "<group>"; };
@@ -235,6 +247,8 @@
 		DF506022207B656F00C38FFC /* ELUtilityHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELUtilityHelper.m; sourceTree = "<group>"; };
 		DF605EBF20A1A460000AB9EF /* NSTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
 		DF605EC020A1A460000AB9EF /* NSTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
+		DF6A40B720FDBB370005D4C8 /* chatVCImageReloadBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatVCImageReloadBtn@2x.png"; sourceTree = "<group>"; };
+		DF6A40B820FDBB370005D4C8 /* chatVCImageReloadBtn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatVCImageReloadBtn@3x.png"; sourceTree = "<group>"; };
 		DF6ABE4520A4154900D2E2BE /* ELSimpleFunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELSimpleFunctionViewController.h; sourceTree = "<group>"; };
 		DF6ABE4620A4154900D2E2BE /* ELSimpleFunctionViewController.m */ = {isa = PBXFileReference; indentWidth = 3; lastKnownFileType = sourcecode.c.objc; path = ELSimpleFunctionViewController.m; sourceTree = "<group>"; };
 		DF6ABE4A20A4443200D2E2BE /* DPScreenshotsPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPScreenshotsPopView.h; sourceTree = "<group>"; };
@@ -287,6 +301,8 @@
 		DF6EBB662074DB2C000A893C /* ELToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ELToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6EBB6A2074DB2C000A893C /* ELToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELToolUITests.m; sourceTree = "<group>"; };
 		DF6EBB6C2074DB2C000A893C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF756692210AEB1A00782A94 /* ELSudoLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELSudoLayoutViewController.h; sourceTree = "<group>"; };
+		DF756693210AEB1A00782A94 /* ELSudoLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELSudoLayoutViewController.m; sourceTree = "<group>"; };
 		DF7CCE2620C8FDB600877061 /* touchID@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "touchID@2x.png"; sourceTree = "<group>"; };
 		DF7CCE2720C8FDB600877061 /* touchID@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "touchID@3x.png"; sourceTree = "<group>"; };
 		DF83F1FA20A9245A009D1289 /* ElWindowTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElWindowTestViewController.h; sourceTree = "<group>"; };
@@ -435,9 +451,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DF19C7DA20F83B0D007E2A30 /* ELKVO_KVC */ = {
+			isa = PBXGroup;
+			children = (
+				DF19C7DB20F83B2A007E2A30 /* ELKVOAndKVCViewController.h */,
+				DF19C7DC20F83B2A007E2A30 /* ELKVOAndKVCViewController.m */,
+				DF19C7DE20F83E3A007E2A30 /* Dog.h */,
+				DF19C7DF20F83E3A007E2A30 /* Dog.m */,
+				DF19C7E120F87D24007E2A30 /* CarMan.h */,
+				DF19C7E220F87D24007E2A30 /* CarMan.m */,
+			);
+			path = ELKVO_KVC;
+			sourceTree = "<group>";
+		};
 		DF1B19022089F54200DAE209 /* ImageFiles */ = {
 			isa = PBXGroup;
 			children = (
+				DF6A40B620FDBB370005D4C8 /* simpleFunctionImages */,
 				DF7CCE2520C8FDB600877061 /* touchIDImages */,
 				DFE3C7FF20B013AE00ABEB31 /* newfuntionGuideImages */,
 				DFDD2C9520AC034300720C2A /* screenShotImages */,
@@ -652,6 +682,15 @@
 			path = ELNSTimer;
 			sourceTree = "<group>";
 		};
+		DF6A40B620FDBB370005D4C8 /* simpleFunctionImages */ = {
+			isa = PBXGroup;
+			children = (
+				DF6A40B720FDBB370005D4C8 /* chatVCImageReloadBtn@2x.png */,
+				DF6A40B820FDBB370005D4C8 /* chatVCImageReloadBtn@3x.png */,
+			);
+			path = simpleFunctionImages;
+			sourceTree = "<group>";
+		};
 		DF6ABE4420A4153700D2E2BE /* ELSimpleFunctions */ = {
 			isa = PBXGroup;
 			children = (
@@ -802,6 +841,22 @@
 			path = ELToolUITests;
 			sourceTree = "<group>";
 		};
+		DF75668B210AC76500782A94 /* ELModularizationVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ELModularizationVC;
+			sourceTree = "<group>";
+		};
+		DF756691210AEAF400782A94 /* ELViewsLayout */ = {
+			isa = PBXGroup;
+			children = (
+				DF756692210AEB1A00782A94 /* ELSudoLayoutViewController.h */,
+				DF756693210AEB1A00782A94 /* ELSudoLayoutViewController.m */,
+			);
+			path = ELViewsLayout;
+			sourceTree = "<group>";
+		};
 		DF7CCE2520C8FDB600877061 /* touchIDImages */ = {
 			isa = PBXGroup;
 			children = (
@@ -823,6 +878,9 @@
 		DF9C0D8320876DFE0039C531 /* FunctionViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				DF756691210AEAF400782A94 /* ELViewsLayout */,
+				DF75668B210AC76500782A94 /* ELModularizationVC */,
+				DF19C7DA20F83B0D007E2A30 /* ELKVO_KVC */,
 				DF25CA2720C7E25E00CC7818 /* ELFingerprintUnlockViewController */,
 				DFBD4AF520F3339B008671CE /* ELAOPViewController */,
 				DF25CA2320C7B8BF00CC7818 /* ELGCD_Semaphore */,
@@ -1086,6 +1144,7 @@
 				DFDD2CA420AC0DD000720C2A /* SFScreenShotClose@3x.png in Resources */,
 				DF7CCE2820C8FDB600877061 /* touchID@2x.png in Resources */,
 				DF6EBB532074DB2C000A893C /* LaunchScreen.storyboard in Resources */,
+				DF6A40BA20FDBB370005D4C8 /* chatVCImageReloadBtn@3x.png in Resources */,
 				DFE3C80320B013AF00ABEB31 /* payQRGuideImage@3x.png in Resources */,
 				DFDD2C8E20AC024900720C2A /* processCate_unselected@3x.png in Resources */,
 				DF7CCE2920C8FDB600877061 /* touchID@3x.png in Resources */,
@@ -1096,6 +1155,7 @@
 				DFDD2C9120AC024900720C2A /* processlist_unselected@2x.png in Resources */,
 				DF6EBB502074DB2C000A893C /* Assets.xcassets in Resources */,
 				DFDD2CA120AC034300720C2A /* SFScrennSharedWXFriend@3x.png in Resources */,
+				DF6A40B920FDBB370005D4C8 /* chatVCImageReloadBtn@2x.png in Resources */,
 				DF6C615B20AD740500E8E884 /* Info.plist in Resources */,
 				A4E3B8EE20C3F2F70092E765 /* jay.jpg in Resources */,
 				DFDD2C8B20AC024900720C2A /* processCate_selected@2x.png in Resources */,
@@ -1202,8 +1262,11 @@
 				DF6C616020AD740500E8E884 /* MJPropertyType.m in Sources */,
 				DF31BCCF20B9555E00A7F0E0 /* JQFMDB.m in Sources */,
 				DF6DB131209C47C400040096 /* ELScreenShotsViewController.m in Sources */,
+				DF19C7DD20F83B2A007E2A30 /* ELKVOAndKVCViewController.m in Sources */,
 				DFF67B8320BEA90F0044E707 /* ELAVPlayerViewController.m in Sources */,
+				DF19C7E020F83E3A007E2A30 /* Dog.m in Sources */,
 				DFB7178C20941B4C00AFB200 /* FirstTestViewController.m in Sources */,
+				DF19C7E320F87D24007E2A30 /* CarMan.m in Sources */,
 				DF6C616520AD740500E8E884 /* NSString+MJExtension.m in Sources */,
 				DF40BE32208B129400BA97C9 /* MJRefreshBackStateFooter.m in Sources */,
 				DF506023207B656F00C38FFC /* ELUtilityHelper.m in Sources */,
@@ -1241,6 +1304,7 @@
 				DF40BE38208B129400BA97C9 /* NSBundle+MJRefresh.m in Sources */,
 				DF6C615E20AD740500E8E884 /* MJProperty.m in Sources */,
 				DF6ABE4C20A4443200D2E2BE /* DPScreenshotsPopView.m in Sources */,
+				DF756694210AEB1A00782A94 /* ELSudoLayoutViewController.m in Sources */,
 				DF40BE2B208B129400BA97C9 /* MJRefreshFooter.m in Sources */,
 				DF31BCCC20B9555E00A7F0E0 /* FMDatabasePool.m in Sources */,
 				DF13479820F5AECF006E6287 /* UIViewController+safeViewAppear.m in Sources */,
