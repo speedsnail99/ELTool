@@ -37,7 +37,7 @@
     
     /*
     // 获取工程中xml文件路径
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"demofirst" ofType:@"xml"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"demoFirst" ofType:@"xml"];
     NSData *xmlData = [NSData dataWithContentsOfFile:filePath];
     // 支节点数组
     NSArray *branchNameArray = @[@"titleBar",  @"adBar"];

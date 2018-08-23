@@ -30,6 +30,8 @@
 #import "ELFingerprintUnlockViewController.h"
 #import "ELKVOAndKVCViewController.h"
 #import "ELSudoLayoutViewController.h"
+#import "ELMultipleViewController.h"
+#import "ELMemoryLeakViewController.h"
 
 #import "LGAlertView.h"
 
@@ -49,7 +51,7 @@
     self.title = @"HOME";
   
     
-    LGAlertView *alertView = [LGAlertView alertViewWithTitle:@"" message:@"" style:nil buttonTitles:nil cancelButtonTitle:@"" destructiveButtonTitle:@""];
+//    LGAlertView *alertView = [LGAlertView alertViewWithTitle:@"" message:@"" style:nil buttonTitles:nil cancelButtonTitle:@"" destructiveButtonTitle:@""];
 //    //使用url
 //    [self createCustomeUrl];
 //    //系统排序方法
@@ -67,7 +69,7 @@
  */
 - (void)initUserData
 {
-    NSArray *tempDataArray = @[@"fingerprintUnlock",@"AFNetworking",@"KVCKVOViewController",@"AOPViewcontroller",@"CollectionView",@"MJRefresh",@"AlgorithmViewController",@"ScreenShots",@"NSTimer" ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"AVPlyaerViewController",@"JQFMDBLearming",@"GCDSemaphore",@"ELScrollViewController",@"SudoLayoutViewController"];
+    NSArray *tempDataArray = @[@"fingerprintUnlock",@"AFNetworking",@"KVCKVOViewController",@"ELMultipleViewController",@"AOPViewcontroller",@"ELMemoryLeakViewController",@"CollectionView",@"MJRefresh",@"AlgorithmViewController",@"ScreenShots",@"NSTimer" ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"AVPlyaerViewController",@"JQFMDBLearming",@"GCDSemaphore",@"ELScrollViewController",@"SudoLayoutViewController"];
     self.homedataArray = [[NSMutableArray alloc] initWithArray:tempDataArray];
 }
 
@@ -118,9 +120,15 @@
         
         [self creatAfNetRequest];
         
+    } else if ([name isEqualToString:@"ELMemoryLeakViewController"]) {
+        [self createMemoryLeakVC];
     } else if ([name isEqualToString:@"KVCKVOViewController"]) {
         
         [self createKVCAndKVOViewController];
+        
+    } else if ([name isEqualToString:@"ELMultipleViewController"]) {
+        
+        [self createMultipleThreadSafeViewController];
         
     } else if ([name isEqualToString:@"CollectionView"]) {
         [self jumpToCollectionVC];
@@ -202,6 +210,18 @@
         [self createELScrollViewController];
     }
     
+}
+
+- (void)createMemoryLeakVC
+{
+    ELMemoryLeakViewController *memoryLeakVC = [[ELMemoryLeakViewController alloc] init];
+    [self.navigationController pushViewController:memoryLeakVC animated:YES];
+}
+
+- (void)createMultipleThreadSafeViewController
+{
+    ELMultipleViewController *elVC = [[ELMultipleViewController alloc] init];
+    [self.navigationController pushViewController:elVC animated:YES];
 }
 
 - (void)createSudoLayoutViewController
@@ -311,6 +331,10 @@
 - (void)createSimpleViewController
 {
     ELSimpleFunctionViewController *simpleVC = [[ELSimpleFunctionViewController alloc] init];
+    [simpleVC simpleFuntionBlock:^{
+        [[NSNotificationCenter defaultCenter] removeObserver:self];
+    }];
+    
     [self.navigationController pushViewController:simpleVC animated:YES];
 }
 

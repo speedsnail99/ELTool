@@ -20,6 +20,61 @@
     // Do any additional setup after loading the view.
     self.title = @"ELSimgpleFunction";
     [self createUserInterface];
+   
+   
+   //判断 componentsSeparated方法切割在特殊位置的数据，生成的数组
+//   [self createStringSeparate];
+
+   //判断特殊枚举值
+//   [self createEnumator];
+  
+   //tag值判断视图
+//   [self createTagView];
+  
+}
+
+- (void)createTagView
+{
+   CGFloat holdViewHeight = 200;
+   UIView *holdView = [[UIView alloc] initWithFrame:CGRectMake(10, 100, kScreenWidth - 2*10, holdViewHeight)];
+   holdView.backgroundColor = [UIColor cyanColor];
+   [self.view addSubview:holdView];
+   
+   UIView *firstV = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 20, 20)];
+   firstV.backgroundColor = [UIColor redColor];
+   firstV.tag = 10031;
+   [holdView addSubview:firstV];
+   
+   UIView *secondV = [[UIView alloc] initWithFrame:CGRectMake(10, CGRectGetMaxY(firstV.frame) + 10, 20, 20)];
+   secondV.backgroundColor = [UIColor purpleColor];
+   secondV.tag = 10031;
+   [holdView addSubview:secondV];
+   
+}
+
+
+/**
+ 判断 componentsSeparated方法切割在特殊位置的数据，生成的数组
+ */
+- (void)createStringSeparate
+{
+      NSString  *tempStr = @"a你好的";
+      NSArray *resultArray = [tempStr componentsSeparatedByString:@"a"];
+      ELLogDebug(@"resultArray%@",resultArray);
+}
+
+
+/**
+ 判断特殊枚举值
+ */
+- (void)createEnumator
+{
+   //自定义枚举类型参数如果没有赋值，那么默认值 self.ctype 会是0
+      if (self.ctype == SFNoticeDetailType_normal) {
+         ELLogDebug(@"true");
+      } else {
+         ELLogDebug(@"false");
+      }
 }
 
 - (void)createUserInterface
@@ -57,34 +112,20 @@
 //   [firstView addSubview:secondView];
    
    CGFloat btnWidth = 80;
-   CGFloat btnHeight = 20;
+   CGFloat btnHeight = 100;
    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
    button.frame = CGRectMake(100, 100, btnWidth, btnHeight);
-   button.backgroundColor = [UIColor clearColor];
-   //设置button正常状态下的图片
-//   [button setImage:[UIImage imageNamed:@"chatVCImageReloadBtn.png"] forState:UIControlStateNormal];
-   //设置button高亮状态下的图片
-//   [button setImage:[UIImage imageNamed:@"chatVCImageReloadBtn.png"] forState:UIControlStateHighlighted];
-//   CGFloat btnImageWidth = button.imageView.frame.size.width;
-//   //设置button正常状态下的背景图
-//   [button setBackgroundImage:[UIImage imageNamed:@"_normal.png"] forState:UIControlStateNormal];
-//   //设置button高亮状态下的背景图
-//   [button setBackgroundImage:[UIImage imageNamed:@"_highlighted.png"] forState:UIControlStateHighlighted];
-   //button图片的偏移量，距上左下右分别(10, 10, 10, 60)像素点
-//   button.imageEdgeInsets = UIEdgeInsetsMake(0, -(btnWidth - btnImageWidth), 0, 0);
-//   [button setTitle:@"重" forState:UIControlStateNormal];
-//   button.titleLabel.adjustsFontSizeToFitWidth = YES;
-   //button标题的偏移量，这个偏移量是相对于图片的
-//   button.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
-   //设置button正常状态下的标题颜色
-   [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-   //设置button高亮状态下的标题颜色
-   [button setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
-   button.titleLabel.font = [UIFont systemFontOfSize:12];
-   [self.view addSubview:button];
    button.backgroundColor = [UIColor cyanColor];
-   [button addTarget:self action:@selector(userTap:) forControlEvents:UIControlEventTouchUpInside];
+   [button addTarget:self action:@selector(callSomeBody) forControlEvents:UIControlEventTouchUpInside];
+   [self.view addSubview:button];
    
+   UIButton *secondButton = [UIButton buttonWithType:UIButtonTypeCustom];
+   secondButton.frame = CGRectMake(CGRectGetMinX(button.frame), CGRectGetMaxY(button.frame) + 20, btnWidth, btnHeight);
+   secondButton.backgroundColor = [UIColor blueColor];
+   [self.view addSubview:secondButton];
+   [secondButton addTarget:self action:@selector(secondDoSomeThing) forControlEvents:UIControlEventTouchUpInside];
+   
+   /*
    //uiimageView
    UIImage *picImage = [UIImage imageNamed:@"chatVCImageReloadBtn.png"];
    UIImageView *picImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, btnHeight, btnHeight)];
@@ -97,11 +138,101 @@
    titleLabel.font = [UIFont systemFontOfSize:12];
    titleLabel.text = @"重新加载";
    [button addSubview:titleLabel];
+   
+   //BlockBtn
+   
+   UIButton *blockbutton = [UIButton buttonWithType:UIButtonTypeCustom];
+   blockbutton.frame = CGRectMake(100, CGRectGetMaxY(button.frame) + 30, btnWidth, btnHeight);
+   blockbutton.backgroundColor = [UIColor cyanColor];
+   [blockbutton setTitle:@"Block" forState:UIControlStateNormal];
+   blockbutton.backgroundColor = [UIColor cyanColor];
+   [blockbutton addTarget:self action:@selector(changeMYBlock) forControlEvents:UIControlEventTouchUpInside];
+   [self.view addSubview:blockbutton];
+    
+    */
+}
+
+- (void)callSomeBody
+{
+   
+
+   
+//   for (int i = 0 ; i < 10 ; i ++) {
+//      dispatch_async(dispatch_queue_create("saveSocketMessage", DISPATCH_QUEUE_SERIAL), ^{
+//         ELLogDebug(@"currentThread:%@",[NSThread currentThread]);
+//      });
+//   }
+   
+   // 主线程队列
+//   dispatch_queue_t queue1=  dispatch_get_main_queue();
+//   dispatch_async(queue1, ^{
+//      ELLogDebug(@"callSomeBody:%@",[NSThread currentThread]);
+//   });
+   
+   
+   /***串行队列****/
+//   dispatch_queue_t seria1 = dispatch_queue_create("helloSeria", DISPATCH_QUEUE_SERIAL);
+//
+//   dispatch_async(seria1, ^{
+//       NSLog(@"我是第一个任务, 当前线程:%@ ,是否主线程%d",[NSThread currentThread],[NSThread isMainThread]);
+//   });
+//
+//   dispatch_async(seria1, ^{
+//       NSLog(@"我是第二个任务, 当前线程:%@ ,是否主线程%d",[NSThread currentThread],[NSThread isMainThread]);
+//   });
+//
+//   dispatch_async(seria1, ^{
+//       NSLog(@"我是第三个任务, 当前线程:%@ ,是否主线程%d",[NSThread currentThread],[NSThread isMainThread]);
+//   });
+//
+//   dispatch_async(seria1, ^{
+//       NSLog(@"我是第四个任务, 当前线程:%@ ,是否主线程%d",[NSThread currentThread],[NSThread isMainThread]);
+//   });
+   
+   /****并行队列***/
+//   dispatch_queue_t concurrentQ = dispatch_queue_create("concurrentQ", DISPATCH_QUEUE_CONCURRENT);
+//   dispatch_async(concurrentQ , ^{
+//
+//   });
+   
+//   dispatch_queue_t queueC;
+//   if (!queueC) {
+//      ELLogDebug(@"不存在");
+//   } else {
+//      ELLogDebug(@"存在")
+//   }
+   
+//   NSString *myName = nil;
+//   NSAssert(myName != nil, @"名字不能为空！");
+//   NSLog(@"My name is %@.",myName);
+
+   
+   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"iOSTencentTest://cc.com"]];
+
+}
+
+- (void)secondDoSomeThing
+{
+   ELLogDebug(@"secondButtonTapeed");
+}
+
+//block赋值
+- (void)simpleFuntionBlock:(ccBlock)completion
+{
+   self.myBlock = completion;
+}
+
+//执行block
+- (void)changeMYBlock
+{
+   self.myBlock();
 }
 
 - (void)userTap:(UIButton *)btn
 {
-   ELLogDebug(@"babyHasTouch");
+   ELLogDebug(@"postZhou");
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"zhou" object:nil];
+   
 }
 
 
@@ -136,7 +267,7 @@
             return NSOrderedDescending;
         }
     }];
-    
+   
     
     NSArray *tempSecondArray = [numArray sortedArrayUsingComparator:^NSComparisonResult(NSString *obj1,NSString *obj2) {
         if ([obj1 compare:obj2] == NSOrderedAscending) {
