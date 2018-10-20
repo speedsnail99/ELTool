@@ -9,7 +9,7 @@
 #import "ELAlgorithmViewController.h"
 
 @interface ELAlgorithmViewController ()
-
+@property (nonatomic, strong) UICollectionView *mainCollectionView;
 @end
 
 @implementation ELAlgorithmViewController

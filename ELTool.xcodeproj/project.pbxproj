@@ -11,6 +11,8 @@
 		A4B45BDC20B86D7C00BBFA64 /* ELFMDBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B45BDB20B86D7C00BBFA64 /* ELFMDBHomeViewController.m */; };
 		A4B45C1E20C04D2E00BBFA64 /* ELJQFMDBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B45C1D20C04D2E00BBFA64 /* ELJQFMDBHomeViewController.m */; };
 		A4B45C2120C04F1A00BBFA64 /* ProductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B45C2020C04F1A00BBFA64 /* ProductionView.m */; };
+		A4BBCA3E2120727200E7ECD3 /* ELAlgorithmCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BBCA3D2120727200E7ECD3 /* ELAlgorithmCollectionViewCell.m */; };
+		A4D8F495217B788B00741A24 /* ELAssocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D8F494217B788B00741A24 /* ELAssocationViewController.m */; };
 		A4E3B8EC20C3E8EE0092E765 /* ELScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E3B8EB20C3E8EE0092E765 /* ELScrollViewController.m */; };
 		A4E3B8EE20C3F2F70092E765 /* jay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4E3B8ED20C3F2F60092E765 /* jay.jpg */; };
 		BBE64FC78A32E22C92A69775 /* libPods-ELToolTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC059C560104A6133D9C1D0 /* libPods-ELToolTests.a */; };
@@ -160,6 +162,10 @@
 		A4B45C1D20C04D2E00BBFA64 /* ELJQFMDBHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELJQFMDBHomeViewController.m; sourceTree = "<group>"; };
 		A4B45C1F20C04F1A00BBFA64 /* ProductionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductionView.h; sourceTree = "<group>"; };
 		A4B45C2020C04F1A00BBFA64 /* ProductionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductionView.m; sourceTree = "<group>"; };
+		A4BBCA3C2120727200E7ECD3 /* ELAlgorithmCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELAlgorithmCollectionViewCell.h; sourceTree = "<group>"; };
+		A4BBCA3D2120727200E7ECD3 /* ELAlgorithmCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELAlgorithmCollectionViewCell.m; sourceTree = "<group>"; };
+		A4D8F493217B788B00741A24 /* ELAssocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELAssocationViewController.h; sourceTree = "<group>"; };
+		A4D8F494217B788B00741A24 /* ELAssocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELAssocationViewController.m; sourceTree = "<group>"; };
 		A4E3B8EA20C3E8EE0092E765 /* ELScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELScrollViewController.h; sourceTree = "<group>"; };
 		A4E3B8EB20C3E8EE0092E765 /* ELScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELScrollViewController.m; sourceTree = "<group>"; };
 		A4E3B8ED20C3F2F60092E765 /* jay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jay.jpg; sourceTree = "<group>"; };
@@ -432,6 +438,15 @@
 				A4B45C2020C04F1A00BBFA64 /* ProductionView.m */,
 			);
 			path = JQFMDBLearning;
+			sourceTree = "<group>";
+		};
+		A4D8F492217B787200741A24 /* ELRunTime */ = {
+			isa = PBXGroup;
+			children = (
+				A4D8F493217B788B00741A24 /* ELAssocationViewController.h */,
+				A4D8F494217B788B00741A24 /* ELAssocationViewController.m */,
+			);
+			path = ELRunTime;
 			sourceTree = "<group>";
 		};
 		A4E3B8E920C3E8DF0092E765 /* ELScrollViewController */ = {
@@ -836,8 +851,8 @@
 				DF6EBB4F2074DB2C000A893C /* Assets.xcassets */,
 				DF6EBB512074DB2C000A893C /* LaunchScreen.storyboard */,
 				DF6EBB542074DB2C000A893C /* Info.plist */,
-				DFDCF05D20C0E73700CB1D7D /* PrefixHeader.pch */,
 				DFDCF05B20C0E57500CB1D7D /* Macro.h */,
+				DFDCF05D20C0E73700CB1D7D /* PrefixHeader.pch */,
 				DF6EBB552074DB2C000A893C /* main.m */,
 			);
 			path = ELTool;
@@ -898,8 +913,12 @@
 		DF9C0D8320876DFE0039C531 /* FunctionViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+
 				DF227501212A67760047654F /* ELMemoryLeaks */,
 				DFEF0B2D211AC593004AF038 /* ELMuitipleThreadSafe */,
+
+				A4D8F492217B787200741A24 /* ELRunTime */,
+
 				DF756691210AEAF400782A94 /* ELViewsLayout */,
 				DF75668B210AC76500782A94 /* ELModularizationVC */,
 				DF19C7DA20F83B0D007E2A30 /* ELKVO_KVC */,
@@ -973,6 +992,8 @@
 			children = (
 				DFDCF0DB20C141F400CB1D7D /* ELAlgorithmViewController.h */,
 				DFDCF0DC20C141F400CB1D7D /* ELAlgorithmViewController.m */,
+				A4BBCA3C2120727200E7ECD3 /* ELAlgorithmCollectionViewCell.h */,
+				A4BBCA3D2120727200E7ECD3 /* ELAlgorithmCollectionViewCell.m */,
 			);
 			path = ELAlgorithmViewController;
 			sourceTree = "<group>";
@@ -1312,6 +1333,7 @@
 				DF6EBB562074DB2C000A893C /* main.m in Sources */,
 				DF40BE39208B129400BA97C9 /* UIScrollView+MJExtension.m in Sources */,
 				DF6C616120AD740500E8E884 /* NSObject+MJClass.m in Sources */,
+				A4D8F495217B788B00741A24 /* ELAssocationViewController.m in Sources */,
 				DF40BE33208B129400BA97C9 /* MJRefreshGifHeader.m in Sources */,
 				DFBD4AFB20F34324008671CE /* NSMutableArray+safe.m in Sources */,
 				DF40BE31208B129400BA97C9 /* MJRefreshBackNormalFooter.m in Sources */,
@@ -1342,7 +1364,11 @@
 				DF13479820F5AECF006E6287 /* UIViewController+safeViewAppear.m in Sources */,
 				DF40BE37208B129400BA97C9 /* MJRefreshConst.m in Sources */,
 				DF40BE3A208B129400BA97C9 /* UIScrollView+MJRefresh.m in Sources */,
+
 				DF227504212A67950047654F /* ELFriends.m in Sources */,
+
+				A4BBCA3E2120727200E7ECD3 /* ELAlgorithmCollectionViewCell.m in Sources */,
+
 				DFBD4AF820F333B0008671CE /* ELAOPViewController.m in Sources */,
 				DFC974B820A5307200C9EEAA /* ELWebViewController.m in Sources */,
 				DF6DB135209C482500040096 /* ELRefreshViewController.m in Sources */,

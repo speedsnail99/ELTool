@@ -1,3 +1,4 @@
+
 //
 //  HomeViewController.m
 //  ELTool
@@ -32,6 +33,8 @@
 #import "ELSudoLayoutViewController.h"
 #import "ELMultipleViewController.h"
 #import "ELMemoryLeakViewController.h"
+#import "ELAssocationViewController.h"
+
 
 #import "LGAlertView.h"
 
@@ -69,7 +72,8 @@
  */
 - (void)initUserData
 {
-    NSArray *tempDataArray = @[@"fingerprintUnlock",@"AFNetworking",@"KVCKVOViewController",@"ELMultipleViewController",@"AOPViewcontroller",@"ELMemoryLeakViewController",@"CollectionView",@"MJRefresh",@"AlgorithmViewController",@"ScreenShots",@"NSTimer" ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"AVPlyaerViewController",@"JQFMDBLearming",@"GCDSemaphore",@"ELScrollViewController",@"SudoLayoutViewController"];
+
+    NSArray *tempDataArray = @[@"fingerprintUnlock",@"ELAssocationViewController",@"AFNetworking",@"KVCKVOViewController",@"AOPViewcontroller",@"CollectionView",@"MJRefresh",@"AlgorithmViewController",@"ScreenShots",@"NSTimer" ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"AVPlyaerViewController",@"JQFMDBLearming",@"GCDSemaphore",@"ELScrollViewController",@"SudoLayoutViewController"];
     self.homedataArray = [[NSMutableArray alloc] initWithArray:tempDataArray];
 }
 
@@ -119,10 +123,15 @@
     if ([name isEqualToString:@"AFNetworking"]) {
         
         [self creatAfNetRequest];
-        
     } else if ([name isEqualToString:@"ELMemoryLeakViewController"]) {
+        
         [self createMemoryLeakVC];
     } else if ([name isEqualToString:@"KVCKVOViewController"]) {
+
+    } else if ([name isEqualToString:@"ELAssocationViewController"]) {
+        
+        [self createAssociationVC];
+    }else if ([name isEqualToString:@"KVCKVOViewController"]) {
         
         [self createKVCAndKVOViewController];
         
@@ -228,6 +237,12 @@
 {
     ELSudoLayoutViewController *sudoLayVC = [[ELSudoLayoutViewController alloc] init];
     [self.navigationController pushViewController:sudoLayVC animated:YES];
+}
+
+- (void)createAssociationVC
+{
+    ELAssocationViewController *associationVC = [[ELAssocationViewController alloc] init];
+    [self.navigationController pushViewController:associationVC animated:YES];
 }
 
 - (void)createKVCAndKVOViewController
