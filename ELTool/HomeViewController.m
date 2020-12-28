@@ -34,6 +34,7 @@
 #import "ELMultipleViewController.h"
 #import "ELMemoryLeakViewController.h"
 #import "ELAssocationViewController.h"
+#import "ELFormViewController.h"
 
 
 #import "LGAlertView.h"
@@ -73,7 +74,7 @@
 - (void)initUserData
 {
 
-    NSArray *tempDataArray = @[@"fingerprintUnlock",@"ELAssocationViewController",@"AFNetworking",@"KVCKVOViewController",@"AOPViewcontroller",@"CollectionView",@"MJRefresh",@"AlgorithmViewController",@"ScreenShots",@"NSTimer" ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"AVPlyaerViewController",@"JQFMDBLearming",@"GCDSemaphore",@"ELScrollViewController",@"SudoLayoutViewController"];
+    NSArray *tempDataArray = @[@"FormInput",@"fingerprintUnlock",@"ELAssocationViewController",@"AFNetworking",@"KVCKVOViewController",@"AOPViewcontroller",@"CollectionView",@"MJRefresh",@"AlgorithmViewController",@"ScreenShots",@"NSTimer" ,@"TableView",@"SimpleFunction",@"ELWebVC",@"CircularReference",@"ELWindow",@"ELNewFunctionGuide",@"ELPresentVC",@"XMLParser",@"ELFMDB",@"AVPlyaerViewController",@"JQFMDBLearming",@"GCDSemaphore",@"ELScrollViewController",@"SudoLayoutViewController"];
     self.homedataArray = [[NSMutableArray alloc] initWithArray:tempDataArray];
 }
 
@@ -217,8 +218,16 @@
         [self createFingerprintUnlockViewController];
     } else if ([name isEqualToString:@"ELScrollViewController"]) {
         [self createELScrollViewController];
+    } else if ([name isEqualToString:@"FormInput"]) {
+        //创建表单
+        [self createForm];
     }
     
+}
+
+- (void)createForm {
+    ELFormViewController *formVC = [[ELFormViewController alloc] init];
+    [self.navigationController pushViewController:formVC animated:YES];
 }
 
 - (void)createMemoryLeakVC
