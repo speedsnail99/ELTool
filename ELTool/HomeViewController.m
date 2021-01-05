@@ -35,6 +35,7 @@
 #import "ELMemoryLeakViewController.h"
 #import "ELAssocationViewController.h"
 #import "ELFormViewController.h"
+#import "FXFormViewController.h"
 
 
 #import "LGAlertView.h"
@@ -226,7 +227,8 @@
 }
 
 - (void)createForm {
-    ELFormViewController *formVC = [[ELFormViewController alloc] init];
+    FXFormViewController *formVC = [[FXFormViewController alloc] init];
+    [formVC loadDataWithFileName:@"Report.json"];
     [self.navigationController pushViewController:formVC animated:YES];
 }
 

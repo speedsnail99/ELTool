@@ -14,6 +14,8 @@
 #define kScreenViewSize                        [UIScreen mainScreen].bounds.size
 #define kScreenHeight                          [UIScreen mainScreen].bounds.size.height
 #define kScreenWidth                           [UIScreen mainScreen].bounds.size.width
+//
+#import "CommonFunctionHeader.h"
 
 /*说明：
  *1.两个log方法，GGLogDebug GGLogError，用法和NSLog一样
